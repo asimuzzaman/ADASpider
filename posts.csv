@@ -1,5 +1,5 @@
-post_id,title,body,score,readers_count,views,like_count,created_at,last_posted_at,word_count,url,creator_username,participant_count
-298254,Unable to compile drivework on orin,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+post_id,title,views,like_count,created_at,last_posted_at,word_count,url,creator_username,participant_count,score,readers_count,body
+298254,Unable to compile drivework on orin,15,0,2024-07-01T09:25:13.166Z,2024-07-01T09:25:13.250Z,284,https://forums.developer.nvidia.com/t/unable-to-compile-drivework-on-orin,deng.shigang,1,0.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -38,10 +38,10 @@ cmake/FindcuDNN.cmake:121 (find_package_handle_standard_args)<br>
 CMakeLists.txt:132 (find_package)</p>
 <p>– Configuring incomplete, errors occurred!<br>
 See also “/home/zhangzs/nvidia/driveworks/samples/build/CMakeFiles/CMakeOutput.log”.<br>
-See also “/home/zhangzs/nvidia/driveworks/samples/build/CMakeFiles/CMakeError.log”.</p>",0.4,1,13,0,2024-07-01T09:25:13.166Z,2024-07-01T09:25:13.250Z,284,https://forums.developer.nvidia.com/t/unable-to-compile-drivework-on-orin,deng.shigang,1
-298223,Image segmentation sample in driveworks 5.14,"<p>Hi,<br>
-Is there any sample provided for Image Segmentation in Driveworks 5.14 on Drive Orin?</p>",25.6,2,20,0,2024-07-01T05:27:08.149Z,2024-07-01T08:21:03.485Z,79,https://forums.developer.nvidia.com/t/image-segmentation-sample-in-driveworks-5-14,akshay.tupkar,2
-298239,"When we read the image data from the camera, how do we save it as a png file?","<p>Please provide the following info (tick the boxes after creating this topic):<br>
+See also “/home/zhangzs/nvidia/driveworks/samples/build/CMakeFiles/CMakeError.log”.</p>"
+298223,Image segmentation sample in driveworks 5.14,20,0,2024-07-01T05:27:08.149Z,2024-07-01T08:21:03.485Z,79,https://forums.developer.nvidia.com/t/image-segmentation-sample-in-driveworks-5-14,akshay.tupkar,2,25.6,2,"<p>Hi,<br>
+Is there any sample provided for Image Segmentation in Driveworks 5.14 on Drive Orin?</p>"
+298239,"When we read the image data from the camera, how do we save it as a png file?",19,0,2024-07-01T07:06:01.063Z,2024-07-01T07:44:36.424Z,242,https://forums.developer.nvidia.com/t/when-we-read-the-image-data-from-the-camera-how-do-we-save-it-as-a-png-file,deng.shigang,2,15.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -72,8 +72,8 @@ Is there any sample provided for Image Segmentation in Driveworks 5.14 on Drive 
 <p>same code：</p>
 <p>dwCameraFrameHandle_t frameHandle = DW_NULL_HANDLE;<br>
 dwTime_t timeout = 33000;<br>
-status = dwSensorCamera_readFrame(&amp;frameHandle, timeout, cameraSensor);</p>",15.6,2,19,0,2024-07-01T07:06:01.063Z,2024-07-01T07:44:36.424Z,242,https://forums.developer.nvidia.com/t/when-we-read-the-image-data-from-the-camera-how-do-we-save-it-as-a-png-file,deng.shigang,2
-296816,Can't find driver for custom camera,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+status = dwSensorCamera_readFrame(&amp;frameHandle, timeout, cameraSensor);</p>"
+296816,Can't find driver for custom camera,97,0,2024-06-18T09:43:07.383Z,2024-07-01T02:48:17.881Z,407,https://forums.developer.nvidia.com/t/cant-find-driver-for-custom-camera,tingguang.wang1,2,11.2,5,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -102,8 +102,8 @@ I am using ./sample_camera_gmsl --camera-type=ar0820-rccb-bae-f008a120bm0a --wri
 It looks nvmedia found the camera type but driver is missing<br>
 nvmedia: ERROR: ImgGetDevice: Can’t find driver for ref_max96712_9295_ar0820f008a120bm0a</p>
 <p>camera is entron f008a120bm0a<br>
-Please let me know what file need to add and where to put, thanks!</p>",11.2,5,97,0,2024-06-18T09:43:07.383Z,2024-07-01T02:48:17.881Z,407,https://forums.developer.nvidia.com/t/cant-find-driver-for-custom-camera,tingguang.wang1,2
-298073,PKCS11 Sample returning CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED error,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+Please let me know what file need to add and where to put, thanks!</p>"
+298073,PKCS11 Sample returning CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED error,65,0,2024-06-28T14:57:02.569Z,2024-07-01T01:47:53.039Z,736,https://forums.developer.nvidia.com/t/pkcs11-sample-returning-ckf-nvidia-secure-storage-not-provisioned-error,ricardo.gonzalez1,2,35.8,3,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -177,8 +177,8 @@ CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED</p>
 <p>sudo -u  -g tzvault ./pkcs11_reference_application</p>
 <hr>
 <p>Based on this information, it appears that the example is intended to run on QNX and not Linux if the TrustZone Secure Environment (TZ-SE) is required. The code and documentation indicate that TZ-SE is not supported on Linux.</p>
-<p>So, I am writing to confirm whether TZ-SE is indeed not supported on Linux, or if I might be missing an initial setup or configuration? Additionally, do you know if there is a way to add GID custom abilities on Linux similar to the QNX README instructions?</p>",35.8,3,65,0,2024-06-28T14:57:02.569Z,2024-07-01T01:47:53.039Z,736,https://forums.developer.nvidia.com/t/pkcs11-sample-returning-ckf-nvidia-secure-storage-not-provisioned-error,ricardo.gonzalez1,2
-298074,Doing device-tree overlays,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>So, I am writing to confirm whether TZ-SE is indeed not supported on Linux, or if I might be missing an initial setup or configuration? Additionally, do you know if there is a way to add GID custom abilities on Linux similar to the QNX README instructions?</p>"
+298074,Doing device-tree overlays,50,0,2024-06-28T14:57:07.297Z,2024-07-01T01:40:25.920Z,252,https://forums.developer.nvidia.com/t/doing-device-tree-overlays,General_Radahn,2,35.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -206,8 +206,8 @@ CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED</p>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>I want to be able to change the soc_id on the device-tree Drive AGX Orin’s dynamically after boot or at some stage during boot. I know that I can do this by specifying the soc_id at bind partitions stage and flashing just the kernel dtb partition, but I need to be able to do this without flashing. Please advise on how to achieve this and if this is possible? Are device-tree  overlays supported by drive-os?</p>",35.6,2,50,0,2024-06-28T14:57:07.297Z,2024-07-01T01:40:25.920Z,252,https://forums.developer.nvidia.com/t/doing-device-tree-overlays,General_Radahn,2
-296861,Bounding box sample application location details,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>I want to be able to change the soc_id on the device-tree Drive AGX Orin’s dynamically after boot or at some stage during boot. I know that I can do this by specifying the soc_id at bind partitions stage and flashing just the kernel dtb partition, but I need to be able to do this without flashing. Please advise on how to achieve this and if this is possible? Are device-tree  overlays supported by drive-os?</p>"
+296861,Bounding box sample application location details,150,1,2024-06-18T16:27:59.132Z,2024-06-28T20:56:48.129Z,1196,https://forums.developer.nvidia.com/t/bounding-box-sample-application-location-details,chris.hoffman,2,31.4,7,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -241,8 +241,8 @@ CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED</p>
 <li>Does it also provide labels of the objects detected?</li>
 <li>Where is the location of this bounding box sample application with instructions?</li>
 </ol>
-<p>Thank you!</p>",31.4,7,150,1,2024-06-18T16:27:59.132Z,2024-06-28T20:56:48.129Z,1196,https://forums.developer.nvidia.com/t/bounding-box-sample-application-location-details,chris.hoffman,2
-296779,CNvMBlockingQueue.hpp 151 - Queue is full,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>Thank you!</p>"
+296779,CNvMBlockingQueue.hpp 151 - Queue is full,99,0,2024-06-18T05:48:42.254Z,2024-06-28T19:03:30.655Z,342,https://forums.developer.nvidia.com/t/cnvmblockingqueue-hpp-151-queue-is-full,collin.day,2,15.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -276,8 +276,8 @@ Jun 18 05:42:33 charlie-b test_sipl[1207178]: [10795468612701] Module_id 30 Seve
 Jun 18 05:42:33 charlie-b test_sipl[1207178]: [10795468613151] Module_id 30 Severity 3 : Queue is full
 </code></pre>
 <p>But I can’t find this in the SDK anywhere.  What does this typically mean?</p>
-<p>Thanks!</p>",15.6,2,99,0,2024-06-18T05:48:42.254Z,2024-06-28T19:03:30.655Z,342,https://forums.developer.nvidia.com/t/cnvmblockingqueue-hpp-151-queue-is-full,collin.day,2
-296848,Trigger notification event / signal?,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>Thanks!</p>"
+296848,Trigger notification event / signal?,97,0,2024-06-18T14:33:02.043Z,2024-06-28T19:00:21.870Z,310,https://forums.developer.nvidia.com/t/trigger-notification-event-signal,collin.day,2,25.8,3,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -305,10 +305,10 @@ Jun 18 05:42:33 charlie-b test_sipl[1207178]: [10795468613151] Module_id 30 Seve
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>I was looking in the SDK API docs, but I don’t see anything - is there trigger received event in the system - similar to the signals in NvSiplPipelineNotifier that tells us when a trigger signal is received?</p>",25.8,3,97,0,2024-06-18T14:33:02.043Z,2024-06-28T19:00:21.870Z,310,https://forums.developer.nvidia.com/t/trigger-notification-event-signal,collin.day,2
-298033,How to integrate new sensor which is not listed in nvidia drive orin list?,"<p>Hi,<br>
-I am working on NVIDIA DRIVE ORIN, how can we integrate new sensor which is not listed in the list?</p>",15.8,5,52,0,2024-06-28T09:21:52.553Z,2024-06-28T09:55:03.497Z,69,https://forums.developer.nvidia.com/t/how-to-integrate-new-sensor-which-is-not-listed-in-nvidia-drive-orin-list,akshay.tupkar,2
-295783,Enabling CAN Driver for Nvidia Drive AGX Orin,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>I was looking in the SDK API docs, but I don’t see anything - is there trigger received event in the system - similar to the signals in NvSiplPipelineNotifier that tells us when a trigger signal is received?</p>"
+298033,How to integrate new sensor which is not listed in nvidia drive orin list?,52,0,2024-06-28T09:21:52.553Z,2024-06-28T09:55:03.497Z,69,https://forums.developer.nvidia.com/t/how-to-integrate-new-sensor-which-is-not-listed-in-nvidia-drive-orin-list,akshay.tupkar,2,15.8,5,"<p>Hi,<br>
+I am working on NVIDIA DRIVE ORIN, how can we integrate new sensor which is not listed in the list?</p>"
+295783,Enabling CAN Driver for Nvidia Drive AGX Orin,259,0,2024-06-10T14:05:26.302Z,2024-06-28T09:14:10.760Z,1273,https://forums.developer.nvidia.com/t/enabling-can-driver-for-nvidia-drive-agx-orin,chintan.patel2,2,49.4,22,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -368,8 +368,8 @@ I am working on NVIDIA DRIVE ORIN, how can we integrate new sensor which is not 
 <p>From the above screenshots the instructions are not pointing to where to enable the CAN Drivers on the Target device.</p>
 <p>Is there some files in the driveworks docker container that we need to transfer to the Target device? If so can you list them?</p>
 <p>Can you please help us in any way possible?</p>
-<p>Thanks in advance.</p>",49.4,22,258,0,2024-06-10T14:05:26.302Z,2024-06-28T09:14:10.760Z,1273,https://forums.developer.nvidia.com/t/enabling-can-driver-for-nvidia-drive-agx-orin,chintan.patel2,2
-296681,CSI capture RCE Traces log,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>Thanks in advance.</p>"
+296681,CSI capture RCE Traces log,115,0,2024-06-17T11:13:05.671Z,2024-06-28T07:02:30.663Z,274,https://forums.developer.nvidia.com/t/csi-capture-rce-traces-log,quang.huy.dang,3,26.8,8,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -401,8 +401,8 @@ I am working on NVIDIA DRIVE ORIN, how can we integrate new sensor which is not 
 <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/nvmedia_debugging_csi_errors/RCETraces8.html"" rel=""noopener nofollow ugc"">RCE Traces | NVIDIA Docs</a></p>
 <p>It doc said to send the traces to NVIDIA for further analysis.<br>
 You can find below the RTE Traces file attached.<br>
-<a class=""attachment"" href=""/uploads/short-url/vnj4M1iOxGFTzcCrC9MDCd66VS6.txt"">trace.txt</a> (1.8 KB)</p>",26.8,8,113,0,2024-06-17T11:13:05.671Z,2024-06-28T07:02:30.663Z,274,https://forums.developer.nvidia.com/t/csi-capture-rce-traces-log,quang.huy.dang,3
-292910,[BUG] cgf helloworld sample nvsci+interprocess communication hangs with exception error,"<p><strong>Required Info:</strong></p>
+<a class=""attachment"" href=""/uploads/short-url/vnj4M1iOxGFTzcCrC9MDCd66VS6.txt"">trace.txt</a> (1.8 KB)</p>"
+292910,[BUG] cgf helloworld sample nvsci+interprocess communication hangs with exception error,529,2,2024-05-15T03:35:46.832Z,2024-06-28T05:32:31.355Z,5402,https://forums.developer.nvidia.com/t/bug-cgf-helloworld-sample-nvsci-interprocess-communication-hangs-with-exception-error,lizhensheng,2,102.6,13,"<p><strong>Required Info:</strong></p>
 <ul>
 <li>Software Version<br>
 [ x ] DRIVE OS 6.0.8.1</li>
@@ -544,8 +544,8 @@ Stack trace (most recent call last):
 <ol>
 <li>Please the forum reproduce the issue with the official minimal helloworld sample.</li>
 <li>Please provide the correct way to use the nvsci channel in dwcgf, and all needed infomation to help us run dwcgf well.</li>
-</ol>",102.6,13,529,2,2024-05-15T03:35:46.832Z,2024-06-28T05:32:31.355Z,5402,https://forums.developer.nvidia.com/t/bug-cgf-helloworld-sample-nvsci-interprocess-communication-hangs-with-exception-error,lizhensheng,2
-296138,Gdm display manager does not automatically come up when Orin is turned on,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+</ol>"
+296138,Gdm display manager does not automatically come up when Orin is turned on,162,0,2024-06-12T17:20:20.973Z,2024-06-28T05:09:09.705Z,809,https://forums.developer.nvidia.com/t/gdm-display-manager-does-not-automatically-come-up-when-orin-is-turned-on,chris.hoffman,3,31.8,8,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -574,8 +574,8 @@ Stack trace (most recent call last):
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
 <p>Hello,</p>
-<p>Is there a script to run / command to run for bringing up the display manager on boot up? For some reason our ORIN is always in the state of display manager being stopped and will only come up after running <code>sudo systemctl start gdm</code>. Previously, Ubuntu desktop login screen would automatically show when Orin is switched on.</p>",31.8,8,161,0,2024-06-12T17:20:20.973Z,2024-06-28T05:09:09.705Z,809,https://forums.developer.nvidia.com/t/gdm-display-manager-does-not-automatically-come-up-when-orin-is-turned-on,chris.hoffman,3
-297292,"Understanding NvENC parameters, benchmarks & bitrate results when using nvm_iep_sci","<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>Is there a script to run / command to run for bringing up the display manager on boot up? For some reason our ORIN is always in the state of display manager being stopped and will only come up after running <code>sudo systemctl start gdm</code>. Previously, Ubuntu desktop login screen would automatically show when Orin is switched on.</p>"
+297292,"Understanding NvENC parameters, benchmarks & bitrate results when using nvm_iep_sci",104,0,2024-06-21T21:55:04.409Z,2024-06-27T21:13:25.374Z,935,https://forums.developer.nvidia.com/t/understanding-nvenc-parameters-benchmarks-bitrate-results-when-using-nvm-iep-sci,samuel.ongzx,2,51.4,6,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -619,8 +619,8 @@ Encoding 4 different streams simultaneously using <code>.yuv</code> files of 4k 
 <p>Retrieved from NVIDIA Jetson AGX Orin Series datasheet<br>
 <img src=""https://global.discourse-cdn.com/nvidia/original/4X/0/b/a/0ba3054e1d0c1400b0368083c05d0e19e8c6adc9.png"" alt=""image"" data-base62-sha1=""1EWwolGkCvtNKekBePP7LTCXaMp"" width=""640"" height=""313""></p>
 <p>Sample output from <code>nvm_iep_sci</code><br>
-<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" data-download-href=""/uploads/short-url/e64KHsAjBdcXMlcUbHc3nYOol2X.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" alt=""image"" data-base62-sha1=""e64KHsAjBdcXMlcUbHc3nYOol2X"" width=""690"" height=""54"" data-dominant-color=""08313C""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">755×60 3.73 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",51.4,6,103,0,2024-06-21T21:55:04.409Z,2024-06-27T21:13:25.374Z,935,https://forums.developer.nvidia.com/t/understanding-nvenc-parameters-benchmarks-bitrate-results-when-using-nvm-iep-sci,samuel.ongzx,2
-297833,MAX96712 Pattern Generator display,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" data-download-href=""/uploads/short-url/e64KHsAjBdcXMlcUbHc3nYOol2X.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" alt=""image"" data-base62-sha1=""e64KHsAjBdcXMlcUbHc3nYOol2X"" width=""690"" height=""54"" data-dominant-color=""08313C""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">755×60 3.73 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
+297833,MAX96712 Pattern Generator display,58,0,2024-06-27T07:28:10.447Z,2024-06-27T09:51:19.101Z,349,https://forums.developer.nvidia.com/t/max96712-pattern-generator-display,quang.huy.dang,2,21.0,4,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -655,8 +655,8 @@ I don’t know if this is the expected behavior.</p>
 <p>The command I used for this test is :<br>
 <code>sudo ./nvsipl_camera --platform-config ""MAX96712_RAW12_TPG_DPHY_x4"" --link-enable-masks ""0x0001 0x0000 0x0000 0x0000""  -v 4 -0 -1 -2 --enableRawOutput --showfps -d 1</code></p>
 <p>This is the log when I launch the application:<br>
-<a class=""attachment"" href=""/uploads/short-url/5vskjLmOD0eCMfbjcjsTwjqWb1f.txt"">MAX96712_TPG.txt</a> (183.1 KB)</p>",21.0,4,57,0,2024-06-27T07:28:10.447Z,2024-06-27T09:51:19.101Z,349,https://forums.developer.nvidia.com/t/max96712-pattern-generator-display,quang.huy.dang,2
-294940,Trtexec Error：Could not find any implementation for node,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<a class=""attachment"" href=""/uploads/short-url/5vskjLmOD0eCMfbjcjsTwjqWb1f.txt"">MAX96712_TPG.txt</a> (183.1 KB)</p>"
+294940,Trtexec Error：Could not find any implementation for node,231,1,2024-06-03T04:25:47.600Z,2024-06-27T08:57:38.354Z,599,https://forums.developer.nvidia.com/t/trtexec-error-could-not-find-any-implementation-for-node,HIENG_NS,2,92.4,11,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -699,8 +699,8 @@ When using trtexec to convert ONNX to TensorRT, an error occurs and the conversi
 I have confirmed that it works correctly when I run the onnx model.</p>
 <p>The TensorRT version on DRIVE OS 6.0.8.1 is 8.6.11.</p>
 <p>The execution location is Orin’s /usr/src/tensorrt/bin</p>
-<p>How can I solve it?</p>",92.4,11,230,1,2024-06-03T04:25:47.600Z,2024-06-27T08:57:38.354Z,599,https://forums.developer.nvidia.com/t/trtexec-error-could-not-find-any-implementation-for-node,HIENG_NS,2
-297834,Unable to start up Sekonix SF3325-100 GMSL Camera on Drive AGX Orin,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>How can I solve it?</p>"
+297834,Unable to start up Sekonix SF3325-100 GMSL Camera on Drive AGX Orin,43,0,2024-06-27T07:54:20.022Z,2024-06-27T08:12:15.552Z,313,https://forums.developer.nvidia.com/t/unable-to-start-up-sekonix-sf3325-100-gmsl-camera-on-drive-agx-orin,kevin.kal,2,20.8,3,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -760,8 +760,8 @@ I have confirmed that it works correctly when I run the onnx model.</p>
 <p>I got the following error on the terminal as shown in the screenshot below:</p>
 <p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b.png"" data-download-href=""/uploads/short-url/5qGOV82Y6DY5xGe5R8HEaYwtPU7.png?dl=1"" title=""Screenshot from 2024-06-27 08-46-58"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_690x388.png"" alt=""Screenshot from 2024-06-27 08-46-58"" data-base62-sha1=""5qGOV82Y6DY5xGe5R8HEaYwtPU7"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_1380x776.png 2x"" data-dominant-color=""36112A""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-27 08-46-58</span><span class=""informations"">1920×1080 235 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
 <p>Can you help us to set up the cameras for us?</p>
-<p>Thanks</p>",20.8,3,42,0,2024-06-27T07:54:20.022Z,2024-06-27T08:12:15.552Z,313,https://forums.developer.nvidia.com/t/unable-to-start-up-sekonix-sf3325-100-gmsl-camera-on-drive-agx-orin,kevin.kal,2
-297808,"Install ros2 , but find dependency issue","<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>Thanks</p>"
+297808,"Install ros2 , but find dependency issue",50,0,2024-06-27T02:54:43.585Z,2024-06-27T05:54:35.442Z,269,https://forums.developer.nvidia.com/t/install-ros2-but-find-dependency-issue,tonyb.zhao,2,10.8,4,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -788,10 +788,10 @@ I have confirmed that it works correctly when I run the onnx model.</p>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
-[✔] other（native Ubuntu Linux 20.04: deb install ）</p>",10.8,4,49,0,2024-06-27T02:54:43.585Z,2024-06-27T05:54:35.442Z,269,https://forums.developer.nvidia.com/t/install-ros2-but-find-dependency-issue,tonyb.zhao,2
-297564,Installing tegrastats GUI,"<p>Hi team,<br>
-I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to view the statistics in graphical view?</p>",21.2,6,100,0,2024-06-25T08:49:37.680Z,2024-06-27T05:51:21.434Z,633,https://forums.developer.nvidia.com/t/installing-tegrastats-gui,akshay.tupkar,2
-297702,How to configure the rig file for camera?,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+[✔] other（native Ubuntu Linux 20.04: deb install ）</p>"
+297564,Installing tegrastats GUI,101,0,2024-06-25T08:49:37.680Z,2024-06-27T05:51:21.434Z,633,https://forums.developer.nvidia.com/t/installing-tegrastats-gui,akshay.tupkar,2,21.2,6,"<p>Hi team,<br>
+I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to view the statistics in graphical view?</p>"
+297702,How to configure the rig file for camera?,60,0,2024-06-26T09:20:36.265Z,2024-06-27T00:42:51.490Z,263,https://forums.developer.nvidia.com/t/how-to-configure-the-rig-file-for-camera,deng.shigang,2,15.6,5,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -823,8 +823,8 @@ I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to vie
 <a class=""attachment"" href=""/uploads/short-url/1Lh94UlXeLcns64qyfjEpJsrDlj.txt"">nvsipl_camera_out.txt</a> (1.9 KB)<br>
 <a class=""attachment"" href=""/uploads/short-url/x6ZKTy5QwbRIPvAlqRbbgw6wq7t.txt"">sample_camera_out.txt</a> (25.9 KB)<br>
 <a class=""attachment"" href=""/uploads/short-url/hXk5r4MaeOFk8Y5kVajOdKRMloG.txt"">sipl_query_out.txt</a> (25.7 KB)<br>
-<a class=""attachment"" href=""/uploads/short-url/i3DwCpc6PMbbm6r2SxY5rrjWUDk.txt"">rig.txt</a> (1.2 KB)</p>",15.6,5,59,0,2024-06-26T09:20:36.265Z,2024-06-27T00:42:51.490Z,263,https://forums.developer.nvidia.com/t/how-to-configure-the-rig-file-for-camera,deng.shigang,2
-297710,Configuring External SSD to work with Drive Unit,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<a class=""attachment"" href=""/uploads/short-url/i3DwCpc6PMbbm6r2SxY5rrjWUDk.txt"">rig.txt</a> (1.2 KB)</p>"
+297710,Configuring External SSD to work with Drive Unit,46,0,2024-06-26T09:49:23.084Z,2024-06-26T10:16:26.907Z,208,https://forums.developer.nvidia.com/t/configuring-external-ssd-to-work-with-drive-unit,chintan.patel2,2,10.8,4,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -854,10 +854,10 @@ I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to vie
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
 <p>We currently possess Nvidia Drive AGX Orin, we want to configure an External SSD to work with the drive unit, since the storage on the drive is limited.</p>
 <p>Can you please help us in any way possible?</p>
-<p>Thanks in advance.</p>",10.8,4,45,0,2024-06-26T09:49:23.084Z,2024-06-26T10:16:26.907Z,208,https://forums.developer.nvidia.com/t/configuring-external-ssd-to-work-with-drive-unit,chintan.patel2,2
-297580,Sample related to sensor fusion on drive orin,"<p>Hi,<br>
-I am working on DRIVE Orin platform. I want to know if there is any module or sample provided for sensor fusion?</p>",1.0,4,63,0,2024-06-25T10:55:11.523Z,2024-06-26T05:09:18.471Z,44,https://forums.developer.nvidia.com/t/sample-related-to-sensor-fusion-on-drive-orin,akshay.tupkar,2
-297003,DRIVE AGX ORIN: New partition,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>Thanks in advance.</p>"
+297580,Sample related to sensor fusion on drive orin,64,0,2024-06-25T10:55:11.523Z,2024-06-26T05:09:18.471Z,44,https://forums.developer.nvidia.com/t/sample-related-to-sensor-fusion-on-drive-orin,akshay.tupkar,2,1.0,4,"<p>Hi,<br>
+I am working on DRIVE Orin platform. I want to know if there is any module or sample provided for sensor fusion?</p>"
+297003,DRIVE AGX ORIN: New partition,106,0,2024-06-19T20:32:35.547Z,2024-06-26T04:37:21.521Z,1305,https://forums.developer.nvidia.com/t/drive-agx-orin-new-partition,mac.pinnock,2,47.2,13,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -985,8 +985,8 @@ OSError: 46
 <li>I’m missing how the whole platform maps the partitions created in the configuration files to the ones visible in the Ubuntu userspace.</li>
 </ol>
 <p>The whole idea is to create a new partition that can be mounted in a new directory in the rootfs called /data.</p>
-<p>I could not find the documentation on how to do something like that. Does somebody know how I can do something like that?</p>",47.2,13,105,0,2024-06-19T20:32:35.547Z,2024-06-26T04:37:21.521Z,1305,https://forums.developer.nvidia.com/t/drive-agx-orin-new-partition,mac.pinnock,2
-297277,Connection Issue while connecting Velodyne Lidar VLP-16,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p>I could not find the documentation on how to do something like that. Does somebody know how I can do something like that?</p>"
+297277,Connection Issue while connecting Velodyne Lidar VLP-16,107,1,2024-06-21T17:02:08.722Z,2024-06-25T14:41:44.947Z,636,https://forums.developer.nvidia.com/t/connection-issue-while-connecting-velodyne-lidar-vlp-16,prit.shah,2,20.8,3,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -1022,8 +1022,8 @@ OSError: 46
 <div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/9/8/698a9302957eb1613d863e9577059a6144da7f92.jpeg"" data-download-href=""/uploads/short-url/f3F1L4NR56PsV2NYs2JVB2ILqTg.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53 (1)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/9/8/698a9302957eb1613d863e9577059a6144da7f92_2_320x500.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53 (1)"" data-base62-sha1=""f3F1L4NR56PsV2NYs2JVB2ILqTg"" width=""320"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/9/8/698a9302957eb1613d863e9577059a6144da7f92_2_320x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/6/9/8/698a9302957eb1613d863e9577059a6144da7f92_2_480x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/6/9/8/698a9302957eb1613d863e9577059a6144da7f92_2_640x1000.jpeg 2x"" data-dominant-color=""B8B8B3""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53 (1)</span><span class=""informations"">1066×1662 411 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
 <div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6.jpeg"" data-download-href=""/uploads/short-url/oMSQ13vW5QrMXOJGMrcw4r40yuq.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_437x500.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53"" data-base62-sha1=""oMSQ13vW5QrMXOJGMrcw4r40yuq"" width=""437"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_437x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_655x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_874x1000.jpeg 2x"" data-dominant-color=""BCBEBD""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53</span><span class=""informations"">1792×2048 645 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
 <div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1.jpeg"" data-download-href=""/uploads/short-url/2wT0lKAP6KPUPTzXVgFlCKwVnc5.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53 (2)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_690x388.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53 (2)"" data-base62-sha1=""2wT0lKAP6KPUPTzXVgFlCKwVnc5"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_1380x776.jpeg 2x"" data-dominant-color=""AEACA6""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53 (2)</span><span class=""informations"">2016×1134 378 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
-<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b.jpeg"" data-download-href=""/uploads/short-url/at2QSlgDv5AMUxmup0jMnTWrcUz.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53 (3)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_690x435.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53 (3)"" data-base62-sha1=""at2QSlgDv5AMUxmup0jMnTWrcUz"" width=""690"" height=""435"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_690x435.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_1035x652.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_1380x870.jpeg 2x"" data-dominant-color=""908C89""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53 (3)</span><span class=""informations"">1786×1126 153 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",20.8,3,106,1,2024-06-21T17:02:08.722Z,2024-06-25T14:41:44.947Z,636,https://forums.developer.nvidia.com/t/connection-issue-while-connecting-velodyne-lidar-vlp-16,prit.shah,2
-297596,About bird's-eye view image sample code,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b.jpeg"" data-download-href=""/uploads/short-url/at2QSlgDv5AMUxmup0jMnTWrcUz.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53 (3)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_690x435.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53 (3)"" data-base62-sha1=""at2QSlgDv5AMUxmup0jMnTWrcUz"" width=""690"" height=""435"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_690x435.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_1035x652.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_1380x870.jpeg 2x"" data-dominant-color=""908C89""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53 (3)</span><span class=""informations"">1786×1126 153 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
+297596,About bird's-eye view image sample code,62,0,2024-06-25T13:29:38.019Z,2024-06-25T14:36:17.827Z,181,https://forums.developer.nvidia.com/t/about-birds-eye-view-image-sample-code,liuq1,2,25.8,6,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -1048,8 +1048,8 @@ OSError: 46
 [ √] native Ubuntu 18.04<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
 <p>Hi experts,<br>
-Is there an example code in NvMedia that converts fish eye images from different directions into a panoramic bird’s-eye view.</p>",25.8,6,61,0,2024-06-25T13:29:38.019Z,2024-06-25T14:36:17.827Z,181,https://forums.developer.nvidia.com/t/about-birds-eye-view-image-sample-code,liuq1,2
-297570,CPU pegasus xavier a doesn't start aymore,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+Is there an example code in NvMedia that converts fish eye images from different directions into a panoramic bird’s-eye view.</p>"
+297570,CPU pegasus xavier a doesn't start aymore,50,0,2024-06-25T09:24:12.527Z,2024-06-25T09:24:12.595Z,142,https://forums.developer.nvidia.com/t/cpu-pegasus-xavier-a-doesnt-start-aymore,erwin.rademakers,1,35.6,3,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -1074,8 +1074,8 @@ Is there an example code in NvMedia that converts fish eye images from different
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
 <p>Hi, I get following error: CBB fault on my xavier a (pegasus). How can I revive it ? If not, is there a way to get the data from internal disk back ?</p>
-<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e.jpeg"" data-download-href=""/uploads/short-url/17Tgwb9MUMQ1VTVMAc1M0vR1VSK.jpeg?dl=1"" title=""GetImage"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg"" alt=""GetImage"" data-base62-sha1=""17Tgwb9MUMQ1VTVMAc1M0vR1VSK"" width=""554"" height=""499"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_831x748.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_1108x998.jpeg 2x"" data-dominant-color=""B0B0B0""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">GetImage</span><span class=""informations"">1762×1588 216 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",35.6,3,49,0,2024-06-25T09:24:12.527Z,2024-06-25T09:24:12.595Z,142,https://forums.developer.nvidia.com/t/cpu-pegasus-xavier-a-doesnt-start-aymore,erwin.rademakers,1
-297567,DriveWorks sample can't execute on the target platform,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e.jpeg"" data-download-href=""/uploads/short-url/17Tgwb9MUMQ1VTVMAc1M0vR1VSK.jpeg?dl=1"" title=""GetImage"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg"" alt=""GetImage"" data-base62-sha1=""17Tgwb9MUMQ1VTVMAc1M0vR1VSK"" width=""554"" height=""499"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_831x748.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_1108x998.jpeg 2x"" data-dominant-color=""B0B0B0""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">GetImage</span><span class=""informations"">1762×1588 216 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
+297567,DriveWorks sample can't execute on the target platform,69,0,2024-06-25T09:09:13.266Z,2024-06-25T09:17:38.693Z,296,https://forums.developer.nvidia.com/t/driveworks-sample-cant-execute-on-the-target-platform,steven_cho,2,46.4,6,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -1108,11 +1108,11 @@ Is there an example code in NvMedia that converts fish eye images from different
 <p>This is error message.<br>
 ./sample_hello_world<br>
 -bash: ./sample_hello_world: cannot execute binary file: Exec format error</p>
-<p>Should I copy the DriveWorks sample source code to the target platform and build it on target platform?</p>",46.4,6,67,0,2024-06-25T09:09:13.266Z,2024-06-25T09:17:38.693Z,296,https://forums.developer.nvidia.com/t/driveworks-sample-cant-execute-on-the-target-platform,steven_cho,2
-297410,Setting up Driveworks 5.14 on the Drive Orin,"<p>Hi team,<br>
+<p>Should I copy the DriveWorks sample source code to the target platform and build it on target platform?</p>"
+297410,Setting up Driveworks 5.14 on the Drive Orin,100,0,2024-06-24T06:32:22.973Z,2024-06-25T07:33:03.799Z,579,https://forums.developer.nvidia.com/t/setting-up-driveworks-5-14-on-the-drive-orin,akshay.tupkar,2,27.0,10,"<p>Hi team,<br>
 I have switched to DRIVE OS 6.0.8.1 from DRIVE OS 6.0.6. Now I need to set up driveworks 5.14 to run samples on drive orin.<br>
-What all are the steps required for that?</p>",27.0,10,98,0,2024-06-24T06:32:22.973Z,2024-06-25T07:33:03.799Z,579,https://forums.developer.nvidia.com/t/setting-up-driveworks-5-14-on-the-drive-orin,akshay.tupkar,2
-297534,CUDA memory usage by process in Orin/DriveOS,"<p>I’m trying to obtain CUDA memory usage per process on Orin. The issues I face are:</p>
+What all are the steps required for that?</p>"
+297534,CUDA memory usage by process in Orin/DriveOS,56,0,2024-06-25T04:12:20.962Z,2024-06-25T06:58:14.541Z,197,https://forums.developer.nvidia.com/t/cuda-memory-usage-by-process-in-orin-driveos,Alex-1,2,35.8,3,"<p>I’m trying to obtain CUDA memory usage per process on Orin. The issues I face are:</p>
 <ol>
 <li>There is no nvidia-smi.</li>
 <li>To work around (1), I try to write a Python program using <code>py3nvml.py3nvml</code>, but it fails due to lack of <code>libnvidia-ml.so</code>.</li>
@@ -1127,4 +1127,4 @@ What all are the steps required for that?</p>",27.0,10,98,0,2024-06-24T06:32:22.
 <p><strong>Hardware Platform</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)</p>
 <p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers</p>",35.8,3,55,0,2024-06-25T04:12:20.962Z,2024-06-25T06:58:14.541Z,197,https://forums.developer.nvidia.com/t/cuda-memory-usage-by-process-in-orin-driveos,Alex-1,2
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers</p>"
