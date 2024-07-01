@@ -1,0 +1,1213 @@
+comment_id,commentor_username,post_id,body,score,readers_count,created_at
+1439131,SivaRamaKrishnaNV,298223,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+We don’t have segmentation sample. However, you could check integrating model using DNN framework.<br>
+The DNN samples provided with DW can be found at <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/driveworks-nvsdk/nvsdk_dw_html/dwx_samples_section.html#dwx_dnn_samples_group"" class=""inline-onebox"">DriveWorks SDK Reference: Samples</a></p>",5.4,1,2024-07-01T05:43:55.615Z
+1439319,akshay.tupkar,298223,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I came across a sample named “Connected Components” in driveworks which seems like segmentation</p>",0.4,1,2024-07-01T08:21:03.485Z
+1439274,SivaRamaKrishnaNV,298239,"<p>Dear <a class=""mention"" href=""/u/deng.shigang"">@deng.shigang</a>,<br>
+We don’t have API to generate png images. You can record the video and use tools like <code>ffmpeg</code> to extract the images from it. To get recorded video, you can use DW’s sample_camera or recorder tool .<br>
+Also, see if <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/nvmedia_sample_apps/nvmedia_nvsipl_camera_CommandLineSwitches32.html"">nvsipl_camera</a> with <code>-f</code> and <code>--writeFrames</code> flag to generate <code>yuv</code> files.</p>",0.4,1,2024-07-01T07:44:36.424Z
+1431883,tingguang.wang1,296816,"<p>I saw a topic about entron f008a said that it was not supported in official release but it was closed already (2021 oct).</p>
+<p>Should I flash the software 10.0 rev2? is it fixed in this version?</p>",1.2,5,2024-06-18T09:56:19.643Z
+1432222,SivaRamaKrishnaNV,296816,"<p>Dear <a class=""mention"" href=""/u/tingguang.wang1"">@tingguang.wang1</a>,<br>
+in DRIVE SW 10.0, the image capture in DW(DRIVEAV) is based on Nvmedia IPP framework.<br>
+In DRIVE OS 5.2.6 + DW 4.0 release, IPP is deprecated and replaced with NVSIPL framework. Note that, the DriveAV supported sensors in DRIVE SW 10.0 are SF3325 and SF3324 and DRIVE IX supports AR0144ATSM-GEVK</p>",10.8,3,2024-06-18T16:51:12.762Z
+1432445,tingguang.wang1,296816,"<p>If I just keepSW10.0 now , what should I do to capture Entron f008a120bm0a video file?<br>
+Try IPP, correct?</p>",0.4,1,2024-06-19T01:57:58.163Z
+1433616,tingguang.wang1,296816,"<p>When I looking into IPP in SW10.0 documentation, entron camera is not listed</p>",0.4,1,2024-06-20T09:48:31.722Z
+1433704,SivaRamaKrishnaNV,296816,"<p>Dear <a class=""mention"" href=""/u/tingguang.wang1"">@tingguang.wang1</a>,<br>
+Entron camera is not supported with Driveworks. Please use supported sensors for using driveworks. Enabling unsupported camera for DW is out of forum support scope.</p>",5.4,1,2024-06-20T11:22:04.703Z
+1438980,tingguang.wang1,296816,"<p>where can I check this support info in overall ?<br>
+As ecosystem camera supplier, entron is only supported within nvmedia scope?</p>",0.4,1,2024-07-01T01:53:33.955Z
+1439026,SivaRamaKrishnaNV,296816,"<p>Dear <a class=""mention"" href=""/u/tingguang.wang1"">@tingguang.wang1</a>,<br>
+Please check <a href=""https://developer.nvidia.com/drive/ecosystem-xavier#camera"" class=""inline-onebox"">DRIVE AGX Xavier Sensors &amp; Accessories | NVIDIA Developer</a> for supported cameras and compatible DRIVE release version</p>
+<p>As clarified earlier DRIVE SW 10.0 uses IPP based framework to capture images in DRIVE AV. We later deprecated IPP and moved to SIPL framework.<br>
+Note that they are no releases targetted for DRIVE AGX Xavier platform and hence we request to use the supported cameras only.</p>",0.2,0,2024-07-01T02:48:17.881Z
+1438974,SivaRamaKrishnaNV,298073,"<aside class=""quote no-group"" data-username=""ricardo.gonzalez1"" data-post=""1"" data-topic=""298073"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> ricardo.gonzalez1:</div>
+<blockquote>
+<p>I am writing to confirm whether TZ-SE is indeed not supported on Linux,</p>
+</blockquote>
+</aside>
+<p>Yes.</p>
+<p>Please use <a href=""https://forums.developer.nvidia.com/c/autonomous-vehicles/drive-agx-orin/drive-agx-orin-general/520"" class=""inline-onebox"">DRIVE AGX Orin General - NVIDIA Developer Forums</a> to post topics related to DRIVE AGX Orin. Also, consider upgrading to latest release (DRIVE 6.0.8.1) to get latest software.</p>",0.2,0,2024-07-01T01:47:53.039Z
+1438970,SivaRamaKrishnaNV,298074,"<p>Dear <a class=""mention"" href=""/u/general_radahn"">@General_Radahn</a>,<br>
+AFAIK, it is not supported. Let me double check internally and update you.</p>",0.2,0,2024-07-01T01:40:25.920Z
+1432280,SivaRamaKrishnaNV,296861,"<p>Dear <a class=""mention"" href=""/u/chris.hoffman"">@chris.hoffman</a>,<br>
+Are you asking about object detection sample based on yolov3? If so, please check <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/driveworks-nvsdk/nvsdk_dw_html/dwx_object_detector_tracker_sample.html"" class=""inline-onebox"">DriveWorks SDK Reference: Basic Object Detector and Tracker Sample</a> for details. For source code, please see <code>/usr/local/driveworks/samples/src/dnn/sample_object_detector_tracker</code> on docker.</p>",6.4,7,2024-06-18T18:44:35.031Z
+1432303,chris.hoffman,296861,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<p>sorry, which docker are you referring to here?<br>
+Also, how to run the object detection sample directly with the camera visualization using <code>nvsipl_camera</code>?</p>",1.4,7,2024-06-18T20:14:17.915Z
+1432311,SivaRamaKrishnaNV,296861,"<p>Dear <a class=""mention"" href=""/u/chris.hoffman"">@chris.hoffman</a>,<br>
+If you have used sdkmanager to flash the target, you can find the source code at <code>usr/local/driveworks/samples/src/dnn/sample_object_detector_tracker</code> on host.</p>
+<p>You can not run object detection directly on nvsipl_camera. The object detector sample also works with live camera. So please check using live camera data in the sample.</p>
+<p>May I know why you are using DRIVE OS 6.0.5 and not the latest release(6.0.8.1)?</p>",6.4,7,2024-06-18T20:53:46.972Z
+1433813,chris.hoffman,296861,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<ol>
+<li>
+<p>I had to use the NGC docker to flash 6.0.5 as I couldn’t use the SDK. In that case, where can I find the built sample or example?</p>
+</li>
+<li>
+<p>Will I be able to get the sample if I just download the 6.0.5 OS using SDK manager on Ubuntu Host?</p>
+</li>
+<li>
+<p>We are on 6.0.5 because our camera drivers were tied to it.</p>
+</li>
+<li>
+<p>Is it possible to show bounding box visualization on the nvsipl_camera output? Or what are the other capabilities of <code>nvsipl_camera</code>? We want the bounding boxes to be shown on the simulated data injected into the Orin and visualized using <code>nvsipl_camera</code></p>
+</li>
+<li>
+<p>What do you mean by live camera? Are you talking about a real camera lens connected to group A?</p>
+</li>
+</ol>",11.4,7,2024-06-20T17:14:18.807Z
+1435076,SivaRamaKrishnaNV,296861,"<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""6"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>I had to use the NGC docker to flash 6.0.5 as I couldn’t use the SDK. In that case, where can I find the built sample or example?</p>
+</blockquote>
+</aside>
+<p>You can find the source code at <code>/usr/local/driveworks/samples/src/dnn/sample_object_detector_tracker</code> on docker</p>
+<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""6"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>what are the other capabilities of <code>nvsipl_camera</code>?</p>
+</blockquote>
+</aside>
+<p>It just shows the camera display output from live camera or can take RAW camera data as input.</p>
+<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""6"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>What do you mean by live camera? Are you talking about a real camera lens connected to group A?</p>
+</blockquote>
+</aside>
+<p>Yes.</p>
+<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""6"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>We want the bounding boxes to be shown on the simulated data injected into the Orin and visualized using <code>nvsipl_camera</code></p>
+</blockquote>
+</aside>
+<p>nvsipl_camera is just based in NVMedia APIs. To detect bouding boxes, we need to use TensorRT framework to perform object detection and detect bouding box.</p>
+<p>We have object detector sample in DW as a reference example which showcase object bounding box detection on live camera or recorder data. Note that, DW internally uses NVMedia(SIPL) APIs to capture camera data and TensorRT APIs to perform any DL related task.</p>",6.2,6,2024-06-24T13:55:38.659Z
+1436120,chris.hoffman,296861,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""7"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>You can find the source code at <code>/usr/local/driveworks/samples/src/dnn/sample_object_detector_tracker</code> on docker</p>
+</blockquote>
+</aside>
+<ol>
+<li>
+<p>Thank you for the clarity on all questions. Do you recommend copying the source code from Docker 6.0.5 to Ubuntu host and then building<br>
+or<br>
+directly copying the source code to Target Orin and building the application there?</p>
+</li>
+<li>
+<p>I am planning on using the command from the README as reference.</p>
+</li>
+</ol>
+<pre><code class=""lang-auto"">./sample_object_detector_tracker --input-type=[video|camera]
+                            --video=[path/to/video]
+                            --camera-type=[camera]
+                            --camera-group=[a|b|c|d]
+                            --camera-index=[0|1|2|3]
+                            --slave=[0|1]
+                            --tensorRT_model=[path/to/TensorRT/model]
+</code></pre>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""7"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>nvsipl_camera is just based in NVMedia APIs. To detect bouding boxes, we need to use TensorRT framework to perform object detection and detect bouding box.</p>
+<p>We have object detector sample in DW as a reference example which showcase object bounding box detection on live camera or recorder data. Note that, DW internally uses NVMedia(SIPL) APIs to capture camera data and TensorRT APIs to perform any DL related task.</p>
+</blockquote>
+</aside>
+<p>My understanding is I can use the same camera/platform (f.e,  <code>""IMX728_RGGB_CPHY_x4""</code>) supported in <code>nvsipl_camera</code> but replace the application with <code>sample_object_detector_tracker</code>. Is this accurate?</p>",6.2,6,2024-06-25T20:59:44.355Z
+1436195,SivaRamaKrishnaNV,296861,"<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""6"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>We are on 6.0.5 because our camera drivers were tied to it</p>
+</blockquote>
+</aside>
+<p>Does that mean, you can not upgrade to latest release DRIVE OS 6.0.8.1? I remember there was some issues in DW DNN model in DRIVE OS 6.0.5 and got fixed later. I see a reported known issue in DRIVE OS 6.0.5 release notes(3823785). Can you quickly verify the <code>/usr/local/driveworks/bin/sample_object_detector_tracker</code> with recorder video as input on target. If you don’t find the sample on target, please install the Driveworks data and samples debians on target. You can find them under <code>/drive/extra</code> on docker.</p>
+<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""8"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>Do you recommend copying the source code from Docker 6.0.5 to Ubuntu host and then building<br>
+or<br>
+directly copying the source code to Target Orin and building the application there?</p>
+</blockquote>
+</aside>
+<p>DW samples can not be compiled on target and needs to cross compiled on host. Please use docker container to cross compile DW samples.</p>
+<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""8"" data-topic=""296861"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>I can use the same camera/platform (f.e, <code>""IMX728_RGGB_CPHY_x4""</code>) supported in <code>nvsipl_camera</code> but replace the application with <code>sample_object_detector_tracker</code>. Is this accurate?</p>
+</blockquote>
+</aside>
+<p>Correct. You are expected to use right value for <code>--camera-type</code>. Please verify the camera functionality with sample_camera  (<a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.5/public/driveworks-nvsdk/dwx_camera_sample.html"" class=""inline-onebox"">DriveWorks SDK Reference: Camera Sample</a>)</p>",6.2,6,2024-06-26T01:38:04.272Z
+1438539,chris.hoffman,296861,<p>We will be trying this out and will update the results. Adding a response so the ticket does not get closed.</p>,0.2,2,2024-06-28T20:56:48.129Z
+1432236,SivaRamaKrishnaNV,296779,"<p>Dear <a class=""mention"" href=""/u/collin.day"">@collin.day</a>,<br>
+Could you share more details on when you see this error? Are you running any sample application and notice the above issue? If so, could you share the application logs, syslog as well?</p>",5.6,2,2024-06-18T17:23:25.304Z
+1432320,collin.day,296779,"<p>No - we don’t see it in nvsipl_camera.  It is our application, so I am not asking you to solve what we are doing wrong to cause it, I just want to better understand what the message implies since we can’t find any info in the SDK docs.</p>",0.6,2,2024-06-18T21:48:03.275Z
+1435231,SivaRamaKrishnaNV,296779,"<p>Dear <a class=""mention"" href=""/u/collin.day"">@collin.day</a>,<br>
+It indicates either enabled ISP output related queue or SIPL notification queues are full.</p>",5.6,2,2024-06-24T19:26:21.970Z
+1438514,collin.day,296779,<p>Thank you for clarifying that.</p>,0.2,0,2024-06-28T19:03:30.655Z
+1432240,SivaRamaKrishnaNV,296848,"<aside class=""quote no-group"" data-username=""collin.day"" data-post=""1"" data-topic=""296848"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> collin.day:</div>
+<blockquote>
+<p>I was looking in the SDK API docs, but I don’t see anything</p>
+</blockquote>
+</aside>
+<p>Dear <a class=""mention"" href=""/u/collin.day"">@collin.day</a>,<br>
+Are you asking about DriveWorks APIs?</p>",5.8,3,2024-06-18T17:29:27.433Z
+1432315,collin.day,296848,<p>No - lower level.  DriveOS SDK.</p>,0.8,3,2024-06-18T21:10:12.852Z
+1435233,SivaRamaKrishnaNV,296848,"<p>Dear <a class=""mention"" href=""/u/collin.day"">@collin.day</a>,<br>
+Could you elaborate a bit more on the request?</p>
+<aside class=""quote no-group"" data-username=""collin.day"" data-post=""1"" data-topic=""296848"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> collin.day:</div>
+<blockquote>
+<p>is there trigger received event in the system - similar to the signals in NvSiplPipelineNotifier that tells us when a trigger signal is received</p>
+</blockquote>
+</aside>",5.8,3,2024-06-24T19:36:37.957Z
+1438513,collin.day,296848,"<p>I think I can rephrase this - maybe expand a little bit - but other than NvSIPLPipelineNotifier events, are there any other events in the system that I can listen for or tap into through the DriveOS sdk?</p>",0.4,2,2024-06-28T19:00:21.870Z
+1438315,SivaRamaKrishnaNV,298033,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a><br>
+May I know which sensor you like to use ?<br>
+Is there any reason you are looking for a non supported sensors.<br>
+Please see <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/driveworks-nvsdk/nvsdk_dw_html/advanced_tutorials.html#dwx_advanced_tutorials_custom"" class=""inline-onebox"">DriveWorks SDK Reference: Advanced Tutorials</a> if it helps</p>",0.8,5,2024-06-28T09:55:03.497Z
+1426559,SivaRamaKrishnaNV,295783,"<p>Dear <a class=""mention"" href=""/u/chintan.patel2"">@chintan.patel2</a>,<br>
+Does <a href=""https://forums.developer.nvidia.com/t/how-to-develop-can-functionality-on-the-development-board/283128"" class=""inline-onebox"">How to develop ""Can"" functionality on the development board?</a> helps?</p>",23.8,19,2024-06-10T17:30:57.950Z
+1427539,chintan.patel2,295783,"<p>We have looked into the link provided by yourself, we tried to setup the can0 bitrate and sent some data through, as shown in the screenshots below.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/1/b/c/1bca4591dc378924dd61ebf4192508455d26b461.jpeg"" data-download-href=""/uploads/short-url/3XQfVGCyaK8eZJZxTqBAD9dILvj.jpeg?dl=1"" title=""Screenshot from 2024-06-11 14-14-31"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/b/c/1bca4591dc378924dd61ebf4192508455d26b461_2_690x388.jpeg"" alt=""Screenshot from 2024-06-11 14-14-31"" data-base62-sha1=""3XQfVGCyaK8eZJZxTqBAD9dILvj"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/b/c/1bca4591dc378924dd61ebf4192508455d26b461_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/1/b/c/1bca4591dc378924dd61ebf4192508455d26b461_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/1/b/c/1bca4591dc378924dd61ebf4192508455d26b461_2_1380x776.jpeg 2x"" data-dominant-color=""283134""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-11 14-14-31</span><span class=""informations"">1920×1080 112 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>The details that you see on the screenshot is only showing data between 2 terminal windows without the harness cables being connected. Therefore it is not a valid loopback test. We can seem to send any data via <em>cansend</em> function from one terminal window to another terminal window, which will receive the data when we use <em>candump</em> function, irrespective of the harness cables being connected or disconnected.</p>
+<p>We require the following things to work:</p>
+<ol>
+<li>
+<p>We want to test the cables, as in send the CAN signals through the cable harnesses and receive it on some other device. We have set up the CAN loopback connections as shown in the pictures of Harness H1&amp; H2 as shown in the link: <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CAN_test_specific_setup.html"" class=""inline-onebox"" rel=""noopener nofollow ugc"">Test Specific Setup | NVIDIA Docs</a></p>
+</li>
+<li>
+<p>Is there a way to check if the <em>mttcan</em> and <em>mttcan-ivc</em> drivers are set on the target properly or not.</p>
+</li>
+<li>
+<p>We want to run the sample program in Driveworks SDK called: "" ./sample_canbus_interpreter --driver=can.socket --params=device=can0 "" and test it with a real device. So for example we want to send steering angle data from the drive unit via Harness cable to the other end connected with a CAN interface device(CAN to USB) connected to another PC to see the received data.</p>
+</li>
+</ol>",3.0,15,2024-06-11T14:44:59.704Z
+1428434,SivaRamaKrishnaNV,295783,"<p>Hi <a class=""mention"" href=""/u/chintan.patel2"">@chintan.patel2</a> ,<br>
+Just want to confirm if <strong>CAN Loopback Cable TS3</strong> is prepared? Could you please share the pictures of all connections used for the test?<br>
+Also, could you try below commands<br>
+Terminal 1</p>
+<pre><code class=""lang-auto"">sudo ip link set can0 type can bitrate 500000 berr-reporting on
+sudo ip link set can1 type can bitrate 500000 berr-reporting on 
+sudo ip link set up can0 
+sudo ip link set up can1
+</code></pre>
+<p>Terminal 2</p>
+<pre><code class=""lang-auto"">candump -x can1
+</code></pre>
+<p>Terminal 1</p>
+<pre><code class=""lang-auto"">cansend can0 220#50
+</code></pre>
+<p><code>mttcan</code> seems to be loaded by default on target. I am checking on file needs to be changed for mttcan-ivi and update you.</p>
+<pre><code class=""lang-auto"">nvidia@tegra-ubuntu:~$ lsmod | grep can
+can_raw                28672  0
+can                    28672  1 can_raw
+mttcan                 65536  0
+can_dev                36864  1 mttcan
+nvpps                  28672  2 mttcan,nvethernet
+</code></pre>
+<p>In your current setting, what do you see in log, when you run <code>./sample_canbus_interpreter --driver=can.socket --params=device=can0</code> on one terminal and run <code>cansend can0 220#50</code> in loop on other termimal.</p>",8.0,15,2024-06-12T19:54:39.739Z
+1429134,chintan.patel2,295783,"<p>Hi there, we are in the middle of testing the system with the instructions you specified. We however need to know how to access the log when we run <code>./sample_canbus_interpreter --driver=can.socket --params=device=can0</code></p>",8.0,14,2024-06-13T12:29:11.074Z
+1430003,chintan.patel2,295783,"<p>Hi there, I’ve attached the photos of the cable connections for the CAN Loopback Cable TS3, as well as the pictures of commands from the terminals.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/b/6/4/b64bf18501712af6c167de51e3bbb448951bff5b.jpeg"" data-download-href=""/uploads/short-url/q0FBFVJMrgYOi24UjLQD2K1pdzB.jpeg?dl=1"" title=""PXL_20240613_121402253"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/b/6/4/b64bf18501712af6c167de51e3bbb448951bff5b_2_690x388.jpeg"" alt=""PXL_20240613_121402253"" data-base62-sha1=""q0FBFVJMrgYOi24UjLQD2K1pdzB"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/b/6/4/b64bf18501712af6c167de51e3bbb448951bff5b_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/b/6/4/b64bf18501712af6c167de51e3bbb448951bff5b_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/b/6/4/b64bf18501712af6c167de51e3bbb448951bff5b_2_1380x776.jpeg 2x"" data-dominant-color=""B9B074""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">PXL_20240613_121402253</span><span class=""informations"">1920×1080 186 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/e/8/0e8f8ce05c654e4b811d8877ccb8bc839ab6a0c0.jpeg"" data-download-href=""/uploads/short-url/24OeRl0PjKkkkc7hQYeUzFRSql2.jpeg?dl=1"" title=""PXL_20240613_121440372"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/e/8/0e8f8ce05c654e4b811d8877ccb8bc839ab6a0c0_2_690x388.jpeg"" alt=""PXL_20240613_121440372"" data-base62-sha1=""24OeRl0PjKkkkc7hQYeUzFRSql2"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/e/8/0e8f8ce05c654e4b811d8877ccb8bc839ab6a0c0_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/0/e/8/0e8f8ce05c654e4b811d8877ccb8bc839ab6a0c0_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/e/8/0e8f8ce05c654e4b811d8877ccb8bc839ab6a0c0_2_1380x776.jpeg 2x"" data-dominant-color=""A49A6F""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">PXL_20240613_121440372</span><span class=""informations"">1920×1080 176 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/c/7/0/c70a1f22141a89b7f2d895ae028f64c275f75862.jpeg"" data-download-href=""/uploads/short-url/soMHwMyJhKWsTG3uDH0dI0AnZe2.jpeg?dl=1"" title=""PXL_20240613_121430580"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/c/7/0/c70a1f22141a89b7f2d895ae028f64c275f75862_2_690x388.jpeg"" alt=""PXL_20240613_121430580"" data-base62-sha1=""soMHwMyJhKWsTG3uDH0dI0AnZe2"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/c/7/0/c70a1f22141a89b7f2d895ae028f64c275f75862_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/c/7/0/c70a1f22141a89b7f2d895ae028f64c275f75862_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/c/7/0/c70a1f22141a89b7f2d895ae028f64c275f75862_2_1380x776.jpeg 2x"" data-dominant-color=""ABA389""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">PXL_20240613_121430580</span><span class=""informations"">1920×1080 145 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/e/4/6e45059656df35949b8ce020a2976d46829b9c1b.jpeg"" data-download-href=""/uploads/short-url/fJuoORmHEy3xdQAbyJmBzUXdi1d.jpeg?dl=1"" title=""PXL_20240613_121452760"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/e/4/6e45059656df35949b8ce020a2976d46829b9c1b_2_690x388.jpeg"" alt=""PXL_20240613_121452760"" data-base62-sha1=""fJuoORmHEy3xdQAbyJmBzUXdi1d"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/e/4/6e45059656df35949b8ce020a2976d46829b9c1b_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/6/e/4/6e45059656df35949b8ce020a2976d46829b9c1b_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/6/e/4/6e45059656df35949b8ce020a2976d46829b9c1b_2_1380x776.jpeg 2x"" data-dominant-color=""A3965F""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">PXL_20240613_121452760</span><span class=""informations"">1920×1080 104 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>These are the cable connections, and below are the screenshots of the command terminals.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/b/5/d/b5debe00e95d9d1d3893d1305163c8170cddf00a.jpeg"" data-download-href=""/uploads/short-url/pWTDZPpDbf2iw1732BM6tIvaPoe.jpeg?dl=1"" title=""Screenshot from 2024-06-14 08-54-08"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/b/5/d/b5debe00e95d9d1d3893d1305163c8170cddf00a_2_690x388.jpeg"" alt=""Screenshot from 2024-06-14 08-54-08"" data-base62-sha1=""pWTDZPpDbf2iw1732BM6tIvaPoe"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/b/5/d/b5debe00e95d9d1d3893d1305163c8170cddf00a_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/b/5/d/b5debe00e95d9d1d3893d1305163c8170cddf00a_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/b/5/d/b5debe00e95d9d1d3893d1305163c8170cddf00a_2_1380x776.jpeg 2x"" data-dominant-color=""424748""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-14 08-54-08</span><span class=""informations"">1920×1080 179 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>We have sent data on CAN0, however we cannot see any data received on CAN1.<br>
+Please can we get assistance in this, and also we still do not know where and how to access log.</p>
+<p>Thanks in advance.</p>",2.8,14,2024-06-14T12:31:27.121Z
+1430944,chintan.patel2,295783,"<p>Hello <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a>,</p>
+<p>Can we please get an update with regards to my previous post?</p>
+<p>Thanks</p>",7.2,10,2024-06-17T10:07:56.340Z
+1432260,SivaRamaKrishnaNV,295783,"<p>Dear <a class=""mention"" href=""/u/chintan.patel2"">@chintan.patel2</a>,<br>
+Thank you for sharing connection details. I will check internally and update you.</p>",17.0,9,2024-06-18T17:53:11.284Z
+1435803,chintan.patel2,295783,"<p>Hello <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a>,</p>
+<p>Any updates on my earlier query regarding CAN communication?</p>",1.4,7,2024-06-25T08:33:22.713Z
+1436050,SivaRamaKrishnaNV,295783,"<p>Hi <a class=""mention"" href=""/u/chintan.patel2"">@chintan.patel2</a> ,<br>
+I see some wire connection between p12 and p15. May I know the details about it?<br>
+Also p4-&gt; p11 and p12-&gt; p13 connection wires are loopback cables suggested in documentation?</p>",11.0,5,2024-06-25T16:28:53.095Z
+1436644,chintan.patel2,295783,"<p>Hi <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> ,</p>
+<p>I have made connections as mentioned in the documentation, I have attached a screenshot of the same.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/e/3/3/e33f51b6f73933d72b39e18e4c41cf74c5f67f92.png"" data-download-href=""/uploads/short-url/wqk2SVJqE3fPEIZLU9iZB7u0tP4.png?dl=1"" title=""Screenshot from 2024-06-26 10-18-36"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/e/3/3/e33f51b6f73933d72b39e18e4c41cf74c5f67f92_2_690x388.png"" alt=""Screenshot from 2024-06-26 10-18-36"" data-base62-sha1=""wqk2SVJqE3fPEIZLU9iZB7u0tP4"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/e/3/3/e33f51b6f73933d72b39e18e4c41cf74c5f67f92_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/e/3/3/e33f51b6f73933d72b39e18e4c41cf74c5f67f92_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/e/3/3/e33f51b6f73933d72b39e18e4c41cf74c5f67f92_2_1380x776.png 2x"" data-dominant-color=""D9D7D8""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-26 10-18-36</span><span class=""informations"">1920×1080 336 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>This is the connection between P12, P15 and P13.</p>
+<p>We did not possess the TS3 CAN loopback cable but we have made use of Male DB9 connectors, which have terminal ends on other end. For your reference:</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/7/b/2/7b27b8807a4577c77a84d8c3cd0da89807ed7139.jpeg"" data-download-href=""/uploads/short-url/hztPsSPPDmZDHI8yfnBmoPyrQXT.jpeg?dl=1"" title=""IMG_20240626_102400"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/7/b/2/7b27b8807a4577c77a84d8c3cd0da89807ed7139_2_666x500.jpeg"" alt=""IMG_20240626_102400"" data-base62-sha1=""hztPsSPPDmZDHI8yfnBmoPyrQXT"" width=""666"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/7/b/2/7b27b8807a4577c77a84d8c3cd0da89807ed7139_2_666x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/7/b/2/7b27b8807a4577c77a84d8c3cd0da89807ed7139_2_999x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/7/b/2/7b27b8807a4577c77a84d8c3cd0da89807ed7139_2_1332x1000.jpeg 2x"" data-dominant-color=""837F6F""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">IMG_20240626_102400</span><span class=""informations"">1920×1440 169 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>Thanks</p>",6.0,5,2024-06-26T09:30:03.148Z
+1437530,chintan.patel2,295783,"<p>Hi <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> ,</p>
+<p>Any updates for my regarding the ongoing CAN query?</p>
+<p>Also, I do have on more connection query, if you can clear it out it would be great.</p>
+<p>The connections between P3 and P14. There are individual resistor connections which is fine, but there is also a connection which connects P3 and p14, just wanted to check if we need that connection.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/b/3/3/b33bb843609375bf1c891da9349ce225404d6cf1.jpeg"" data-download-href=""/uploads/short-url/pzzpO2NPJG6NZBKtZwY7Zudx4Wd.jpeg?dl=1"" title=""Screenshot from 2024-06-27 12-35-59"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/b/3/3/b33bb843609375bf1c891da9349ce225404d6cf1_2_690x388.jpeg"" alt=""Screenshot from 2024-06-27 12-35-59"" data-base62-sha1=""pzzpO2NPJG6NZBKtZwY7Zudx4Wd"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/b/3/3/b33bb843609375bf1c891da9349ce225404d6cf1_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/b/3/3/b33bb843609375bf1c891da9349ce225404d6cf1_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/b/3/3/b33bb843609375bf1c891da9349ce225404d6cf1_2_1380x776.jpeg 2x"" data-dominant-color=""A6B4C3""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-27 12-35-59</span><span class=""informations"">1920×1080 163 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/8/7/4/874a852a3fc774db076785e1d2034abd0979dd30.jpeg"" data-download-href=""/uploads/short-url/jiQ7gIf2nUcP5yd8K4uGCJ9yWwE.jpeg?dl=1"" title=""Screenshot from 2024-06-27 12-36-05"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/8/7/4/874a852a3fc774db076785e1d2034abd0979dd30_2_690x388.jpeg"" alt=""Screenshot from 2024-06-27 12-36-05"" data-base62-sha1=""jiQ7gIf2nUcP5yd8K4uGCJ9yWwE"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/8/7/4/874a852a3fc774db076785e1d2034abd0979dd30_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/8/7/4/874a852a3fc774db076785e1d2034abd0979dd30_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/8/7/4/874a852a3fc774db076785e1d2034abd0979dd30_2_1380x776.jpeg 2x"" data-dominant-color=""B0B9C6""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-27 12-36-05</span><span class=""informations"">1920×1080 177 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>These show connecting the 120ohm resistors on the instructed pins for P3 and P14.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/c/d/9/cd97b7852b8a0050afe088e14b198507d3e2def8.png"" data-download-href=""/uploads/short-url/tkKVRNge7eptMCe4rYiXQjJU236.png?dl=1"" title=""Screenshot from 2024-06-27 12-36-11"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/c/d/9/cd97b7852b8a0050afe088e14b198507d3e2def8_2_690x388.png"" alt=""Screenshot from 2024-06-27 12-36-11"" data-base62-sha1=""tkKVRNge7eptMCe4rYiXQjJU236"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/c/d/9/cd97b7852b8a0050afe088e14b198507d3e2def8_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/c/d/9/cd97b7852b8a0050afe088e14b198507d3e2def8_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/c/d/9/cd97b7852b8a0050afe088e14b198507d3e2def8_2_1380x776.png 2x"" data-dominant-color=""D9D8D8""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-27 12-36-11</span><span class=""informations"">1920×1080 348 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>This image shows the connection between P3 and P14.</p>
+<p>Is this connection for our Drive Unit, as it shows P3663 as well, and the serial number of Nvidia Drive AGX Orin is P3710.</p>
+<p>It would it be great if can get this cleared.</p>
+<p>Thank you.</p>",0.8,4,2024-06-27T11:45:22.241Z
+1438279,SivaRamaKrishnaNV,295783,"<p>Dear <a class=""mention"" href=""/u/chintan.patel2"">@chintan.patel2</a>,<br>
+The connections looks correct to me. I would expect can loopback test to work. Could you please file a bug and share bug ID details here for follow up. Please click <strong>Submit new bug</strong> tag to file a bug at <a href=""https://developer.nvidia.com/support"" class=""inline-onebox"">Log in | NVIDIA Developer</a></p>",0.4,1,2024-06-28T09:14:10.760Z
+1432230,SivaRamaKrishnaNV,296681,"<p>Dear <a class=""mention"" href=""/u/quang.huy.dang"">@quang.huy.dang</a>,<br>
+Do you notice any issue while using any camera module and hence sharing the logs for guidance?</p>",1.0,4,2024-06-18T17:08:24.140Z
+1438101,kayccc,296681,<p>Is this still an issue to support? Any result can be shared?</p>,5.6,3,2024-06-28T06:16:10.883Z
+1438146,quang.huy.dang,296681,<p>The problem is resolved now. Thank you</p>,0.6,3,2024-06-28T07:02:30.663Z
+1409988,lizhensheng,292910,"<p>step2, caseD: connection 1:1 with predefined channelName in <code>nvsciipc.cfg</code><br>
+caseD works well.</p>
+<pre data-code-wrap=""json""><code class=""lang-json"">        {
+            ""src"": ""helloWorldNode.VALUE_0"",
+            ""dests"": {
+                ""sumNode.VALUE_0"": {
+                    ""mailbox"": true,
+                    ""reuse"": true
+                }
+            },
+            ""params"": {
+                ""type"": ""nvsci"",
+                ""srcEndpoint"": ""nvscistream_0"",
+                ""destEndpoint"": ""nvscistream_1""
+            }
+        },
+        {
+            ""src"": ""helloWorldNode.VALUE_1"",
+            ""dests"": {
+                ""sumNode.VALUE_1"": {
+                    ""mailbox"": true,
+                    ""reuse"": true
+                }
+            },
+            ""params"": {
+                ""type"": ""nvsci"",
+                ""srcEndpoint"": ""nvscistream_2"",
+                ""destEndpoint"": ""nvscistream_3""
+            }
+        },
+</code></pre>",2.0,10,2024-05-15T07:49:34.237Z
+1410148,lizhensheng,292910,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> Friendly ping for response.</p>",2.2,11,2024-05-15T12:10:23.094Z
+1410219,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a>,<br>
+I will reproduce the issue and update tomorrow EOD</p>",2.2,11,2024-05-15T14:47:56.686Z
+1410771,lizhensheng,292910,"<p>step2, caseE: connection 1:N with predefined channelName in <code>nvsciipc.cfg</code><br>
+caseE hangs too, with different exception.</p>
+<p>NOTE: the multipleNode is another instance of sumNode</p>
+<pre data-code-wrap=""json""><code class=""lang-json"">{
+            ""src"": ""helloWorldNode.VALUE_1"",
+            ""dests"": {
+                ""sumNode.VALUE_1"": {
+                    ""mailbox"": true,
+                    ""reuse"": true
+                },
+                ""multipleNode.VALUE_1"": {
+                    ""mailbox"": true,
+                    ""reuse"": true
+                }
+            },
+            ""params"": {
+                ""type"": ""nvsci"",
+                ""limits"": -1,
+                ""srcEndpoint"": ""nvscistream_4:nvscistream_6"",
+                ""destEndpoint"": ""nvscistream_5:nvscistream_7""
+            }
+        },
+</code></pre>
+<p>the log shows the <code>limits</code> parameter is fault.</p>
+<pre data-code-wrap=""log""><code class=""lang-log"">- - [1715844068087636us][DEBUG][tid:20][ChannelNvSciStream.hpp:1066][ChannelNvSciStreamProducer]  Producer: Pool creation 
+&lt;13&gt;1 2024-05-16T15:21:39.211685+08:00 - helloworld_process0 77951 - - [1715844068087681us][DEBUG][tid:20][ChannelNvSciStream.hpp:1069][ChannelNvSciStreamProducer]  Producer: Creating producer block 
+&lt;13&gt;1 2024-05-16T15:21:39.211720+08:00 - helloworld_process0 77951 - - [1715844068087716us][DEBUG][tid:20][ChannelNvSciStream.hpp:1074][ChannelNvSciStreamProducer]  Source (UP) stream creation with ipcEndpoints, scisync, scibuf and ipcblocks
+&lt;13&gt;1 2024-05-16T15:21:39.211735+08:00 - helloworld_process0 77951 - - [1715844068087731us][DEBUG][tid:20][ChannelNvSciStream.hpp:1248][ChannelNvSciStreamProducer] Producer: Opening endpoint with name nvscistream_4
+&lt;13&gt;1 2024-05-16T15:21:39.211814+08:00 - helloworld_process0 77951 - - [1715844068087809us][DEBUG][tid:20][ChannelNvSciStream.hpp:1251][ChannelNvSciStreamProducer]  Resetting Producer IPC endpoint
+&lt;13&gt;1 2024-05-16T15:21:39.211882+08:00 - helloworld_process0 77951 - - [1715844068087877us][DEBUG][tid:20][ChannelNvSciStream.hpp:1272][ChannelNvSciStreamProducer] Connecting ipc/limiter and multicast
+&lt;13&gt;1 2024-05-16T15:21:39.212377+08:00 - helloworld_process0 77951 - - [1715844068088372us][DEBUG][tid:20][Exception.cpp:403][NO_TAG] Driveworks exception thrown: DW_INVALID_ARGUMENT: ChannelNvSciStreamParams: limiter maxPackets index out of range
+&lt;15&gt;1 2024-05-16T15:21:39.220662+08:00 - helloworld_process0 77951 - - [1715844068096656us][VERBOSE][tid:25][ChannelNvSciStreamUtil.hpp:665][ChannelNvSciStreamBlockWithEventNotifier] Notify start 10
+&lt;15&gt;1 2024-05-16T15:21:39.220719+08:00 - helloworld_process0 77951 - - [1715844068096715us][VERBOSE][tid:25][ChannelNvSciStream.cpp:148][NvSciStreamBlockEventQuery] [pid.tid=77951.281461689116928][ID=1000][Block=10][Type=IPCSRC] result NvSciStreamEventType_Disconnected
+&lt;11&gt;1 2024-05-16T15:21:39.220748+08:00 - helloworld_process0 77951 - - [1715844068096744us][ERROR][tid:25][ChannelFactory.cpp:259][ChannelFactoryImpl] ChannelFactory::handleEventLoopError: uid: 0, blockType: IPCSRC, status: DW_END_OF_STREAM, sciError: NvSciError_Success, endpoint: nvscistream_4, what: NvSciEventService notify
+&lt;13&gt;1 2024-05-16T15:21:39.220771+08:00 - helloworld_process0 77951 - - [1715844068096767us][DEBUG][tid:25][ChannelNvSciStreamUtil.hpp:849][ChannelNvSciStreamEventServiceLoop] Removing block 10
+</code></pre>
+<p>QST: How to properly config the 1:N nvsci channel communication?</p>",2.0,10,2024-05-16T07:30:40.675Z
+1411214,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a>,<br>
+Does your repo (<a href=""https://github.com/ZhenshengLee/nv_driveworks/tree/main"" class=""inline-onebox"">GitHub - ZhenshengLee/nv_driveworks: learning materials of driveworks from nvidia drive sdk.</a>) has tested helloWorld CGF sample files to repro the directly. If not, can you push the files? I could not find it in repo.</p>",6.6,8,2024-05-16T19:44:26.218Z
+1411326,lizhensheng,292910,"<p>For security reasons, I cannot push the project files to the github.</p>
+<p><a href=""https://github.com/ZhenshengLee/nv_driveworks/tree/main/driveworks-5.14/samples/src/cgf_nodes"" rel=""noopener nofollow ugc"">nv_driveworks/driveworks-5.14/samples/src/cgf_nodes at main · ZhenshengLee/nv_driveworks (github.com)</a></p>
+<p>NOTE: The files is the same in the sdk <code>/usr/local/driveworks</code></p>
+<p>the buildup tutorial is in <a href=""https://github.com/ZhenshengLee/nv_driveworks/blob/main/drive-agx-orin-doc/3-drive-works/CGF-presentation.pdf"" rel=""noopener nofollow ugc"">nv_driveworks/drive-agx-orin-doc/3-drive-works/CGF-presentation.pdf at main · ZhenshengLee/nv_driveworks (github.com)</a></p>
+<p>NOTE: The pdf is provided by the nvidia developer forum.</p>",1.6,8,2024-05-17T01:47:49.191Z
+1412576,lizhensheng,292910,"<p>Please refer to this topic to get all src files.</p><aside class=""quote quote-modified"" data-post=""10"" data-topic=""290421"">
+  <div class=""title"">
+    <div class=""quote-controls""></div>
+    <img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar"">
+    <a href=""https://forums.developer.nvidia.com/t/bug-cgf-helloworld-sample-socket-communication-inconsistency-behavior-in-mailbox-reuse-connection/290421/10"">[BUG] cgf helloworld sample socket communication inconsistency behavior in mailbox+reuse connection</a> <a class=""badge-category__wrapper "" href=""/c/autonomous-vehicles/drive-agx-orin/drive-agx-orin-general/520""><span data-category-id=""520"" style=""--category-badge-color: #76B900; --category-badge-text-color: #FFFFFF; --parent-category-badge-color: #76B900;"" data-parent-category-id=""636"" data-drop-close=""true"" class=""badge-category --has-parent"" title=""Forum to support developers in NVIDIA DRIVE® AGX SDK Developer Program.""><span class=""badge-category__name"">DRIVE AGX Orin General</span></span></a>
+  </div>
+  <blockquote>
+    I updated the SumNodeImpl.hpp/cpp. I hit a weird strange issue when using app.json snippet shared above. I renamed it as hellosum.app.json and updated few variable paths. 
+root@6.0.8.1-0006-build-linux-sdk:/usr/local/driveworks-5.14/tools/descriptionScheduleYamlGenerator# /usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py --app /usr/local/driveworks/apps/helloWorldApp/hellosum.app.json --output ./hellosum__standardSchedule.yaml
+Input Description file…
+  </blockquote>
+</aside>
+
+<p>As far as I can see from the comment.</p>
+<p>Although all src files are provided, the forum still cannot compile and run the app, nveer say reproducing the issue.</p>",6.4,7,2024-05-20T07:24:44.710Z
+1414238,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a>,<br>
+Thanks for sharing the src path. Let me relook into it and get back to you if I see any issue.</p>",1.4,7,2024-05-22T01:57:04.678Z
+1415306,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a>,<br>
+I see below snippet in the thread you have pointed</p>
+<pre><code class=""lang-auto"">subcomponents"": {
+        ""helloWorldNode"": {
+            ""componentType"": ""../../../nodes/example/helloworld/HelloWorldNode.node.json"",
+            ""parameters"": {
+                ""name"": ""$paraName""
+            }
+        },
+        ""sumNode"": {
+            ""componentType"": ""../../../nodes/example/helloworld/SumNode.node.json""
+        }
+    }
+</code></pre>
+<p>I just want to confirm if these node.json files are same as <code>/usr/local/driveworks/samples/src/cgf_nodes/</code> or you have modified adding any additional parameters/settings to generate new lib with HelloworldNode and SumNode? Last time, I was seeing issue when using the app.json from that thread.<br>
+Note that, forum team does not much experiencing in writing CGF apps on own and hence we are asking to share the files and steps. We expect to have minimal changes on our side. The recommendation is to put the files under <code>/usr/local/driveworks/apps</code> as a seperate folder similar to other CGF applications so that we can manage to repro across different machines easily. This is helps to setup the application and reproduce the issue to get insights form core team further.</p>",6.4,7,2024-05-23T01:23:10.300Z
+1415859,lizhensheng,292910,"<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""11"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>I just want to confirm if these node.json files are same as <code>/usr/local/driveworks/samples/src/cgf_nodes/</code> or you have modified adding any additional parameters/settings to generate new lib with HelloworldNode and SumNode?</p>
+</blockquote>
+</aside>
+<p>The same.</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""11"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>Last time, I was seeing issue when using the app.json from that thread.</p>
+</blockquote>
+</aside>
+<p>The issue cannot repro in my code repo.</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""11"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>We expect to have minimal changes on our side.</p>
+</blockquote>
+</aside>
+<p>As far as I know, there is no helloworld app in the <code>/usr/local/driveworks/apps</code>, so it’s better that there is a helloworld demo in the apps folder.</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""11"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>This is helps to setup the application and reproduce the issue to get insights form core team further.</p>
+</blockquote>
+</aside>
+<p>As far as I know, there is no any complete example of cgf app that include graphs and node srcs.</p>",1.2,6,2024-05-23T12:18:32.994Z
+1416049,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a>,<br>
+I have tested your code on freshly flashed target with DRIVE OS 6.0.8.1 and notice the same issue like last time</p>
+<pre><code class=""lang-auto"">root@6.0.8.1-0006-build-linux-sdk:/usr/local/driveworks/apps/helloworldDemo# /usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py --app /usr/local/driveworks/apps/helloworldDemo/DWCGFHelloworld.app.json --output ./DWCGFHelloworld__standardSchedule.yaml
+Input Description file path: /usr/local/driveworks/apps/helloworldDemo/DWCGFHelloworld.app.json
+Output schedule directory path: /usr/local/driveworks-5.14/apps/helloworldDemo/
+=============================
+Analysis...
+Traceback (most recent call last):
+  File ""/usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py"", line 3123, in &lt;module&gt;
+    main()
+  File ""/usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py"", line 3081, in main
+    systemDescription = SystemDescription(appFile)
+  File ""/usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py"", line 2999, in __init__
+    self.schedules = [
+  File ""/usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py"", line 3000, in &lt;listcomp&gt;
+    ScheduleDescription(self.baseDir, stmSchedule, stmScheduleKey, identifier, stmScheduleKey == defaultStmScheduleKey, self)
+  File ""/usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py"", line 1437, in __init__
+    self.subcomponents[graphletId] = GraphletDescription(graphletId, grapheletFile, self)
+  File ""/usr/local/driveworks/tools/descriptionScheduleYamlGenerator/descriptionScheduleYamlGenerator.py"", line 2780, in __init__
+    graphletJson = json.load(gf)
+  File ""/usr/lib/python3.8/json/__init__.py"", line 293, in load
+    return loads(fp.read(),
+  File ""/usr/lib/python3.8/json/__init__.py"", line 357, in loads
+    return _default_decoder.decode(s)
+  File ""/usr/lib/python3.8/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File ""/usr/lib/python3.8/json/decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 26 column 17 (char 693)
+root@6.0.8.1-0006-build-linux-sdk:/usr/local/driveworks/apps/helloworldDemo#
+root@6.0.8.1-0006-build-linux-sdk:/usr/local/driveworks/apps/helloworldDemo# vim DWCGFHelloworld.app.json                  root@6.0.8.1-0006-build-linux-sdk:/usr/local/driveworks/apps/helloworldDemo# ls
+DWCGFHelloworld.app.json       DWCGFHelloworld_wcet.yaml     HelloWorldNode.node.json  sensor_mappings
+DWCGFHelloworld.graphlet.json  DWCGFImagePipeExtraInfo.json  SumNode.node.json
+</code></pre>
+<p>Could you please put the unzip the file(<br>
+<a class=""attachment"" href=""/uploads/short-url/axgMrPr40B9JCOF0pMCYwAhuyjZ.zip"">helloworldDemo.zip</a> (3.8 KB)</p>
+<p>) under <code>/usr/local/driveworks/apps</code> folder and test.</p>
+<p>app.json and other files are copied from <a href=""https://forums.developer.nvidia.com/t/bug-cgf-helloworld-sample-socket-communication-inconsistency-behavior-in-mailbox-reuse-connection/290421"" class=""inline-onebox"">[BUG] cgf helloworld sample socket communication inconsistency behavior in mailbox+reuse connection</a>.</p>",31.6,8,2024-05-23T18:28:29.910Z
+1416193,lizhensheng,292910,"<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""13"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>Could you please put the unzip the file(<br>
+<a class=""attachment"" href=""/uploads/short-url/axgMrPr40B9JCOF0pMCYwAhuyjZ.zip"">helloworldDemo.zip</a> (3.8 KB)</p>
+<p>) under <code>/usr/local/driveworks/apps</code> folder and test.</p>
+</blockquote>
+</aside>
+<p>OK, I will prepare a repo that is in the <code>/usr/local/driveworks/apps</code> and give a detailed repro steps to you, EOD.</p>",1.6,8,2024-05-24T01:42:38.192Z
+1417391,lizhensheng,292910,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<p>The dwcgf helloworld sample is uploaded in the <code>/usr/local/driveworks/sample</code>, please check the doc to reproduce this cgf-nvsci bug.</p>
+<pre data-code-wrap=""sh""><code class=""lang-sh"">git clone -b bug/nvsci https://github.com/ZhenshengLee/nv_driveworks.git
+</code></pre>
+<p>the doc is in <a href=""https://github.com/ZhenshengLee/nv_driveworks/blob/bug/nvsci/README_en.md"" rel=""noopener nofollow ugc"">nv_driveworks/README_en.md at bug/nvsci · ZhenshengLee/nv_driveworks (github.com)</a></p>
+<p>Please ask any question when you encounter problem reproduce the cgf issue.</p>",1.4,7,2024-05-27T07:39:22.343Z
+1418610,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a> ,<br>
+I cloned your repo to 6.0.8.1 docker and followed the steps to compile the samples from <code>nv_driveworks/driveworks-5.14</code>. I enabled only <code>src/framework</code> , <code>src/dwchannel</code> and <code>src/cgf_nodes</code> in <code>nv_driveworks/driveworks-5.14/samples/CMakeListss.txt</code> and notice below issue when running <code>make</code> command.</p>
+<p>But If I use <code>/usr/local/driveworks/samples</code> instead of <code>nv_driveworks/driveworks-5.14/samples</code> with <code>cmake</code>, I could cross compile the samples.</p>
+<pre><code class=""lang-auto"">root@6.0.8.1-0006-build-linux-sdk:/home/nvidia/GAC/nv_driveworks# cmake -B ./target/dw514/ -DCMAKE_TOOLCHAIN_FILE=/usr/local/driveworks/samples/cmake/Toolchain-V5L.cmake -DVIBRANTE_PDK=/drive/drive-linux -S ./driveworks-5.14/samples
+-- VIBRANTE_PDK = /drive/drive-linux
+-- Found PDK version 6.0.8.1 (6000801)
+-- VIBRANTE_PDK = /drive/drive-linux
+-- Found PDK version 6.0.8.1 (6000801)
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/aarch64-linux-gcc
+-- Check for working C compiler: /drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/aarch64-linux-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/aarch64-linux-g++
+-- Check for working CXX compiler: /drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/aarch64-linux-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The CUDA compiler identification is NVIDIA 11.4.409
+-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc
+-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc -- works
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version ""0.29.1"")
+-- Found EGL: /drive/drive-linux/lib-target/libEGL.so
+-- Found /drive/drive-linux/lib-target/libEGL.so:
+--  - Includes: [/drive/drive-linux/include]
+--  - Libraries: [/drive/drive-linux/lib-target/libEGL.so]
+-- Found: /drive/drive-linux/lib-target/libdrm.so
+-- Header at: /drive/drive-linux/include
+-- DW_EXPERIMENTAL_FORCE_EGL set and EGL Support Enabled
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_FLAG_FNO_OMIT_FRAME_POINTER
+-- Performing Test C_COMPILER_FLAG_FNO_OMIT_FRAME_POINTER - Success
+-- Performing Test CXX_COMPILER_FLAG_FNO_OMIT_FRAME_POINTER
+-- Performing Test CXX_COMPILER_FLAG_FNO_OMIT_FRAME_POINTER - Success
+-- Performing Test C_COMPILER_FLAG_FNO_TREE_VECTORIZE
+-- Performing Test C_COMPILER_FLAG_FNO_TREE_VECTORIZE - Success
+-- Performing Test CXX_COMPILER_FLAG_FNO_TREE_VECTORIZE
+-- Performing Test CXX_COMPILER_FLAG_FNO_TREE_VECTORIZE - Success
+-- Performing Test C_COMPILER_FLAG_FSTACK_PROTECTOR_STRONG
+-- Performing Test C_COMPILER_FLAG_FSTACK_PROTECTOR_STRONG - Success
+-- Performing Test CXX_COMPILER_FLAG_FSTACK_PROTECTOR_STRONG
+-- Performing Test CXX_COMPILER_FLAG_FSTACK_PROTECTOR_STRONG - Success
+-- Performing Test CXX_COMPILER_FLAG_WERROR_ALL
+-- Performing Test CXX_COMPILER_FLAG_WERROR_ALL - Success
+-- Building GLFW for X11 (static)
+-- Found X11: /drive/drive-linux/include
+-- Looking for XOpenDisplay in /drive/drive-linux/lib-target/libX11.so;/drive/drive-linux/lib-target/libXext.so
+-- Looking for XOpenDisplay in /drive/drive-linux/lib-target/libX11.so;/drive/drive-linux/lib-target/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- VIBRANTE_PDK_BRANCH = 6.0.8.1
+-- **** Please copy the contents of `/home/nvidia/GAC/nv_driveworks/target/dw514/install/usr/local/driveworks/samples/bin' on the host filesystem to `/usr/local/driveworks/samples/bin' on the target filesystem. ****
+-- Found CUDART: /usr/local/cuda/targets/aarch64-linux/include
+-- Found cuBLAS: /usr/local/cuda/targets/aarch64-linux/include
+-- Found NvSCI: /drive/drive-linux/include
+-- Found cuDNN: /usr/include/aarch64-linux-gnu (found suitable version ""8.9.2"", minimum required is ""8.6.0"")
+-- Found TensorRT: /usr/include/aarch64-linux-gnu (found suitable version ""8.6.11.4"", minimum required is ""8.5.10.4"")
+-- Found cuDLA: /usr/local/cuda/targets/aarch64-linux/include
+-- Found cuPVA: /usr/local/driveworks/targets/aarch64-Linux/include/cupva
+-- Could NOT find NvMedia (missing: NvMedia_INCLUDE_DIR NvMedia_LIBRARY)
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dwtrace library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwtrace.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_base library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_base.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_calibration library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_calibration.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_egomotion library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_egomotion.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_imageprocessing library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_imageprocessing.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_pointcloudprocessing library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_pointcloudprocessing.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_sensors library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_sensors.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_vehicleio library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_vehicleio.so
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dw_dnn_base library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdw_dnn_base.so
+-- Found 'dwvisualization/core/Visualization.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found driveworks_visualization library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdriveworks_visualization.so
+-- Found 'dwvisualization/core/Visualization.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'dw/core/base/Version.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dwshared library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwshared.so
+-- Found 'dw/core/DynamicMemory.h' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found dwdynamicmemory library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwdynamicmemory.so
+-- Found 'dwframework/dwnodes/common/factories/DWChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'dwcgf/channel/ChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'modern-json/json.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include/3rdparty
+-- Found dwpbwire library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwpbwire.so
+-- Found 'dwframework/dwnodes/common/factories/DWChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'dwcgf/channel/ChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'modern-json/json.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include/3rdparty
+-- Found dwcgf library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwcgf.so
+-- Found 'dwframework/dwnodes/common/factories/DWChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'dwcgf/channel/ChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'modern-json/json.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include/3rdparty
+-- Found dwframework_dwnodes library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwframework_dwnodes.so
+-- Found 'dwframework/dwnodes/common/factories/DWChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'dwcgf/channel/ChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'modern-json/json.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include/3rdparty
+-- Found dwframework_dwnodes_channel_packets library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwframework_dwnodes_channel_packets.so
+-- Found 'dwframework/dwnodes/common/factories/DWChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'dwcgf/channel/ChannelFactory.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include
+-- Found 'modern-json/json.hpp' in /usr/local/driveworks-5.14/targets/aarch64-Linux/include/3rdparty
+-- Found dwroadcast-frontend library in /usr/local/driveworks-5.14/targets/aarch64-Linux/lib/libdwroadcast-frontend.so
+'/usr/local/driveworks/tools/schema/validate_cgfdescriptors.py' '--ignore-order' '--ignore-array-order' '--ignore-indentation' '/home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs'
+-- ✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/apps/example/appHelloworld/DWCGFHelloworld.app.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/apps/example/appHelloworld/DWCGFHelloworld.graphlet.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/nodes/example/helloworld/HelloWorldNode.node.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/nodes/example/helloworld/MultipleNode.node.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/nodes/example/helloworld/SubtractNode.node.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/nodes/example/helloworld/SumNode.node.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/extra/appCommon/DWCGFImagePipe.required-sensors.json
+✓ /home/nvidia/GAC/nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/extra/sensor_mappings/pilot.sensor-mappings.json
+
+Validated 8 files against their schema and additional constraints
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nvidia/GAC/nv_driveworks/target/dw514
+
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia/GAC/nv_driveworks/target/dw514# make -j12
+[  3%] Built target lodepng-src
+[  5%] Built target cgf_custom_nodes_yamlHelloworld
+[  8%] Built target samples_allocator
+[ 33%] Built target glfw-x11
+[ 37%] Built target cgf_custom_nodes_stmHelloworld
+[ 38%] Built target glfw-src
+[ 44%] Built target cgf_custom_nodes_htmlHelloworld
+[ 79%] Built target samples_framework
+[ 81%] Linking CXX executable sample_cgf_dwchannel
+[ 83%] Linking CXX shared library libcgf_custom_nodes.so
+/drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/../lib/gcc/aarch64-buildroot-linux-gnu/9.3.0/../../../../aarch64-buildroot-linux-gnu/bin/ld: cannot find -ludev
+/drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/../lib/gcc/aarch64-buildroot-linux-gnu/9.3.0/../../../../aarch64-buildroot-linux-gnu/bin/ld: cannot find -lusb-1.0
+collect2: error: ld returned 1 exit status
+make[2]: *** [src/dwchannel/CMakeFiles/sample_cgf_dwchannel.dir/build.make:142: src/dwchannel/sample_cgf_dwchannel] Error 1
+make[1]: *** [CMakeFiles/Makefile2:348: src/dwchannel/CMakeFiles/sample_cgf_dwchannel.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/../lib/gcc/aarch64-buildroot-linux-gnu/9.3.0/../../../../aarch64-buildroot-linux-gnu/bin/ld: cannot find -ludev
+/drive/toolchains/aarch64--glibc--stable-2022.03-1/bin/../lib/gcc/aarch64-buildroot-linux-gnu/9.3.0/../../../../aarch64-buildroot-linux-gnu/bin/ld: cannot find -lusb-1.0
+collect2: error: ld returned 1 exit status
+make[2]: *** [src/cgf_nodes/CMakeFiles/cgf_custom_nodes.dir/build.make:232: src/cgf_nodes/libcgf_custom_nodes.so] Error 1
+make[1]: *** [CMakeFiles/Makefile2:460: src/cgf_nodes/CMakeFiles/cgf_custom_nodes.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2
+</code></pre>
+<p>I think it is ok to update /usr/local/driveworks/samples/cgf_nodes with your folder <code>nv_driveworks/driveworks-5.14/samples/cgf_nodes</code> . I will check it and update you.</p>",26.4,7,2024-05-28T18:33:55.701Z
+1418795,lizhensheng,292910,"<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""16"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>I cloned your repo to 6.0.8.1 docker and followed the steps to compile the samples from <code>nv_driveworks/driveworks-5.14</code> . I enabled only <code>src/framework</code> , <code>src/dwchannel</code> and <code>src/cgf_nodes</code> in <code>nv_driveworks/driveworks-5.14/samples/CMakeListss.txt</code> and notice below issue when running <code>make</code> command.</p>
+</blockquote>
+</aside>
+<p>I didn’t reproduce the compiling issue. What if you don’t disable any directory and keep everything the same as the repo in github? have a try.</p>
+<p>here is my compiling log</p>
+<p><a class=""attachment"" href=""/uploads/short-url/7LbhrQVtu56kHnn0eSEztjDswAJ.log"">nvdriveworks-5.14.log</a> (152.0 KB)</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""16"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>I think it is ok to update /usr/local/driveworks/samples/cgf_nodes with your folder <code>nv_driveworks/driveworks-5.14/samples/cgf_nodes</code> .</p>
+</blockquote>
+</aside>
+<p>It’s ok to update the code in <code>/usr/local/driveworks/</code>, if you like. check the commit <a href=""https://github.com/ZhenshengLee/nv_driveworks/commit/b9646459c1092d09c381d1f84ce240b6b4c534e0"" rel=""noopener nofollow ugc"">add dwcgf helloworld sample. · ZhenshengLee/nv_driveworks@b964645 (github.com)</a> to avoid something missing.</p>",1.2,6,2024-05-29T02:16:10.169Z
+1418801,lizhensheng,292910,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""16"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>I cloned your repo to 6.0.8.1 docker and followed the steps to compile the samples from <code>nv_driveworks/driveworks-5.14</code>. I enabled only <code>src/framework</code> , <code>src/dwchannel</code> and <code>src/cgf_nodes</code> in <code>nv_driveworks/driveworks-5.14/samples/CMakeListss.txt</code> and notice below issue when running <code>make</code> command.</p>
+<p>But If I use <code>/usr/local/driveworks/samples</code> instead of <code>nv_driveworks/driveworks-5.14/samples</code> with <code>cmake</code>, I could cross compile the samples.</p>
+</blockquote>
+</aside>
+<p>I checked your compile log, you are missing cmake finding package with udev and usb, which is appear in my cmake log</p>
+<pre data-code-wrap=""sh""><code class=""lang-sh"">-- VIBRANTE_PDK_BRANCH = 6.0.8.1
+-- Found vibrante lib: /gw_demo/driveworks-5.14/samples/3rdparty/linux-aarch64/vibrante/lib/libudev.so
+-- Found vibrante lib: /gw_demo/driveworks-5.14/samples/3rdparty/linux-aarch64/vibrante/lib/libusb-1.0.so
+-- Found vibrante_Xlib: /gw_demo/driveworks-5.14/samples/3rdparty/linux-aarch64/vibrante_Xlibs/lib/libXcursor.so
+</code></pre>
+<p>This is because I missed some <code>*.so</code> with usb and udev which is in the <code>driveworks-5.14/samples/3rdparty/linux-aarch64/vibrante/lib/libudev.so</code> and <code>driveworks-5.14/samples/3rdparty/linux-aarch64/vibrante/lib/libusb-1.0.so</code></p>
+<p><a href=""https://github.com/ZhenshengLee/nv_driveworks/commit/9d93f0bc733cb423ef10bb582ab60bb30f207ce1"" rel=""noopener nofollow ugc"">add vibrante binary so. · ZhenshengLee/nv_driveworks@9d93f0b (github.com)</a> should fix the issue, you can update the branch and try again.</p>",1.2,6,2024-05-29T02:21:56.463Z
+1421517,lizhensheng,292910,"<p>Ping <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a>  for updates.</p>",0.8,4,2024-06-03T02:52:39.648Z
+1423358,lizhensheng,292910,"<p>Friendly ping <a class=""mention"" href=""/u/vicknv"">@VickNV</a>  for updates.</p>",0.8,4,2024-06-05T01:36:46.192Z
+1424436,SivaRamaKrishnaNV,292910,"<p>Dear <a class=""mention"" href=""/u/lizhensheng"">@lizhensheng</a>,<br>
+It seems <a href=""https://github.com/ZhenshengLee/nv_driveworks/blob/bug/nvsci/driveworks-5.14/samples/src/cgf_nodes/graphs/apps/example/appHelloworld/DWCGFHelloworld.graphlet.json"" class=""inline-onebox"">nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/apps/example/appHelloworld/DWCGFHelloworld.graphlet.json at bug/nvsci · ZhenshengLee/nv_driveworks · GitHub</a> contains Case E</p>
+<p>I removed multipleNode related info from both graphlet.json and app.json.</p>
+<p>For Case A,D: It worked for you.<br>
+For Case B: I don’t see any issue.</p>
+<pre><code class=""lang-auto""> helloworld_process0_0.log has entry
+
+&lt;13&gt;1 2024-06-05T18:12:56.539013Z - helloworld_process0 7209 - - [1717611149747464us][DEBUG][tid:13][Runtime.cpp:1451][Runtime] Runtime: create output channel for top.helloWorldNode.VALUE_0 with parameter: type=NVSCI,limits=-1,streamName=cgf_0_0,id=cgf_0_0,producer-fifo=1,fifo-size=4,role=producer
+&lt;13&gt;1 2024-06-05T18:12:56.539051Z - helloworld_process0 7209 - - [1717611149747501us][DEBUG][tid:14][ThreadPool.hpp:107][ThreadPool] Thread exit from ThreadPool: bindOutput
+&lt;13&gt;1 2024-06-05T18:12:56.539197Z - helloworld_process0 7209 - - [1717611149747647us][DEBUG][tid:15][Runtime.cpp:1451][Runtime] Runtime: create output channel for top.helloWorldNode.VALUE_1 with parameter: type=NVSCI,limits=-1,streamName=cgf_1_0,id=cgf_1_0,producer-fifo=1,fifo-size=4,role=producer
+
+
+
+sum_process0_0.log has below messages 
+ntime: create input channel for top.sumNode.VALUE_0 with parameter: type=NVSCI,num-clients=1,streamName=cgf_0_1,fifo-size=1,id=cgf_0_0,mode=mailbox,reuse=true,role=consumer
+&lt;13&gt;1 2024-06-05T18:12:56.559937Z - sum_process0 7212 - - [1717611149768388us][DEBUG][tid:27][Runtime.cpp:1300][Runtime] Runtime: create input channel for top.sumNode.VALUE_1 with parameter: type=NVSCI,num-clients=1,streamName=cgf_1_1,fifo-size=1,id=cgf_1_0,mode=mailbox,reuse=true,role=consumer
+
+13&gt;1 2024-06-05T18:13:02.933559Z - sum_process0 7212 - - [1717611156142010us][DEBUG][tid:39][SumNodeImpl.cpp:72][SumNode] [Epoch 4] Received 3 from input VALUE_0, received 9997 from input VALUE_1. Add together: 10000!
+[Epoch 5] Received 4 from input VALUE_0, received 9996 from input VALUE_1. Add together: 10000!
+
+</code></pre>
+<p>The above messages confirms no issue on my side. Did you restart the target after updating <code>/etc/nvsciipc.cfg</code>?</p>
+<p>Case C: I dont see any issue.</p>
+<pre><code class=""lang-auto"">#helloworld_process0_0.log has below messages
+
+time] Runtime: create output channel for top.helloWorldNode.VALUE_0 with parameter: type=NVSCI,limits=-1,streamName=cgf_hello_0,id=cgf_hello_0,producer-fifo=1,fifo-size=4,role=producer
+&lt;13&gt;1 2024-06-05T18:37:54.916867Z - helloworld_process0 10073 - - [1717612648125317us][DEBUG][tid:14][ThreadPool.hpp:107][ThreadPool] Thread exit from ThreadPool: bindOutput
+&lt;13&gt;1 2024-06-05T18:37:54.916987Z - helloworld_process0 10073 - - [1717612648125438us][DEBUG][tid:15][Runtime.cpp:1451][Runtime] Runtime: create output channel for top.helloWorldNode.VALUE_1 with parameter: type=SOCKET,id=18000,ip=127.0.0.1,role=producer
+
+#sum process has below log
+
+&lt;13&gt;1 2024-06-05T18:37:54.937712Z - sum_process0 10076 - - [1717612648146162us][DEBUG][tid:25][Runtime.cpp:1300][Runtime] Runtime: create input channel for top.sumNode.VALUE_0 with parameter: type=NVSCI,num-clients=1,streamName=cgf_hello_1,fifo-size=1,id=cgf_hello_0,mode=mailbox,reuse=true,role=consumer
+&lt;13&gt;1 2024-06-05T18:37:54.937757Z - sum_process0 10076 - - [1717612648146208us][DEBUG][tid:26][ThreadPool.hpp:107][ThreadPool] Thread exit from ThreadPool: bindInput
+&lt;13&gt;1 2024-06-05T18:37:54.937873Z - sum_process0 10076 - - [1717612648146323us][DEBUG][tid:27][Runtime.cpp:1300][Runtime] Runtime: create input channel for top.sumNode.VALUE_1 with parameter: type=SOCKET,fifo-size=1,id=18000,ip=127.0.0.1,mode=mailbox,reuse=true,role=consumer
+
+[Epoch 1] Received 0 from input VALUE_0, received 10000 from input VALUE_1. Add together: 10000!
+ [Epoch 2] Received 1 from input VALUE_0, received 9999 from input VALUE_1. Add together: 10000!
+
+</code></pre>
+<p>The above logs indicate no issue.</p>
+<p>Case E: I could reproduce the issue.<br>
+I see below error in launcher.log</p>
+<pre><code class=""lang-auto""> what():  2: apps/roadrunner-2.0/framework/runtime/Runtime.cpp:1466 DriveWorks Error DW_INVALID_ARGUMENT: node name: top.helloWorldNode output portID: 1output portName: VALUE_1
+</code></pre>",10.8,4,2024-06-05T18:26:34.832Z
+1424567,lizhensheng,292910,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a>  Thanks for your reply!</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""22"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>It seems <a href=""https://github.com/ZhenshengLee/nv_driveworks/blob/bug/nvsci/driveworks-5.14/samples/src/cgf_nodes/graphs/apps/example/appHelloworld/DWCGFHelloworld.graphlet.json"" rel=""noopener nofollow ugc"">nv_driveworks/driveworks-5.14/samples/src/cgf_nodes/graphs/apps/example/appHelloworld/DWCGFHelloworld.graphlet.json at bug/nvsci · ZhenshengLee/nv_driveworks · GitHub</a> contains Case E</p>
+</blockquote>
+</aside>
+<p>Yes, it’s ok for you to change the case from A to E.</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""22"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>For Case B: I don’t see any issue.</p>
+</blockquote>
+</aside>
+<p>May I ask the driveos version of your drive-orin-platform? In the last topic I saw you just use the DO6090, which has dw516 rather than the developer version DO6081+dw514. <a href=""https://forums.developer.nvidia.com/t/bug-sample-cgf-dwchannel-from-dw5-14-failed-with-stuck-in-inter-process-socket-communication/294735"">[BUG] sample_cgf_dwchannel from dw5.14 failed with stuck in inter-process-socket communication (nvidia.com)</a></p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""22"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>Did you restart the target after updating <code>/etc/nvsciipc.cfg</code>?</p>
+</blockquote>
+</aside>
+<p>I will double check the CASE B and Case C, and check the log you post.</p>
+<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""22"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>Case E: I could reproduce the issue.</p>
+</blockquote>
+</aside>
+<p>Glad to see the issue repro, when should it be resolved, and in which release?</p>
+<p>Thanks.</p>",5.6,3,2024-06-06T01:33:29.070Z
+1424716,SivaRamaKrishnaNV,292910,"<aside class=""quote no-group"" data-username=""lizhensheng"" data-post=""23"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/lizhensheng/48/235936_2.png"" class=""avatar""> lizhensheng:</div>
+<blockquote>
+<p>May I ask the driveos version of your drive-orin-platform</p>
+</blockquote>
+</aside>
+<p>DRIVE 6.0.8.1</p>",0.4,2,2024-06-06T05:24:37.444Z
+1428955,lizhensheng,292910,"<aside class=""quote group-Employee"" data-username=""SivaRamaKrishnaNV"" data-post=""22"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/sivaramakrishnanv/48/14043_2.png"" class=""avatar""> SivaRamaKrishnaNV:</div>
+<blockquote>
+<p>Case E: I could reproduce the issue.<br>
+I see below error in launcher.log</p>
+</blockquote>
+</aside>
+<p>When will Case E issue be resolved? In which release?</p>
+<p>Thanks.</p>",0.6,3,2024-06-13T09:25:43.877Z
+1429144,lizhensheng,292910,"<p>There is no documentation about how to config the nvsci communication.</p>
+<p>That’s why I ask in the forum.</p>
+<p>Could you get the sample run based on the code base I shared to you?<br>
+All I need is a runnable correct example.</p>
+<p>Thanks.</p>",5.6,3,2024-06-13T12:40:31.012Z
+1438068,lizhensheng,292910,"<aside class=""quote no-group"" data-username=""lizhensheng"" data-post=""26"" data-topic=""292910"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/lizhensheng/48/235936_2.png"" class=""avatar""> lizhensheng:</div>
+<blockquote>
+<p>Could you get the sample run based on the code base I shared to you?<br>
+All I need is a runnable correct example.</p>
+</blockquote>
+</aside>
+<p>Please take the responsibility to provide the fixed cgf 1:N nvsci communication helloworld example.<br>
+<a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a>  <a class=""mention"" href=""/u/vicknv"">@VickNV</a></p>",0.6,3,2024-06-28T05:32:31.355Z
+1428405,SivaRamaKrishnaNV,296138,"<p>Dear <a class=""mention"" href=""/u/chris.hoffman"">@chris.hoffman</a> ,<br>
+Could you share the output of <code> sudo systemctl status gdm</code> after booting. Also, what is the output of <code>ls -la /etc/init.d/</code>?</p>",6.8,8,2024-06-12T18:24:31.846Z
+1429340,chris.hoffman,296138,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I switched off the Orin and switched it back on to check the status:</p>
+<pre><code class=""lang-auto"">root@tegra-ubuntu:~# sudo systemctl status gdm
+● gdm.service - GNOME Display Manager
+     Loaded: loaded (/lib/systemd/system/gdm.service; static; vendor preset: enabled)
+     Active: inactive (dead)
+</code></pre>
+<pre><code class=""lang-auto"">root@tegra-ubuntu:~# ls -la /etc/init.d/
+total 108
+drwxr-xr-x.   2 root root 4096 May 17 22:24 .
+drwxr-xr-x. 109 root root 4096 May 17 23:04 ..
+-rwxr-xr-x.   1 root root 5574 Nov  5  2019 alsa-utils
+-rwxr-xr-x.   1 root root 3740 Oct 10  2023 apparmor
+-rwxr-xr-x.   1 root root 2968 Feb 26  2020 bluetooth
+-rwxr-xr-x.   1 root root 1232 Mar 27  2020 console-setup.sh
+-rwxr-xr-x.   1 root root  937 Feb  4  2020 cryptdisks
+-rwxr-xr-x.   1 root root  896 Feb  4  2020 cryptdisks-early
+-rwxr-xr-x.   1 root root 3152 Sep 30  2019 dbus
+-rwxr-xr-x.   1 root root  734 Oct 21  2019 fio
+-rwxr-xr-x.   1 root root 3033 Nov 10  2020 gdm3
+-rwxr-xr-x.   1 root root  985 Jan 11  2022 grub-common
+-rwxr-xr-x.   1 root root 3809 Jul 28  2019 hwclock.sh
+-rwxr-xr-x.   1 root root 1479 Nov 27  2019 keyboard-setup.sh
+-rwxr-xr-x.   1 root root 2044 Feb 19  2020 kmod
+-rwxr-xr-x.   1 root root 1942 Nov 27  2021 network-manager
+-rwxr-xr-x.   1 root root  612 Feb  8  2019 pppd-dns
+-rwxr-xr-x.   1 root root  924 Feb 13  2020 procps
+-rwxr-xr-x.   1 root root  469 Oct 15  2020 pulseaudio-enable-autospawn
+-rwxr-xr-x.   1 root root 2800 Mar  6  2019 rng-tools
+-rwxr-xr-x.   1 root root 2864 Mar  7  2019 rsyslog
+-rwxr-xr-x.   1 root root 3088 Oct 10  2019 smartmontools
+-rwxr-xr-x.   1 root root 3939 Mar 30  2022 ssh
+-rwxr-xr-x.   1 root root 6872 Apr 21  2022 udev
+-rwxr-xr-x.   1 root root 2757 Jan 20  2017 x11-common
+</code></pre>",6.6,7,2024-06-13T18:21:35.989Z
+1431198,chris.hoffman,296138,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> any feedback on this?</p>",1.0,4,2024-06-17T20:24:19.713Z
+1431851,SivaRamaKrishnaNV,296138,"<p>Dear <a class=""mention"" href=""/u/chris.hoffman"">@chris.hoffman</a>,<br>
+Could you check reinstalling gdm fixes the issue?</p>",6.0,4,2024-06-18T09:29:21.420Z
+1432184,chris.hoffman,296138,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> are you able to share the steps specific to the Orin for that? I’ve tried other ways before, but they did not help.</p>",6.0,4,2024-06-18T15:50:47.169Z
+1435237,SivaRamaKrishnaNV,296138,"<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""7"" data-topic=""296138"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>I’ve tried other ways before, but they did not help</p>
+</blockquote>
+</aside>
+<p>May I know what you have tried and not worked?</p>",5.8,3,2024-06-24T19:38:55.118Z
+1437779,chris.hoffman,296138,"<p><a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<ol>
+<li>To install the minimal GNOME desktop environment, use your system’s package manager to install the GUI and gdm3 window manager.</li>
+</ol>
+<p><code>$ sudo apt install gnome-session gdm3</code></p>
+<ol start=""2"">
+<li>After installation is complete, reboot your system and you will be presented with a GNOME login.</li>
+</ol>
+<p><code>$ reboot</code></p>
+<aside class=""onebox allowlistedgeneric"" data-onebox-src=""https://linuxconfig.org/how-to-install-gnome-on-ubuntu-20-04-lts-focal-fossa#:~:text=To%20install%20the%20minimal,%24%20reboot"">
+  <header class=""source"">
+      <img class=""site-icon"" src=""https://global.discourse-cdn.com/nvidia/original/4X/a/4/f/a4f55438f5d20f270415861f47c871a07a314ee1.png"" data-dominant-color=""4BAFF1"" width=""32"" height=""32"">
+
+      <a href=""https://linuxconfig.org/how-to-install-gnome-on-ubuntu-20-04-lts-focal-fossa#:~:text=To%20install%20the%20minimal,%24%20reboot"" target=""_blank"" rel=""noopener nofollow ugc"">Linux Tutorials - Learn Linux Configuration</a>
+  </header>
+
+  <article class=""onebox-body"">
+    <img width=""690"" height=""459"" class=""thumbnail"" src=""https://global.discourse-cdn.com/nvidia/original/4X/4/0/1/4018ae7320decefa16a72649186aeccf0fee24c1.png"" data-dominant-color=""7D806E"">
+
+<h3><a href=""https://linuxconfig.org/how-to-install-gnome-on-ubuntu-20-04-lts-focal-fossa#:~:text=To%20install%20the%20minimal,%24%20reboot"" target=""_blank"" rel=""noopener nofollow ugc"">How to install Gnome on Ubuntu 20.04 LTS Focal Fossa</a></h3>
+
+  <p>In this tutorial, we show how to install the GNOME desktop environment as a GUI on Ubuntu 20.04 Focal Fossa Linux.</p>
+
+  <p>
+    <span class=""label1"">Est. reading time: 3 minutes</span>
+  </p>
+
+  </article>
+
+  <div class=""onebox-metadata"">
+    
+    
+  </div>
+
+  <div style=""clear: both""></div>
+</aside>
+",10.6,2,2024-06-27T18:59:49.688Z
+1438039,HIENG_NS,296138,"<p>Dear <a class=""mention"" href=""/u/chris.hoffman"">@chris.hoffman</a><br>
+Hi , Maybe this can be fixed<br>
+Directory：/etc/system/system/<br>
+Symbolic Link File：display-manager.service<br>
+Link Destination：/lib/systemd/system/gdm3.service</p>
+<p>①$ cd /etc/system/system/<br>
+②$ ln –s /lib/systemd/system/gdm3.service display-manager.service<br>
+③reboot</p>",0.6,2,2024-06-28T04:34:54.334Z
+1438057,SivaRamaKrishnaNV,296138,"<aside class=""quote no-group"" data-username=""chris.hoffman"" data-post=""9"" data-topic=""296138"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> chris.hoffman:</div>
+<blockquote>
+<p>$ reboot</p>
+</blockquote>
+</aside>
+<p>Hi <a class=""mention"" href=""/u/chris.hoffman"">@chris.hoffman</a>,<br>
+Note that, reboot command does not work on Orin. Please see <a href=""https://forums.developer.nvidia.com/t/cli-reboot-and-poweroff-commands-do-not-work/240689"" class=""inline-onebox"">CLI reboot and poweroff commands do not work</a> .<br>
+common_if_testapp -mcureset needs to be run on tegra to reboot.</p>",0.2,1,2024-06-28T05:09:09.705Z
+1434885,SivaRamaKrishnaNV,297292,"<p>Dear <a class=""mention"" href=""/u/samuel.ongzx"">@samuel.ongzx</a>,<br>
+This forum is exclusively for developers who are part of <a href=""https://developer.nvidia.com/drive-agx-program"">the NVIDIA DRIVE™ AGX SDK Developer Program</a>. To post in the forum, please use an account associated with your corporate or university email address.<br>
+This helps us ensure that the forum remains a platform for verified members of the developer program.<br>
+Thanks.</p>",6.0,4,2024-06-24T08:47:57.163Z
+1435162,samuel.ongzx,297292,"<p>Hi <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> thanks for letting me know. I have updated my email address to my corporate email address. Should I continue this question in this thread or should I post another with my updated email address?</p>",1.0,4,2024-06-24T16:07:01.709Z
+1435194,SivaRamaKrishnaNV,297292,"<aside class=""quote no-group"" data-username=""samuel.ongzx"" data-post=""1"" data-topic=""297292"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/samuel.ongzx/48/290015_2.png"" class=""avatar""> samuel.ongzx:</div>
+<blockquote>
+<p>I am getting an average of 70 fps across 4 videos, with varying average bitrates of 60Mbps to 105Mbps</p>
+</blockquote>
+</aside>
+<p>Dear <a class=""mention"" href=""/u/samuel.ongzx"">@samuel.ongzx</a>,<br>
+Just trying to understand your test. You ran 4 instances of sample with different input video? Could you share the config files?</p>
+<p>The perf numbers(Mpix/s and Max cumulative numbers) came from running wide range of tests on contents of varied complexities and a range of bitrates.<br>
+Note that Jetson Orin NVENC frequency is different from DRIVE Orin. The perf numbers needs to be scaled accordingly.</p>
+<p>For different types of encoding quality, please seehttps://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/api_reference/group__x__image__encode__api.html#ga4c3ff348635d525887be959c28fab776</p>",11.0,4,2024-06-24T17:45:09.722Z
+1435200,samuel.ongzx,297292,"<p>Hi <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> thanks for the reply!</p>
+<p>Yeap, I ran 4 instances of the sample (through a shell script) simultaneously to encode 4 different input videos (<code>.yuv</code>) files. I have attached the <code>H265_UHP.cfg</code> file that I have, and the command that I used to run the sample app.</p>
+<p>Thanks for the explanation. Do you happen to have a typical test result that you could share so we could determine whether our tests is similar to real world average results?</p>
+<p>Lastly, is there a deeper explanation that I could find on the difference between the different type of encoding quality than just <code>low, medium, high</code>?</p>
+<p>Thanks!<br>
+Sam</p>
+<p>Config File:<br>
+<a class=""attachment"" href=""/uploads/short-url/aVKTMgIofaeF8wbNk7OgiRbCgCM.txt"">H265_UHP.txt</a> (16.5 KB)</p>
+<p>Shell command:</p>
+<pre><code class=""lang-auto"">#!/bin/bash
+WIDTH=3840
+HEIGHT=2160
+
+OUT=$2
+CONFIG=./config/H265_UHP.cfg
+
+./nvm_iep_sci \
+	-cf $CONFIG -fsl 0 \
+	-alternateCreateAPI 0 \
+	-p InputFile=$FILE InputFileFormat=0 OutputFile=$OUT \
+	EPEncodeWidth=$WIDTH EPEncodeHeight=$HEIGHT \
+	FramesToBeEncoded=0 \
+	-profile 0 \
+	-v 3 \
+	$3
+</code></pre>",6.0,4,2024-06-24T17:54:36.885Z
+1437817,samuel.ongzx,297292,"<p>Hi <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> pinging again to see if you could assist with my questions!</p>
+<p>Thanks!</p>",0.8,3,2024-06-27T21:13:25.374Z
+1437380,SivaRamaKrishnaNV,297833,"<p>Dear <a class=""mention"" href=""/u/quang.huy.dang"">@quang.huy.dang</a>,<br>
+May I know the camera module? Is it listed at <a href=""https://developer.nvidia.com/drive/ecosystem-orin#camera"" class=""inline-onebox"">DRIVE AGX Orin Sensors &amp; Accessories | NVIDIA Developer</a> ?</p>",6.0,4,2024-06-27T07:40:18.899Z
+1437390,quang.huy.dang,297833,"<p>The drive agx orin is not connected to any camera right now. The camera module name I’m using come from the the binary file compiled from this folder<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/5/b/c/5bcac68a716594ee65814e7fdfbbb807886e7bdb.png"" data-download-href=""/uploads/short-url/d61Tsa3o0aGyjShhbtq7Amr0xg7.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/5/b/c/5bcac68a716594ee65814e7fdfbbb807886e7bdb_2_690x58.png"" alt=""image"" data-base62-sha1=""d61Tsa3o0aGyjShhbtq7Amr0xg7"" width=""690"" height=""58"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/5/b/c/5bcac68a716594ee65814e7fdfbbb807886e7bdb_2_690x58.png, https://global.discourse-cdn.com/nvidia/optimized/4X/5/b/c/5bcac68a716594ee65814e7fdfbbb807886e7bdb_2_1035x87.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/5/b/c/5bcac68a716594ee65814e7fdfbbb807886e7bdb_2_1380x116.png 2x"" data-dominant-color=""1A1918""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1653×140 15.5 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+After compiling I copied the .so files into the drive agx orin and then I launch the stream</p>",1.0,4,2024-06-27T07:55:59.086Z
+1437442,SivaRamaKrishnaNV,297833,"<p>Dear <a class=""mention"" href=""/u/quang.huy.dang"">@quang.huy.dang</a>,<br>
+May I know the display resolution?</p>",5.8,3,2024-06-27T09:04:25.718Z
+1437474,quang.huy.dang,297833,"<p>The resolution of the camera module config is 1920x1236<br>
+The resolution of the monitor im connecting to the drive orin is 1920x1200</p>",0.8,3,2024-06-27T09:51:19.101Z
+1421558,SivaRamaKrishnaNV,294940,"<p>Dear <a class=""mention"" href=""/u/hieng_ns"">@HIENG_NS</a>,<br>
+Could you share model and trtexec log?</p>",7.2,10,2024-06-03T04:36:36.221Z
+1421560,HIENG_NS,294940,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>
+<p><a class=""attachment"" href=""/uploads/short-url/2x8kCTmddOGAVrTncyttzkePvpy.log"">trtexec.log</a> (7.3 KB)<br>
+Here is the log</p>",2.2,10,2024-06-03T04:46:24.635Z
+1421567,SivaRamaKrishnaNV,294940,"<p>Dear <a class=""mention"" href=""/u/hieng_ns"">@HIENG_NS</a>,<br>
+Can you share trtexec log with <code>verbose</code> flag. Also, is it possible to share your model to verify internally. If model cannot be shared any simple model which can repro the error works for us.</p>",7.2,10,2024-06-03T04:58:12.274Z
+1421578,HIENG_NS,294940,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+Here is the log with verbose flag<br>
+<a class=""attachment"" href=""/uploads/short-url/rdxJ2PldHvz2fusf2FG5gLbIdUn.log"">trtexec_verbose.log</a> (4.7 MB)</p>
+<p>I will confirm with my team if it is permissible to share the model.</p>",11.8,8,2024-06-03T05:15:02.118Z
+1421872,SivaRamaKrishnaNV,294940,"<aside class=""quote no-group"" data-username=""HIENG_NS"" data-post=""6"" data-topic=""294940"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> HIENG_NS:</div>
+<blockquote>
+<p>will confirm with my team if it is permissible to share the model</p>
+</blockquote>
+</aside>
+<p>Issue seems to be with fusion of few nodes. If you can provide model which can repro the issue, I can quickly check if got fixed in recent version.</p>",6.8,8,2024-06-03T11:06:40.052Z
+1422239,HIENG_NS,294940,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I can share the onnx file, but it is over 100MB in size.<br>
+how can i share？</p>",1.6,7,2024-06-04T01:48:17.644Z
+1422463,SivaRamaKrishnaNV,294940,"<p>Dear <a class=""mention"" href=""/u/hieng_ns"">@HIENG_NS</a>,<br>
+Your file shared via PM is not accessible. Please use any publicly shared drives like Google drive.</p>",6.6,7,2024-06-04T05:51:18.232Z
+1425414,HIENG_NS,294940,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I shared the model with you the other day, Any update on this?</p>",1.4,6,2024-06-07T01:52:44.968Z
+1425465,SivaRamaKrishnaNV,294940,"<p>Dear <a class=""mention"" href=""/u/hieng_ns"">@HIENG_NS</a>,<br>
+I see it is failing with internal release as well. I am checking internally and update you.</p>",11.2,5,2024-06-07T03:10:31.810Z
+1425589,HIENG_NS,294940,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+Thank you for investigating.<br>
+Also, if possible, what layers/nodes/plugins should I avoid using in my current environment?</p>",16.2,5,2024-06-07T07:18:40.315Z
+1437165,HIENG_NS,294940,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+Any update on this?</p>
+<aside class=""quote no-group"" data-username=""HIENG_NS"" data-post=""13"" data-topic=""294940"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> HIENG_NS:</div>
+<blockquote>
+<p>what layers/nodes/plugins should I avoid using in my current environment?</p>
+</blockquote>
+</aside>",0.8,3,2024-06-27T02:31:04.470Z
+1437435,SivaRamaKrishnaNV,294940,"<p>Dear <a class=""mention"" href=""/u/hieng_ns"">@HIENG_NS</a>,<br>
+There is a  bug in fusion of nodes in node {ForeignNode[2793…Slice_2457]}. We are working on fix and update you.</p>",15.6,2,2024-06-27T08:57:38.354Z
+1437403,SivaRamaKrishnaNV,297834,"<p>Dear <a class=""mention"" href=""/u/kevin.kal"">@kevin.kal</a> ,<br>
+Please see <a href=""https://forums.developer.nvidia.com/t/running-sekonix-sf3325-100/282953"" class=""inline-onebox"">Running Sekonix SF3325-100</a>.<br>
+the ‘Sekonix SF3325’ camera is supported by Onsemi. I will send you their contact information via a private message.</p>",0.8,3,2024-06-27T08:12:15.552Z
+1437204,tonyb.zhao,297808,"<p>When I try to install ros2 into drive os 6.0.9, I found dependency issue,<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/c/5/7/c57cfa75e131a77bfe4555f3808e3cd015d0d0d6.png"" data-download-href=""/uploads/short-url/sb3PfnJxp72AJjy7F2dIMVVsbl4.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/c/5/7/c57cfa75e131a77bfe4555f3808e3cd015d0d0d6.png"" alt=""image"" data-base62-sha1=""sb3PfnJxp72AJjy7F2dIMVVsbl4"" width=""690"" height=""188"" data-dominant-color=""161615""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1243×339 30.5 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+when I try to install  ros-foxy-pcl-conversions, it will also caused lots of dependency issue, so I doult that if the drive so lacking some ubuntu components?</p>",0.8,4,2024-06-27T03:00:18.021Z
+1437296,SivaRamaKrishnaNV,297808,"<p>Dear <a class=""mention"" href=""/u/tonyb.zhao"">@tonyb.zhao</a>,<br>
+We don’t officially support ROS2 on DRIVE. May I know what functionalities you need from ROS2 and are missing on DriveOS+ DriveWorks?</p>
+<p>Also, DRIVE OS 6.0.9 is not supported on forum. Please contact your NVIDIA representative on issues using DRIVE OS 6.0.9 for guide on right support channel.</p>",0.6,4,2024-06-27T05:54:35.442Z
+1435847,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+Looks like you are asking a tool similar to <a href=""https://developer.nvidia.com/embedded/community/jetson-projects/jetson_stats"" class=""inline-onebox"">Jetson Stats | NVIDIA Developer</a>. Unfortunately, This is not available for DRIVE.</p>
+<p>Can you check if <a href=""https://developer.nvidia.com/nsight-systems"" class=""inline-onebox"">Nsight Systems | NVIDIA Developer</a> works for your case?</p>",6.2,6,2024-06-25T09:20:41.272Z
+1435852,akshay.tupkar,297564,"<p>Thanks <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a> for letting me know.<br>
+Where can I find the nsight tools on drive orin?<br>
+I am not sure whether this has been installed or not. I had flashed Drive OS onto drive Orin using docker container</p>",1.2,6,2024-06-25T09:24:07.727Z
+1435874,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a> ,<br>
+Please see <a href=""https://forums.developer.nvidia.com/t/how-to-use-tegrastats-to-track-gpu-usage-on-drive-orin/292946/7"" class=""inline-onebox"">How to use tegrastats to track gpu usage on drive orin - #7 by SivaRamaKrishnaNV</a> if it helps.</p>",6.2,6,2024-06-25T09:57:09.499Z
+1435922,akshay.tupkar,297564,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+On drive orin<br>
+nvidia@tegra-ubuntu:~$ nsys --version<br>
+-bash: nsys: command not found<br>
+Earlier before flashing, I could use the commands such as nsys profile, but now facing this issue<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/1/3/1/1310bdbfb78f80de400f9e9c63bef33912d5fcf8.png"" data-download-href=""/uploads/short-url/2IEWgCD7WzuN4fmnVCB5VKYJYMg.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/1/3/1/1310bdbfb78f80de400f9e9c63bef33912d5fcf8.png"" alt=""image"" data-base62-sha1=""2IEWgCD7WzuN4fmnVCB5VKYJYMg"" width=""690"" height=""163"" data-dominant-color=""070707""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1709×406 20.2 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",0.6,4,2024-06-25T10:50:28.468Z
+1435932,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+When you profile the target first time via remote connection from host, <code>nsys</code> files gets installed on target. Later, you can directly run the <code>nsys</code> on target</p>",5.6,4,2024-06-25T11:08:55.849Z
+1435935,akshay.tupkar,297564,<p>Yes I got your point. Files has been transferred to target already but not able to execute those commands. It is showing an error as “nsys: command not found”</p>,5.6,4,2024-06-25T11:11:07.196Z
+1435959,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+Were you able to perform remote profiling from docker using <code>nsys-ui</code> tool? If so, could you find the location of <code>nsys</code> on target using linux command such as <code>locate</code> or <code>find</code></p>
+<aside class=""quote no-group"" data-username=""akshay.tupkar"" data-post=""9"" data-topic=""297564"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> akshay.tupkar:</div>
+<blockquote>
+<p>Files has been transferred to target already</p>
+</blockquote>
+</aside>",5.6,4,2024-06-25T12:09:44.140Z
+1436368,akshay.tupkar,297564,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/f/0/8/f08b0cfe097b4881cb2986e147c441acd18a429f.png"" data-download-href=""/uploads/short-url/yjWvtRrmsSFo7MarTVD58nLrkDB.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/f/0/8/f08b0cfe097b4881cb2986e147c441acd18a429f.png"" alt=""image"" data-base62-sha1=""yjWvtRrmsSFo7MarTVD58nLrkDB"" width=""690"" height=""196"" data-dominant-color=""050505""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1350×385 6.93 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+This is what I could see after running “locate nsys”. These are the files which were generated before flashing. One more thing is on the host filesystem i still can see the driveworks 5.10. Is that a reason which is causing issue? I am not sure whether nsight tools that i am using belongs to DRIVE OS 6.0.6 or DRIVE OS 6.0.8.1. I didnt open it from docker container’s terminal</p>",5.6,4,2024-06-26T05:04:21.583Z
+1436380,akshay.tupkar,297564,"<p>On the docker container’s terminal, this is what i could see<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/6/1/661c11bc93d4ada7c59a8040819f56701d37779f.png"" data-download-href=""/uploads/short-url/eziQ5wZ2OmreA2wA8M972B3eSnl.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/6/1/661c11bc93d4ada7c59a8040819f56701d37779f_2_690x171.png"" alt=""image"" data-base62-sha1=""eziQ5wZ2OmreA2wA8M972B3eSnl"" width=""690"" height=""171"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/6/1/661c11bc93d4ada7c59a8040819f56701d37779f_2_690x171.png, https://global.discourse-cdn.com/nvidia/optimized/4X/6/6/1/661c11bc93d4ada7c59a8040819f56701d37779f_2_1035x256.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/6/6/1/661c11bc93d4ada7c59a8040819f56701d37779f_2_1380x342.png 2x"" data-dominant-color=""080808""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1898×471 37 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",0.6,4,2024-06-26T05:21:43.288Z
+1436414,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+I notice docker container has <code>/opt/nvidia/nsight-systems/2023.2.7/target-linux-tegra-armv8</code> folder. Could you check copying it to target and test?</p>",5.6,4,2024-06-26T06:03:04.164Z
+1436487,akshay.tupkar,297564,"<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/a/8/6/a8634153ffb5d12ac75f2ad0f2077c93b0db3b78.png"" data-download-href=""/uploads/short-url/o1CRPIZwk7IE0k7VAIKaYba1UP6.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/8/6/a8634153ffb5d12ac75f2ad0f2077c93b0db3b78_2_690x131.png"" alt=""image"" data-base62-sha1=""o1CRPIZwk7IE0k7VAIKaYba1UP6"" width=""690"" height=""131"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/8/6/a8634153ffb5d12ac75f2ad0f2077c93b0db3b78_2_690x131.png, https://global.discourse-cdn.com/nvidia/optimized/4X/a/8/6/a8634153ffb5d12ac75f2ad0f2077c93b0db3b78_2_1035x196.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/a/8/6/a8634153ffb5d12ac75f2ad0f2077c93b0db3b78_2_1380x262.png 2x"" data-dominant-color=""070B07""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1919×366 26.2 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+I have copied “target-linux-tegra-armv8” to target but still it is showing the same error.<br>
+This is how i am using nsys command to execute a program<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/8/8/2/882436248422a1d9b1a5c00b09699ce0f84b46aa.png"" data-download-href=""/uploads/short-url/jqmwa4NMjcMHNkVaxLrqcJnN3Cy.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/8/8/2/882436248422a1d9b1a5c00b09699ce0f84b46aa_2_690x105.png"" alt=""image"" data-base62-sha1=""jqmwa4NMjcMHNkVaxLrqcJnN3Cy"" width=""690"" height=""105"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/8/8/2/882436248422a1d9b1a5c00b09699ce0f84b46aa_2_690x105.png, https://global.discourse-cdn.com/nvidia/optimized/4X/8/8/2/882436248422a1d9b1a5c00b09699ce0f84b46aa_2_1035x157.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/8/8/2/882436248422a1d9b1a5c00b09699ce0f84b46aa_2_1380x210.png 2x"" data-dominant-color=""090A0A""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1890×290 15.8 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",0.6,4,2024-06-26T07:13:39.912Z
+1436523,SivaRamaKrishnaNV,297564,"<p>Hi <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a> ,<br>
+Please update the PATH variable or check running with absolute path.</p>",5.6,4,2024-06-26T07:54:28.503Z
+1436685,akshay.tupkar,297564,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+report1.nsys-rep file has been generated and I copied this file to host and opened it in nsight tool. But there is an error showing that “Failed to load a report.The report was possibly created with a newer version of NVIDIA Nsight systems. Please upgrade to the latest version and try again”. How can I upgrade this tool?</p>",5.6,4,2024-06-26T10:16:57.433Z
+1436688,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+Please install latest version from <a href=""https://developer.nvidia.com/nsight-systems/get-started"" class=""inline-onebox"">Nsight Systems - Get Started | NVIDIA Developer</a> on host.</p>",5.6,4,2024-06-26T10:19:06.404Z
+1437267,akshay.tupkar,297564,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I installed the latest version of nsight system on host.<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/1/a/61ae254a27bdaf7751595e63aa48508df14085eb.jpeg"" data-download-href=""/uploads/short-url/dW7q2sDDmsKaNgmmZdabAfAohLB.jpeg?dl=1"" title=""IMG_2213"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/1/a/61ae254a27bdaf7751595e63aa48508df14085eb_2_666x500.jpeg"" alt=""IMG_2213"" data-base62-sha1=""dW7q2sDDmsKaNgmmZdabAfAohLB"" width=""666"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/1/a/61ae254a27bdaf7751595e63aa48508df14085eb_2_666x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/6/1/a/61ae254a27bdaf7751595e63aa48508df14085eb_2_999x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/6/1/a/61ae254a27bdaf7751595e63aa48508df14085eb_2_1332x1000.jpeg 2x"" data-dominant-color=""838285""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">IMG_2213</span><span class=""informations"">1920×1440 387 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+Why am I facing this issue?</p>",0.6,4,2024-06-27T05:12:28.437Z
+1437279,SivaRamaKrishnaNV,297564,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a><br>
+Profile using nsys on target and then view the report on host using latest nsys. I hope it works for you.</p>
+<aside class=""quote no-group"" data-username=""akshay.tupkar"" data-post=""17"" data-topic=""297564"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> akshay.tupkar:</div>
+<blockquote>
+<p>there is an error showing that “Failed to load a report.The report was possibly created with a newer version</p>
+</blockquote>
+</aside>",5.6,4,2024-06-27T05:30:40.082Z
+1437290,akshay.tupkar,297564,"<p>yes that is working but i noticed there are some missing binaries in docker container<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/5/8/c/58c1be85a3913469c105c53297a6d2af1ace7ffd.png"" data-download-href=""/uploads/short-url/cFb6YpHcoUKHo9dwmdIWpDHPnFX.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/5/8/c/58c1be85a3913469c105c53297a6d2af1ace7ffd_2_690x119.png"" alt=""image"" data-base62-sha1=""cFb6YpHcoUKHo9dwmdIWpDHPnFX"" width=""690"" height=""119"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/5/8/c/58c1be85a3913469c105c53297a6d2af1ace7ffd_2_690x119.png, https://global.discourse-cdn.com/nvidia/optimized/4X/5/8/c/58c1be85a3913469c105c53297a6d2af1ace7ffd_2_1035x178.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/5/8/c/58c1be85a3913469c105c53297a6d2af1ace7ffd_2_1380x238.png 2x"" data-dominant-color=""040404""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1899×328 13 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",0.6,4,2024-06-27T05:51:21.434Z
+1436680,SivaRamaKrishnaNV,297702,"<p>Dear <a class=""mention"" href=""/u/deng.shigang"">@deng.shigang</a>,<br>
+Could you check if adding <code>skip-eeprom=1</code> to rig file params helps?</p>",5.6,5,2024-06-26T10:15:00.454Z
+1437111,deng.shigang,297702,"<p>yes,it works.</p>
+<p>Is there a document that introduces the parameters of the rig file?</p>",5.4,5,2024-06-27T00:42:51.490Z
+1436682,SivaRamaKrishnaNV,297710,"<p>Dear <a class=""mention"" href=""/u/chintan.patel2"">@chintan.patel2</a>,<br>
+Please use USB 3.2 port to connect SSD to extend storage.</p>",0.6,3,2024-06-26T10:16:26.907Z
+1435929,SivaRamaKrishnaNV,297580,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+driveworks don’t have sample related to sensor fusion.</p>",6.0,4,2024-06-25T11:05:46.889Z
+1436371,akshay.tupkar,297580,"<p>Okay <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+Can you suggest something for sensor fusion?</p>",0.4,2,2024-06-26T05:09:18.471Z
+1433563,SivaRamaKrishnaNV,297003,"<p>Dear <a class=""mention"" href=""/u/mac.pinnock"">@mac.pinnock</a>,<br>
+Let me check internally on this issue and get back to you.</p>",6.8,10,2024-06-20T07:29:01.082Z
+1433802,mac.pinnock,297003,"<p>Got it, thanks!</p>",1.6,9,2024-06-20T16:52:03.976Z
+1436359,SivaRamaKrishnaNV,297003,"<aside class=""quote no-group"" data-username=""mac.pinnock"" data-post=""1"" data-topic=""297003"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/mac.pinnock/48/273049_2.png"" class=""avatar""> mac.pinnock:</div>
+<blockquote>
+<p>we want to create a new partition that is visible in the Linux userspace</p>
+</blockquote>
+</aside>
+<p>May I know why you need this?  Any issue to keep the data under some folder in same partition?</p>",0.4,5,2024-06-26T04:37:21.521Z
+1434090,SivaRamaKrishnaNV,297277,"<p>Dear <a class=""mention"" href=""/u/prit.shah"">@prit.shah</a>,<br>
+Could you confirm if you can open lidar configuration page using used lidar IP like in page 25/26 in <a href=""https://velodynelidar.com/wp-content/uploads/2019/12/63-9243-Rev-E-VLP-16-User-Manual.pdf"">https://velodynelidar.com/wp-content/uploads/2019/12/63-9243-Rev-E-VLP-16-User-Manual.pdf</a><br>
+Did you change lidar IP?<br>
+Could you share complete log of the sample?</p>",5.6,3,2024-06-21T17:21:08.876Z
+1434094,prit.shah,297277,"<p>Thanks for your reply,</p>
+<p>Yes I can open lidar configuration page in Host PC but I am unable to open the same in NVIDIA Drive AGX Orin.</p>
+<p>In Settings(IPV4) the IP of Lidar is 192.168.1.22</p>
+<p>I have attached the screenshot of the output.</p>
+<p>Also we are not getting any eth0 or add anything in network manager.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/a/2/e/a2e0fd4b9941d0c0362388a50b0db0e045edd11b.jpeg"" data-download-href=""/uploads/short-url/neTo2UnZ195GOB4m0E8bXoXNjyH.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 18.37.11 (2)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/2/e/a2e0fd4b9941d0c0362388a50b0db0e045edd11b_2_690x388.jpeg"" alt=""WhatsApp Image 2024-06-21 at 18.37.11 (2)"" data-base62-sha1=""neTo2UnZ195GOB4m0E8bXoXNjyH"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/2/e/a2e0fd4b9941d0c0362388a50b0db0e045edd11b_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/a/2/e/a2e0fd4b9941d0c0362388a50b0db0e045edd11b_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/a/2/e/a2e0fd4b9941d0c0362388a50b0db0e045edd11b_2_1380x776.jpeg 2x"" data-dominant-color=""A4A296""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 18.37.11 (2)</span><span class=""informations"">2016×1134 350 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/c/f/b/cfb86d8291febfd01a33c493bdec1e25f82898bf.jpeg"" data-download-href=""/uploads/short-url/tDzYcM6G1A1nl8MzKdMtN1RDaN1.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 18.37.11 (1)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/c/f/b/cfb86d8291febfd01a33c493bdec1e25f82898bf_2_690x388.jpeg"" alt=""WhatsApp Image 2024-06-21 at 18.37.11 (1)"" data-base62-sha1=""tDzYcM6G1A1nl8MzKdMtN1RDaN1"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/c/f/b/cfb86d8291febfd01a33c493bdec1e25f82898bf_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/c/f/b/cfb86d8291febfd01a33c493bdec1e25f82898bf_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/c/f/b/cfb86d8291febfd01a33c493bdec1e25f82898bf_2_1380x776.jpeg 2x"" data-dominant-color=""716D65""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 18.37.11 (1)</span><span class=""informations"">2016×1134 195 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/7/1/6/716011e3090f438485876ed884b4cc028fea4c6a.jpeg"" data-download-href=""/uploads/short-url/gaXMxv9O49FnouPa1ahsCnVVCuC.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 18.37.11"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/7/1/6/716011e3090f438485876ed884b4cc028fea4c6a_2_690x388.jpeg"" alt=""WhatsApp Image 2024-06-21 at 18.37.11"" data-base62-sha1=""gaXMxv9O49FnouPa1ahsCnVVCuC"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/7/1/6/716011e3090f438485876ed884b4cc028fea4c6a_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/7/1/6/716011e3090f438485876ed884b4cc028fea4c6a_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/7/1/6/716011e3090f438485876ed884b4cc028fea4c6a_2_1380x776.jpeg 2x"" data-dominant-color=""84827E""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 18.37.11</span><span class=""informations"">2016×1134 234 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/2/8/2/282a084084af06d7e109cd569b0371033ec4792f.jpeg"" data-download-href=""/uploads/short-url/5Jj9s4FYbRt9UPTire3oDIt9clx.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 18.37.10"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/8/2/282a084084af06d7e109cd569b0371033ec4792f_2_690x388.jpeg"" alt=""WhatsApp Image 2024-06-21 at 18.37.10"" data-base62-sha1=""5Jj9s4FYbRt9UPTire3oDIt9clx"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/8/2/282a084084af06d7e109cd569b0371033ec4792f_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/2/8/2/282a084084af06d7e109cd569b0371033ec4792f_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/2/8/2/282a084084af06d7e109cd569b0371033ec4792f_2_1380x776.jpeg 2x"" data-dominant-color=""B9B9B2""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 18.37.10</span><span class=""informations"">2016×1134 488 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",5.8,3,2024-06-21T17:39:53.542Z
+1434109,SivaRamaKrishnaNV,297277,"<p>Dear <a class=""mention"" href=""/u/prit.shah"">@prit.shah</a>,<br>
+Can you share the lidar connection pictures, lidar configuration page picture and ifconfig output.</p>",0.8,3,2024-06-21T19:00:56.207Z
+1434891,prit.shah,297277,"<p>Hello,</p>
+<p>Please find the images of Ifconfig and Lidar Connection below,</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/d/d/3/dd300f4a4e813618a7b9889251acde5dbe6bc63e.jpeg"" data-download-href=""/uploads/short-url/vyIuhDRpziWBOXtkReo59pub2kS.jpeg?dl=1"" title=""ifconfig_1"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/d/d/3/dd300f4a4e813618a7b9889251acde5dbe6bc63e_2_343x500.jpeg"" alt=""ifconfig_1"" data-base62-sha1=""vyIuhDRpziWBOXtkReo59pub2kS"" width=""343"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/d/d/3/dd300f4a4e813618a7b9889251acde5dbe6bc63e_2_343x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/d/d/3/dd300f4a4e813618a7b9889251acde5dbe6bc63e_2_514x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/d/d/3/dd300f4a4e813618a7b9889251acde5dbe6bc63e_2_686x1000.jpeg 2x"" data-dominant-color=""B8B5B0""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">ifconfig_1</span><span class=""informations"">1409×2048 542 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/1/f/3/1f348e769ef6a75bc43410c22e46cfefd2d0abc5.jpeg"" data-download-href=""/uploads/short-url/4s3p0w6FoCufo4wcb8m04tH9oHP.jpeg?dl=1"" title=""ifconfig_2"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/f/3/1f348e769ef6a75bc43410c22e46cfefd2d0abc5_2_281x500.jpeg"" alt=""ifconfig_2"" data-base62-sha1=""4s3p0w6FoCufo4wcb8m04tH9oHP"" width=""281"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/f/3/1f348e769ef6a75bc43410c22e46cfefd2d0abc5_2_281x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/1/f/3/1f348e769ef6a75bc43410c22e46cfefd2d0abc5_2_421x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/1/f/3/1f348e769ef6a75bc43410c22e46cfefd2d0abc5_2_562x1000.jpeg 2x"" data-dominant-color=""ACA7A2""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">ifconfig_2</span><span class=""informations"">1134×2016 497 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/b/7/6b7055534fbd621b462af153406983cefc7d173c.jpeg"" data-download-href=""/uploads/short-url/fkrLgogcCvv9lX23RNvqQik2kkA.jpeg?dl=1"" title=""Interface_box_connection"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/b/7/6b7055534fbd621b462af153406983cefc7d173c_2_281x500.jpeg"" alt=""Interface_box_connection"" data-base62-sha1=""fkrLgogcCvv9lX23RNvqQik2kkA"" width=""281"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/b/7/6b7055534fbd621b462af153406983cefc7d173c_2_281x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/6/b/7/6b7055534fbd621b462af153406983cefc7d173c_2_421x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/6/b/7/6b7055534fbd621b462af153406983cefc7d173c_2_562x1000.jpeg 2x"" data-dominant-color=""566D66""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Interface_box_connection</span><span class=""informations"">1134×2016 405 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/f/8/6/f86db7c0f417b35e2910361f164f8bb839db4f2c.jpeg"" data-download-href=""/uploads/short-url/zrHtSBHyFSyjX82SOFqdhnphOTG.jpeg?dl=1"" title=""Connection _to_Drive"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/f/8/6/f86db7c0f417b35e2910361f164f8bb839db4f2c_2_281x500.jpeg"" alt=""Connection _to_Drive"" data-base62-sha1=""zrHtSBHyFSyjX82SOFqdhnphOTG"" width=""281"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/f/8/6/f86db7c0f417b35e2910361f164f8bb839db4f2c_2_281x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/f/8/6/f86db7c0f417b35e2910361f164f8bb839db4f2c_2_421x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/f/8/6/f86db7c0f417b35e2910361f164f8bb839db4f2c_2_562x1000.jpeg 2x"" data-dominant-color=""4D453D""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Connection _to_Drive</span><span class=""informations"">1134×2016 208 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",0.6,3,2024-06-24T08:54:41.940Z
+1434896,prit.shah,297277,"<p>Please find Lidar Configuration page in this thread.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/7/9/e/79e8e0b89df8d9a029d0cd751ae49e52bac33440.jpeg"" data-download-href=""/uploads/short-url/hosIag3wQ1s6Sh8lr7UYOTWfe12.jpeg?dl=1"" title=""Lidar_configuration_page"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/7/9/e/79e8e0b89df8d9a029d0cd751ae49e52bac33440_2_645x500.jpeg"" alt=""Lidar_configuration_page"" data-base62-sha1=""hosIag3wQ1s6Sh8lr7UYOTWfe12"" width=""645"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/7/9/e/79e8e0b89df8d9a029d0cd751ae49e52bac33440_2_645x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/7/9/e/79e8e0b89df8d9a029d0cd751ae49e52bac33440_2_967x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/7/9/e/79e8e0b89df8d9a029d0cd751ae49e52bac33440_2_1290x1000.jpeg 2x"" data-dominant-color=""E2E3E5""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Lidar_configuration_page</span><span class=""informations"">1291×1000 168 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>",0.6,3,2024-06-24T09:01:44.470Z
+1435208,SivaRamaKrishnaNV,297277,"<p>Dear <a class=""mention"" href=""/u/prit.shah"">@prit.shah</a>,<br>
+Are you able to ping Lidar from target? Could you check if <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/driveworks-nvsdk/nvsdk_dw_html/dwx_recording_devguide_basic_recording.html#dwx_recording_devguide_basic_lidar"" class=""inline-onebox"">DriveWorks SDK Reference: Basic Recording</a> helps?<br>
+I see mgbe1_0 interface has IP? Did you set it?</p>
+<aside class=""quote no-group"" data-username=""prit.shah"" data-post=""4"" data-topic=""297277"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> prit.shah:</div>
+<blockquote>
+<p>In Settings(IPV4) the IP of Lidar is 192.168.1.22</p>
+</blockquote>
+</aside>
+<p>I see in configuration page lidar IP is 192.168.1.201. May I know where do you see 192.168.1.22?</p>",0.6,3,2024-06-24T18:30:20.754Z
+1435998,prit.shah,297277,"<p>Hello, Thanks for the help it has solved my issue.</p>",0.4,2,2024-06-25T13:56:11.082Z
+1436004,SivaRamaKrishnaNV,297277,"<p>Dear <a class=""mention"" href=""/u/prit.shah"">@prit.shah</a>,<br>
+Glad to hear the issue is fixed. Could you share what was the mistake?</p>",0.4,2,2024-06-25T14:26:27.372Z
+1436011,prit.shah,297277,<p>We have connected the Lidar to Router and that router we are connecting to the Drive. By this we are running  Velodyne Lidar.</p>,45.4,2,2024-06-25T14:41:44.947Z
+1435995,SivaRamaKrishnaNV,297596,"<p>Dear <a class=""mention"" href=""/u/liuq1"">@liuq1</a>,<br>
+No. We do not have any sample to get bird eye view in DRIVE SW.<br>
+In case, you are looking to stitch two images, please see the discussion at <a href=""https://forums.developer.nvidia.com/t/dwimagetransformation-empty-lines-and-incorrect-colours/109500"" class=""inline-onebox"">dwImageTransformation empty lines and incorrect colours</a></p>",5.6,5,2024-06-25T13:49:30.767Z
+1436010,liuq1,297596,"<p>Thanks <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+The sample to get bird eye view is <strong>img_ldc</strong>, right?</p>",0.6,5,2024-06-25T14:36:17.827Z
+1435842,SivaRamaKrishnaNV,297567,"<aside class=""quote no-group"" data-username=""steven_cho"" data-post=""1"" data-topic=""297567"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" class=""avatar"" src=""https://global.discourse-cdn.com/nvidia/original/3X/d/2/d2a387bcc59afb6f6fc9281deb01d412675e26e6.png"" data-dominant-color=""DADBDA""> steven_cho:</div>
+<blockquote>
+<p>bash: ./sample_hello_world: cannot execute binary file: Exec format error</p>
+</blockquote>
+</aside>
+<p>It looks you have copied the x86 binary. Please confirm with <code>file</code> Linux command.<br>
+You can’t compile DW sample on target . For cross compiling samples on docker, please check <a href=""https://forums.developer.nvidia.com/t/setting-up-driveworks-5-14-on-the-drive-orin/297410/5"" class=""inline-onebox"">Setting up Driveworks 5.14 on the Drive Orin - #5 by SivaRamaKrishnaNV</a> if helps…</p>",1.2,6,2024-06-25T09:17:38.693Z
+1434821,SivaRamaKrishnaNV,297410,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+Please check <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/driveworks-nvsdk/nvsdk_dw_html/dwx_devguide_getting_started_drive_sdk_ngc_sdk_docker_container.html"" class=""inline-onebox"">DriveWorks SDK Reference: Getting Started Using the NVIDIA DRIVE OS NGC Docker Container</a></p>",6.8,10,2024-06-24T07:38:34.443Z
+1434874,akshay.tupkar,297410,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/4/9/a/49a16892558ada8d4ec3ffc673d6c5ebdb622fca.png"" data-download-href=""/uploads/short-url/avmFCWLZL4ZIPqR0zFZjx0IcCBs.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/a/49a16892558ada8d4ec3ffc673d6c5ebdb622fca_2_690x282.png"" alt=""image"" data-base62-sha1=""avmFCWLZL4ZIPqR0zFZjx0IcCBs"" width=""690"" height=""282"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/a/49a16892558ada8d4ec3ffc673d6c5ebdb622fca_2_690x282.png, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/a/49a16892558ada8d4ec3ffc673d6c5ebdb622fca_2_1035x423.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/a/49a16892558ada8d4ec3ffc673d6c5ebdb622fca_2_1380x564.png 2x"" data-dominant-color=""C2C3C3""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1383×567 45.3 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+This command is not working on my host. It is throwing an error as<br>
+""docker: Error response from daemon: could not select device driver "" "" with capabilities: [[gpu]]<br>
+Is this because of I dont have gpu on the host?<br>
+Do i need to execute the command ""# mkdir -p /home/nvidia/build-x86_64-linux-gnu</p>
+<h1><a name=""cmake-b-homenvidiabuild-x86_64-linux-gnu-s-usrlocaldriveworkssamples-in-docker-containers-terminal-1"" class=""anchor"" href=""#cmake-b-homenvidiabuild-x86_64-linux-gnu-s-usrlocaldriveworkssamples-in-docker-containers-terminal-1""></a>cmake -B /home/nvidia/build-x86_64-linux-gnu -S /usr/local/driveworks/samples"" in docker container’s terminal?</h1>
+<p>Will these sample be cross compiled after this command?</p>",1.8,10,2024-06-24T08:33:04.706Z
+1435070,SivaRamaKrishnaNV,297410,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+You need GPU on host to run DW samples. However, you can cross compile the DW samples for target from docker. Please find the instructions for cross compilation at <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/driveworks-nvsdk/nvsdk_dw_html/dwx_devguide_getting_started_drive_sdk_ngc_sdk_docker_container.html#dwx_devguide_getting_started_drive_sdk_ngc_sdk_docker_container_ndotsal_sccfs"" class=""inline-onebox"">DriveWorks SDK Reference: Getting Started Using the NVIDIA DRIVE OS NGC Docker Container</a></p>
+<p>I followed below commands to attach to docker and cross compile the DW samples to generate binaries.</p>
+<pre><code class=""lang-auto"">$sudo docker ps -a
+[sudo] password for ubuntu-machine:
+CONTAINER ID   IMAGE                                                                                              COMMAND       CREATED         STATUS                       PORTS     NAMES
+46966dcb02dd   nvcr.io/drive/driveos-sdk/drive-agx-orin-linux-aarch64-sdk-build-x86:latest                        ""/bin/bash""   6 months ago    Up 2 months                            exciting_heyrovsky
+$sudo docker attach 46966dcb02dd
+root@6.0.8.1-0006-build-linux-sdk:/# cd /home/nvidia/
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia#
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia# mkdir DW-build
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia# cmake -B /home/nvidia/DW-build/ -DCMAKE_TOOLCHAIN_FILE=/usr/local/driveworks/samples/cmake/Toolchain-V5L.cmake -DVIBRANTE_PDK=/drive/drive-linux -S /usr/local/driveworks-5.14/samples
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia# cd DW-build
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia/DW-build# make
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia/DW-build#cd /home/nvidia/DW-build/src/dnn/sample_object_detector_tracker
+root@6.0.8.1-0006-build-linux-sdk:/home/nvidia/DW-build/src/dnn/sample_object_detector_tracker# ls
+CMakeFiles  Makefile  cmake_install.cmake  sample_object_detector_tracker
+</code></pre>",11.8,10,2024-06-24T13:43:52.696Z
+1435586,akshay.tupkar,297410,"<p>Thanks <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I cross compiled the samples successfully on target</p>",1.6,9,2024-06-25T04:56:41.163Z
+1435598,akshay.tupkar,297410,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I ran the cmake command where my samples are located for ex. # /usr/local/driveworks/samples#. Is it right?</p>",1.6,9,2024-06-25T05:30:06.770Z
+1435603,SivaRamaKrishnaNV,297410,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+We suggest to create a seperate build folder and pass build folder as parameter to cmake using <code>-B</code> as commands shared above. This keep the original driveworks binaries intact and changes made in the sample are reflected in new build folder.</p>",6.6,9,2024-06-25T05:45:19.502Z
+1435680,akshay.tupkar,297410,"<p>Dear <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a><br>
+I have created a separate build folder under /home/nvidia/ but my doubt is do i need to execute that cmake -B command in the build directory which i have created or does it need to be executed at root@6.0.8.1-0006-build-linux-sdk:/usr/local/driveworks/samples# sudo cmake -B /home/nvidia/build-aarch64-linux-gnu -DCMAKE_TOOLCHAIN_FILE=/usr/local/driveworks/samples/cmake/Toolchain-V5L.cmake -DVIBRANTE_PDK=/drive/drive-linux -S /usr/local/driveworks/samples?</p>",1.2,6,2024-06-25T07:00:51.827Z
+1435690,SivaRamaKrishnaNV,297410,"<p>Dear <a class=""mention"" href=""/u/akshay.tupkar"">@akshay.tupkar</a>,<br>
+You can execute the command from any where.</p>",6.2,6,2024-06-25T07:06:33.321Z
+1435734,akshay.tupkar,297410,"<p>Okay Thanks <a class=""mention"" href=""/u/sivaramakrishnanv"">@SivaRamaKrishnaNV</a></p>",1.2,6,2024-06-25T07:33:03.799Z
+1435674,SivaRamaKrishnaNV,297534,"<aside class=""quote no-group"" data-username=""Alex-1"" data-post=""1"" data-topic=""297534"">
+<div class=""title"">
+<div class=""quote-controls""></div>
+<img loading=""lazy"" alt="""" width=""24"" height=""24"" src=""https://sea2.discourse-cdn.com/nvidia/user_avatar/forums.developer.nvidia.com/alex-1/48/344424_2.png"" class=""avatar""> Alex-1:</div>
+<blockquote>
+<p>libnvidia-ml.so</p>
+</blockquote>
+</aside>
+<p>It is removed from DRIVE OS 6.0.8.1 package.<br>
+Could you check <a href=""https://forums.developer.nvidia.com/t/pytorch-cuda11-4-on-6-0-8-1/272288/6"" class=""inline-onebox"">PyTorch + CUDA11.4 on 6.0.8.1 - #6 by SivaRamaKrishnaNV</a> if it helps?</p>",0.4,2,2024-06-25T06:58:14.541Z
