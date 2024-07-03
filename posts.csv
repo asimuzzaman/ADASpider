@@ -1,5 +1,510 @@
-post_id,title,views,like_count,created_at,last_posted_at,word_count,url,creator_username,participant_count,score,readers_count,body
-298254,Unable to compile drivework on orin,15,0,2024-07-01T09:25:13.166Z,2024-07-01T09:25:13.250Z,284,https://forums.developer.nvidia.com/t/unable-to-compile-drivework-on-orin,deng.shigang,1,0.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+post_id,title,views,like_count,created_at,last_posted_at,word_count,url,creator_username,participant_count,score,readers_count,tags,body
+298484,Coordinate system defined in egomotion sample,11,0,2024-07-03T06:56:28.978Z,2024-07-03T07:08:14.373Z,76,https://forums.developer.nvidia.com/t/coordinate-system-defined-in-egomotion-sample,akshay.tupkar,2,0.4,2,driveworks,"<p>Hi team,<br>
+I executed an Egomotion sample provided by driveworks. I have some doubts that are not cleared by looking at a code. In the output of egomotion sample, centre of a vehicle is considered as a reference point but I want to know with respect to what has it been considered?</p>"
+298398,Import Error: libopenblas.so.0: Cannot open shared object file: No such file or directory,35,0,2024-07-02T14:04:27.749Z,2024-07-03T06:47:11.005Z,1632,https://forums.developer.nvidia.com/t/import-error-libopenblas-so-0-cannot-open-shared-object-file-no-such-file-or-directory,m.sachin6,2,15.8,3,"cuda,driveos","<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> Linux</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager</p>
+<p>I have installed torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl. There are no errors during installation. But when I run import torch I am getting “Import Error: libopenblas.so.0: Cannot open shared object file: No such file or directory” this error.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/9/e/b/9eb9d1920a96bdf9b57ce9a8de9d2754000643ae.jpeg"" data-download-href=""/uploads/short-url/mE9yp6SXLMZ5h5f313nO6PjQMhw.jpeg?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/9/e/b/9eb9d1920a96bdf9b57ce9a8de9d2754000643ae_2_690x126.jpeg"" alt=""image"" data-base62-sha1=""mE9yp6SXLMZ5h5f313nO6PjQMhw"" width=""690"" height=""126"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/9/e/b/9eb9d1920a96bdf9b57ce9a8de9d2754000643ae_2_690x126.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/9/e/b/9eb9d1920a96bdf9b57ce9a8de9d2754000643ae_2_1035x189.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/9/e/b/9eb9d1920a96bdf9b57ce9a8de9d2754000643ae_2_1380x252.jpeg 2x"" data-dominant-color=""909089""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1920×352 132 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>Thanks in Advance.</p>"
+298331,How to use drivework to synchronize time with multiple cameras?,53,0,2024-07-02T01:48:20.176Z,2024-07-03T05:49:20.551Z,1440,https://forums.developer.nvidia.com/t/how-to-use-drivework-to-synchronize-time-with-multiple-cameras,deng.shigang,2,26.0,4,driveworks-cameras,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>How to use drivework to synchronize time with multiple cameras?</p>"
+298299,Nvidia DRIVE AGX Orin setup error state help,73,0,2024-07-01T16:26:26.813Z,2024-07-03T02:18:35.622Z,1452,https://forums.developer.nvidia.com/t/nvidia-drive-agx-orin-setup-error-state-help,chd,2,46.0,4,drive-platform-setup,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<hr>
+<h2><a name=""nvidia-drive-agx-orin-setup-help-1"" class=""anchor"" href=""#nvidia-drive-agx-orin-setup-help-1""></a>Nvidia DRIVE AGX Orin setup help</h2>
+<p>Note: SDK Manager 2.1.0.11682</p>
+<p>Hi, I’m tring to setup a Nvidia Drive AGX Orin following this steps found in : <a href=""https://developer.nvidia.com/drive/secure/drive-orin/drive-agx-orin-devkit-qsg-du-11049-001.pdf"" rel=""noopener nofollow ugc"">https://developer.nvidia.com/drive/secure/drive-orin/drive-agx-orin-devkit-qsg-du-11049-001.pdf</a></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/d/f/6dfc9e6daeeaa620eb55df5ff1421e09cfad7c02.png"" data-download-href=""/uploads/short-url/fGZhdrXSVdzV7zcAzsa0rTS4GOu.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/d/f/6dfc9e6daeeaa620eb55df5ff1421e09cfad7c02_2_690x419.png"" alt=""image"" data-base62-sha1=""fGZhdrXSVdzV7zcAzsa0rTS4GOu"" width=""690"" height=""419"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/6/d/f/6dfc9e6daeeaa620eb55df5ff1421e09cfad7c02_2_690x419.png, https://global.discourse-cdn.com/nvidia/original/4X/6/d/f/6dfc9e6daeeaa620eb55df5ff1421e09cfad7c02.png 1.5x, https://global.discourse-cdn.com/nvidia/original/4X/6/d/f/6dfc9e6daeeaa620eb55df5ff1421e09cfad7c02.png 2x"" data-dominant-color=""ECEDED""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">873×531 97.1 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>But when I get to step 8, instead of geeting any EULA agreement, I get the following error in the minicom terminal (dev/ttyACM1):</p>
+<pre><code class=""lang-auto"">*************** NvShell Initialization Start******************
+DRIVE-V6.0.4-P3710-AFW-Aurix-StepB-5.05.03
+Compilation date: Jul 16 2022, 01:07:14
+Enter 'help' to see the available commands.
+
+*************** NvShell Initialized  *************************
+ Press 'Enter' for NvShell prompt 
+*************************************************************
+
+
+MCU_FOH: E2E Initialized
+MCU_FOH: Initialization done
+INFO: MCU_PLTFPWRMGR: Power-on Triggered...
+MCU_FOH: SOC error pin is asserted
+ERROR: MCU_PLTFPWRMGR: Enable Pre-regulator Request failed ....Move to error state !
+INFO: MCU_SWC_FanControl: max_rpm fan1 : 0
+INFO: MCU_SWC_FanControl: maxrpm of fan1 has more than 50 percent deviation against rated maxrpm
+INFO: MCU_SWC_FanControl: max_rpm fan2 : 0
+INFO: MCU_SWC_FanControl: maxrpm of fan2 has more than 50 percent deviation against rated maxrpm
+</code></pre>
+<hr>
+<p>I don’t see any fan movement or LED or something on.</p>
+<p>I have the following connections:<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/f/e/6fe79b3c65ff536d9e3ffe3eae274a5f0c27ff18.jpeg"" data-download-href=""/uploads/short-url/fXXdfagjYr4sZJHMKrIzrxfTfXW.jpeg?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/6/f/e/6fe79b3c65ff536d9e3ffe3eae274a5f0c27ff18.jpeg"" alt=""image"" data-base62-sha1=""fXXdfagjYr4sZJHMKrIzrxfTfXW"" width=""632"" height=""500"" data-dominant-color=""5F757B""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">766×606 61.3 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>I tried also flashing the device with SDK Manager, but it also fails:<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/8/8/0/8802f0973d52b287e7920286f316a3d70be9490e.jpeg"" data-download-href=""/uploads/short-url/jpdexnyluHdlf7DOPLzUVd8FiJ8.jpeg?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/8/8/0/8802f0973d52b287e7920286f316a3d70be9490e_2_690x328.jpeg"" alt=""image"" data-base62-sha1=""jpdexnyluHdlf7DOPLzUVd8FiJ8"" width=""690"" height=""328"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/8/8/0/8802f0973d52b287e7920286f316a3d70be9490e_2_690x328.jpeg, https://global.discourse-cdn.com/nvidia/original/4X/8/8/0/8802f0973d52b287e7920286f316a3d70be9490e.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/original/4X/8/8/0/8802f0973d52b287e7920286f316a3d70be9490e.jpeg 2x"" data-dominant-color=""232223""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">778×370 76.8 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>Can someone help me find the way to solve this, please. Any documentation that can help me understand the problem. What does “Pre-regulator Request failed” refers to? Thanks in advance.</p>"
+296621,Camera bring up with NVSIPL,113,0,2024-06-17T01:52:22.195Z,2024-07-03T01:30:24.633Z,404,https://forums.developer.nvidia.com/t/camera-bring-up-with-nvsipl,tingguang.wang1,2,26.2,5,driveos-nvmedia,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello again.<br>
+Issue on NVSIPL exit operation, it’s easy to stuck when trying exit NVSIPL sample (camera is on) from default fullscreen mode.<br>
+Is that any safe measure to force the exit? (I don’t want to take risk to poweroff the board)</p>
+<p>BTW， I am still wanting for the answer to the HW/Software version mapping to the entron camera, please provide if possible, thanks!</p>
+<p>BRs<br>
+Tingguang</p>"
+298074,Doing device-tree overlays,73,0,2024-06-28T14:57:07.297Z,2024-07-03T00:45:59.898Z,287,https://forums.developer.nvidia.com/t/doing-device-tree-overlays,General_Radahn,2,80.8,3,drive-platform-configuration,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>I want to be able to change the soc_id on the device-tree Drive AGX Orin’s dynamically after boot or at some stage during boot. I know that I can do this by specifying the soc_id at bind partitions stage and flashing just the kernel dtb partition, but I need to be able to do this without flashing. Please advise on how to achieve this and if this is possible? Are device-tree  overlays supported by drive-os?</p>"
+297834,Unable to start up Sekonix SF3325-100 GMSL Camera on Drive AGX Orin,66,0,2024-06-27T07:54:20.022Z,2024-07-03T00:34:43.638Z,395,https://forums.developer.nvidia.com/t/unable-to-start-up-sekonix-sf3325-100-gmsl-camera-on-drive-agx-orin,kevin.kal,2,30.8,3,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+[*] DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+[*] Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+[*] other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello,</p>
+<p>We recently purchased 2x Sekonix SF3325-100. We were advised by Sekonix that the cameras are equipped with the MAX96705 Serializer and is compatible with MAX96712 Deserializer on Nvidia Drive AGX Orin.</p>
+<p>We were following the guide to setup camera link below:</p>
+<aside class=""onebox allowlistedgeneric"" data-onebox-src=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/camera_setup/ConnectingtheCameras12.html"">
+  <header class=""source"">
+      <img class=""site-icon"" src=""https://global.discourse-cdn.com/nvidia/original/4X/6/4/2/642d303a8b2a61febcc945bc42ffac9131cb1489.png"" data-dominant-color=""74B700"" width=""16"" height=""16"">
+
+      <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/camera_setup/ConnectingtheCameras12.html"" target=""_blank"" rel=""noopener nofollow ugc"">developer.nvidia.com</a>
+  </header>
+
+  <article class=""onebox-body"">
+    
+
+<h3><a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/camera_setup/ConnectingtheCameras12.html"" target=""_blank"" rel=""noopener nofollow ugc"">Connecting the Cameras | NVIDIA Docs</a></h3>
+
+  <p>Warning: The GMSL camera must be 8V tolerant. Refer to the platform datasheet for details on the electrical requirements for the GMSL camera. Always turn off main power before connecting or ...</p>
+
+
+  </article>
+
+  <div class=""onebox-metadata"">
+    
+    
+  </div>
+
+  <div style=""clear: both""></div>
+</aside>
+
+<p>After coping and pasting this command: “sudo ./nvsipl_camera --platform-config “V728S1-120V1-FWC_CPHY_x4” --link-enable-masks “0x0001 0x0000 0x0000 0x0000” -d 0”</p>
+<p>I got the following error on the terminal as shown in the screenshot below:</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b.png"" data-download-href=""/uploads/short-url/5qGOV82Y6DY5xGe5R8HEaYwtPU7.png?dl=1"" title=""Screenshot from 2024-06-27 08-46-58"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_690x388.png"" alt=""Screenshot from 2024-06-27 08-46-58"" data-base62-sha1=""5qGOV82Y6DY5xGe5R8HEaYwtPU7"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_1380x776.png 2x"" data-dominant-color=""36112A""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-27 08-46-58</span><span class=""informations"">1920×1080 235 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>Can you help us to set up the cameras for us?</p>
+<p>Thanks</p>"
+297292,"Understanding NvENC parameters, benchmarks & bitrate results when using nvm_iep_sci",127,0,2024-06-21T21:55:04.409Z,2024-07-02T20:21:41.443Z,1257,https://forums.developer.nvidia.com/t/understanding-nvenc-parameters-benchmarks-bitrate-results-when-using-nvm-iep-sci,samuel.ongzx,2,66.6,7,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hi NVIDIA Team,</p>
+<p>I am hoping to understand in the NvENC benchmarks (<code>MPix/s</code> &amp; <code>Max cumulative bitrate</code>). Currently, my setup is to encode 3-4 4K videos @ 30 fps, using HEVC (h265), either on the HP or UHP setting with the sample application <code>nvm_iep_sci</code>. I am getting some results and hoping to get some clarification to get a better understanding.</p>
+<p><strong>Results</strong><br>
+Encoding 4 different streams simultaneously using <code>.yuv</code> files of 4k resolution (100 frames / file), using UHP default settings, constant QP @ QP32, I am getting an average of 70 fps across 4 videos, with varying average bitrates of 60Mbps to 105Mbps (sample output from <code>nvm_iep_sci</code> below). Based on the benchmarks we got from NVIDIA (separate from the one below but using it as a reference), the cumulative bitrate should be somewhere in the order of 155Mbps for UHP of 3x 4k@30fps videos. However, if we were to sum the average / minimum bitrate of the 4 videos, it is well over 200Mbps which is much higher than the maximum cumulative bitrate.</p>
+<p>Additionally, if I were to encode 3 different streams using Constant Bitrate and specifying the <code>RCAverageBitrate</code> parameter = <code>50Mbps</code>, I am getting an average <code>60fps</code> across 3 streams, and an average bitrate of <code>150Mbps</code>. Summing all 3 streams bitrate puts the bitrate well over the maximum cumulative bitrate.</p>
+<p><strong>Questions</strong></p>
+<ol>
+<li>Is my understanding of maximum cumulative bitrate correct - <code>maximum cumulative bitrate / no. of streams = desired average bitrate per stream</code>? How does this benchmark number come into use when trying to encode the streams (is it used only in a certain encoding setting)?</li>
+<li>For the other benchmark number of <code>MPix/s</code>, how does it come into use when trying to encode the streams?</li>
+<li>What is the encoding (quality?) difference between <code>HQ</code>, <code>HP</code> &amp; <code>UHP</code> setting? We see that the default config files main difference is <code>H265EncPreset</code>, but it seems like the number of streams that NvENC can guarantee a 4k@30fps encoding differs significantly when changing the setting.</li>
+<li>What is the <code>EPFrameRateNum/Den</code> parameter used for - is it only useful for actual camera streams? How do you specify the output frame rate of the encoded streams (<code>.hevc</code>) files?</li>
+</ol>
+<p>Thanks in advance!</p>
+<p>Retrieved from NVIDIA Jetson AGX Orin Series datasheet<br>
+<img src=""https://global.discourse-cdn.com/nvidia/original/4X/0/b/a/0ba3054e1d0c1400b0368083c05d0e19e8c6adc9.png"" alt=""image"" data-base62-sha1=""1EWwolGkCvtNKekBePP7LTCXaMp"" width=""640"" height=""313""></p>
+<p>Sample output from <code>nvm_iep_sci</code><br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" data-download-href=""/uploads/short-url/e64KHsAjBdcXMlcUbHc3nYOol2X.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" alt=""image"" data-base62-sha1=""e64KHsAjBdcXMlcUbHc3nYOol2X"" width=""690"" height=""54"" data-dominant-color=""08313C""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">755×60 3.73 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
+298413,"How memory being managed by iGPU, and CPU on orin",25,0,2024-07-02T15:42:25.141Z,2024-07-02T16:30:36.166Z,158,https://forums.developer.nvidia.com/t/how-memory-being-managed-by-igpu-and-cpu-on-orin,MicroSW,2,30.6,2,"cuda,kernel,drive-misc","<p>Hi<br>
+I would like to know if it is possible to get the only GPU memory usage information? as I know GPU and CPU on Orin share the same memory over memory controller, I used torch.cuda.mem_get_info to get the memory consumption, but the information I got from this function is the same as one I got via htop/free -h.<br>
+I am wondering   torch.cuda.mem_get_info will return GPU+CPU memory usage information,  there is no possibility to get only GPU memory consumption. is this correct?</p>"
+297570,CPU pegasus xavier a doesn't start aymore,72,0,2024-06-25T09:24:12.527Z,2024-07-02T13:05:46.952Z,259,https://forums.developer.nvidia.com/t/cpu-pegasus-xavier-a-doesnt-start-aymore,erwin.rademakers,2,41.4,6,drive-platform-bootup,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hi, I get following error: CBB fault on my xavier a (pegasus). How can I revive it ? If not, is there a way to get the data from internal disk back ?</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e.jpeg"" data-download-href=""/uploads/short-url/17Tgwb9MUMQ1VTVMAc1M0vR1VSK.jpeg?dl=1"" title=""GetImage"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg"" alt=""GetImage"" data-base62-sha1=""17Tgwb9MUMQ1VTVMAc1M0vR1VSK"" width=""554"" height=""499"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_831x748.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_1108x998.jpeg 2x"" data-dominant-color=""B0B0B0""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">GetImage</span><span class=""informations"">1762×1588 216 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
+298288,GMSL2 link lock failure for MAX96712 (part 2),48,0,2024-07-01T14:54:12.297Z,2024-07-02T12:46:39.549Z,994,https://forums.developer.nvidia.com/t/gmsl2-link-lock-failure-for-max96712-part-2,jmanning2,2,10.8,3,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hi. I had previously posted <a href=""https://forums.developer.nvidia.com/t/gmsl2-link-lock-failure-for-max96712/287868"">here</a> about a link lock failure for MAX96712. I did not receive an answer from Nvidia before my post was automatically closed. Can I please get more information from Nvidia about possible mitigations for this issue?</p>
+<p>Thank you.</p>"
+295783,Enabling CAN Driver for Nvidia Drive AGX Orin,280,0,2024-06-10T14:05:26.302Z,2024-07-02T12:45:36.804Z,1416,https://forums.developer.nvidia.com/t/enabling-can-driver-for-nvidia-drive-agx-orin,chintan.patel2,2,59.8,23,driveos-can,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+[*] DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+[*] Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+[*] other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>We have the Nvidia Drive AGX Orin, along with the Vehicle Accessory kit. We want to test the CAN Communication on the Target Device(AGX Orin).</p>
+<aside class=""onebox allowlistedgeneric"" data-onebox-src=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CANDriver1.html"">
+  <header class=""source"">
+      <img class=""site-icon"" src=""https://global.discourse-cdn.com/nvidia/original/4X/4/b/f/4bf849cf02aedc66982a9e2f19b6740b87888a0c.png"" data-dominant-color=""74B700"" width=""16"" height=""16"">
+
+      <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CANDriver1.html"" target=""_blank"" rel=""noopener nofollow ugc"">developer.nvidia.com</a>
+  </header>
+
+  <article class=""onebox-body"">
+    
+
+<h3><a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CANDriver1.html"" target=""_blank"" rel=""noopener nofollow ugc"">CAN Driver | NVIDIA Docs</a></h3>
+
+  <p>Linux releases support two instances of NVIDIA Tegra Controller Area Network (TegraCAN). The CAN controller for Tegra family devices is the Bosch MTTCAN controller IP. TegraCAN provides two SocketCAN ...</p>
+
+
+  </article>
+
+  <div class=""onebox-metadata"">
+    
+    
+  </div>
+
+  <div style=""clear: both""></div>
+</aside>
+
+<p>We are following the above link to set up the CAN, however we are not sure how to set it up properly. Below are some of the screenshots of the steps that we are stuck on.</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f.png"" data-download-href=""/uploads/short-url/1789EPl1EWaPCqwkdVbfSSJICK3.png?dl=1"" title=""Screenshot from 2024-06-10 14-53-52"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_690x388.png"" alt=""Screenshot from 2024-06-10 14-53-52"" data-base62-sha1=""1789EPl1EWaPCqwkdVbfSSJICK3"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_1380x776.png 2x"" data-dominant-color=""C1C6BE""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-10 14-53-52</span><span class=""informations"">1920×1080 413 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7.png"" data-download-href=""/uploads/short-url/bmP4ZuDRY9JyzPv6KtGJDVIr8vd.png?dl=1"" title=""Screenshot from 2024-06-10 14-53-37"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_690x388.png"" alt=""Screenshot from 2024-06-10 14-53-37"" data-base62-sha1=""bmP4ZuDRY9JyzPv6KtGJDVIr8vd"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_1380x776.png 2x"" data-dominant-color=""C7CDC4""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-10 14-53-37</span><span class=""informations"">1920×1080 446 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>From the above screenshots the instructions are not pointing to where to enable the CAN Drivers on the Target device.</p>
+<p>Is there some files in the driveworks docker container that we need to transfer to the Target device? If so can you list them?</p>
+<p>Can you please help us in any way possible?</p>
+<p>Thanks in advance.</p>"
+296800,Nvmedia error when running lightnet sample with sf3325,82,0,2024-06-18T08:42:47.299Z,2024-07-02T12:43:42.148Z,267,https://forums.developer.nvidia.com/t/nvmedia-error-when-running-lightnet-sample-with-sf3325,tingguang.wang1,2,25.6,2,driveos-nvmedia,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>I tried to run DW 2.2 sample with default camera SF3325-100</p>
+<p>ERROR is provided when choose --input-type=camera</p>
+<p>Max96712 Rev 2 detected!<br>
+nvmedia: ERROR: MAX96712CheckLink: Config link(0) is not locked<br>
+nvmedia: ERROR: SetConfigLink: Failed to check config link lock 0, err = 1(Operation not permitted)<br>
+nvmedia: ERROR: Init: Failed to setup config link</p>
+<p>Does it related to the output-format? currently is raw, if so, how to enable ISP usage?</p>"
+296848,Trigger notification event / signal?,111,0,2024-06-18T14:33:02.043Z,2024-07-01T18:34:00.853Z,402,https://forums.developer.nvidia.com/t/trigger-notification-event-signal,collin.day,2,26.0,4,driveos,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>I was looking in the SDK API docs, but I don’t see anything - is there trigger received event in the system - similar to the signals in NvSiplPipelineNotifier that tells us when a trigger signal is received?</p>"
+298293,Updating kernel dtb with driveupdate,41,0,2024-07-01T15:27:14.703Z,2024-07-01T17:22:54.805Z,418,https://forums.developer.nvidia.com/t/updating-kernel-dtb-with-driveupdate,pablo.smith,2,20.6,2,driveos,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other<br>
+(using 6.0.9)</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> other</p>
+<p>I am trying to do just driveos kernel dtb updates with driveupdate (all nvidia provided samples and plugins are used)<br>
+The board is flashed with a different image before following these steps<br>
+Steps followed:<br>
+./make/bind_partitions -s 2 -b p3710-10-s05 linux<br>
+python3 ./tools/flashtools/bootburn/create_bsp_images.py -u A_1_kernel-dtb -b p3710-10-s05 -B qspi -r 1 -g $NV_WORKSPACE/bsp_image<br>
+python3 ./dupkg/dupkg.py gen --template dupkg_single_tegra_template --in TEGRA_A_SRC=$NV_WORKSPACE/bsp_image/642-63710-0010-000_TS5/flash-images/ --out $NV_WORKSPACE/dupkg<br>
+The output of create_bsp_images.py works and boots properly when we flash it with flash_bsp_images.py.<br>
+The dupkg from the same bsp_image when deployed however breaks the boot process to the other bootchain in MB2 with error:</p>
+<blockquote>
+<p>I&gt; Task: Load PVIT<br>
+I&gt; Partition name: B_pvit<br>
+I&gt; Size of partition: 262144<br>
+I&gt; Binary@ device:8/0 block-13636928 (partition size: 0x40000), name: B_pvit<br>
+E&gt; HeaderMagic Invalid<br>
+E&gt; data NVDA, header magic kernel-dtb<br>
+C&gt; Task 0x0 failed (err: 0x22220002)<br>
+E&gt; Top caller module: LOADER, error module: LOADER, reason: 0x02, aux_info: 0x00<br>
+I&gt; Busy Spin</p>
+</blockquote>
+<p>It looks like the PVIT is not valid after the driveupdate, but the USB flash method handles this case properly by doing some sort of partial PVIT update.</p>
+<p>Please advise on how to fix this?</p>
+<p>I am looking to use driveupdate to just deploy devicetree modifications without touching anything else in the image.</p>
+<p>Thank you in advance.</p>"
+298223,Image segmentation sample in driveworks 5.14,42,0,2024-07-01T05:27:08.149Z,2024-07-01T13:02:00.113Z,145,https://forums.developer.nvidia.com/t/image-segmentation-sample-in-driveworks-5-14,akshay.tupkar,2,25.8,4,driveworks,"<p>Hi,<br>
+Is there any sample provided for Image Segmentation in Driveworks 5.14 on Drive Orin?</p>"
+298254,Unable to compile drivework on orin,42,0,2024-07-01T09:25:13.166Z,2024-07-01T11:36:10.894Z,328,https://forums.developer.nvidia.com/t/unable-to-compile-drivework-on-orin,deng.shigang,2,11.0,4,driveworks,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -39,9 +544,7 @@ CMakeLists.txt:132 (find_package)</p>
 <p>– Configuring incomplete, errors occurred!<br>
 See also “/home/zhangzs/nvidia/driveworks/samples/build/CMakeFiles/CMakeOutput.log”.<br>
 See also “/home/zhangzs/nvidia/driveworks/samples/build/CMakeFiles/CMakeError.log”.</p>"
-298223,Image segmentation sample in driveworks 5.14,20,0,2024-07-01T05:27:08.149Z,2024-07-01T08:21:03.485Z,79,https://forums.developer.nvidia.com/t/image-segmentation-sample-in-driveworks-5-14,akshay.tupkar,2,25.6,2,"<p>Hi,<br>
-Is there any sample provided for Image Segmentation in Driveworks 5.14 on Drive Orin?</p>"
-298239,"When we read the image data from the camera, how do we save it as a png file?",19,0,2024-07-01T07:06:01.063Z,2024-07-01T07:44:36.424Z,242,https://forums.developer.nvidia.com/t/when-we-read-the-image-data-from-the-camera-how-do-we-save-it-as-a-png-file,deng.shigang,2,15.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+298239,"When we read the image data from the camera, how do we save it as a png file?",38,0,2024-07-01T07:06:01.063Z,2024-07-01T07:44:36.424Z,242,https://forums.developer.nvidia.com/t/when-we-read-the-image-data-from-the-camera-how-do-we-save-it-as-a-png-file,deng.shigang,2,15.8,4,driveworks-cameras,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -73,7 +576,7 @@ Is there any sample provided for Image Segmentation in Driveworks 5.14 on Drive 
 <p>dwCameraFrameHandle_t frameHandle = DW_NULL_HANDLE;<br>
 dwTime_t timeout = 33000;<br>
 status = dwSensorCamera_readFrame(&amp;frameHandle, timeout, cameraSensor);</p>"
-296816,Can't find driver for custom camera,97,0,2024-06-18T09:43:07.383Z,2024-07-01T02:48:17.881Z,407,https://forums.developer.nvidia.com/t/cant-find-driver-for-custom-camera,tingguang.wang1,2,11.2,5,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+296816,Can't find driver for custom camera,110,0,2024-06-18T09:43:07.383Z,2024-07-01T02:48:17.881Z,407,https://forums.developer.nvidia.com/t/cant-find-driver-for-custom-camera,tingguang.wang1,2,11.2,5,driveos-nvmedia,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -103,7 +606,7 @@ It looks nvmedia found the camera type but driver is missing<br>
 nvmedia: ERROR: ImgGetDevice: Can’t find driver for ref_max96712_9295_ar0820f008a120bm0a</p>
 <p>camera is entron f008a120bm0a<br>
 Please let me know what file need to add and where to put, thanks!</p>"
-298073,PKCS11 Sample returning CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED error,65,0,2024-06-28T14:57:02.569Z,2024-07-01T01:47:53.039Z,736,https://forums.developer.nvidia.com/t/pkcs11-sample-returning-ckf-nvidia-secure-storage-not-provisioned-error,ricardo.gonzalez1,2,35.8,3,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+298073,PKCS11 Sample returning CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED error,85,0,2024-06-28T14:57:02.569Z,2024-07-01T01:47:53.039Z,736,https://forums.developer.nvidia.com/t/pkcs11-sample-returning-ckf-nvidia-secure-storage-not-provisioned-error,ricardo.gonzalez1,2,35.8,3,driveos,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -178,36 +681,7 @@ CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED</p>
 <hr>
 <p>Based on this information, it appears that the example is intended to run on QNX and not Linux if the TrustZone Secure Environment (TZ-SE) is required. The code and documentation indicate that TZ-SE is not supported on Linux.</p>
 <p>So, I am writing to confirm whether TZ-SE is indeed not supported on Linux, or if I might be missing an initial setup or configuration? Additionally, do you know if there is a way to add GID custom abilities on Linux similar to the QNX README instructions?</p>"
-298074,Doing device-tree overlays,50,0,2024-06-28T14:57:07.297Z,2024-07-01T01:40:25.920Z,252,https://forums.developer.nvidia.com/t/doing-device-tree-overlays,General_Radahn,2,35.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
-<strong>Software Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Target Operating System</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Hardware Platform</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>SDK Manager Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
-<p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>I want to be able to change the soc_id on the device-tree Drive AGX Orin’s dynamically after boot or at some stage during boot. I know that I can do this by specifying the soc_id at bind partitions stage and flashing just the kernel dtb partition, but I need to be able to do this without flashing. Please advise on how to achieve this and if this is possible? Are device-tree  overlays supported by drive-os?</p>"
-296861,Bounding box sample application location details,150,1,2024-06-18T16:27:59.132Z,2024-06-28T20:56:48.129Z,1196,https://forums.developer.nvidia.com/t/bounding-box-sample-application-location-details,chris.hoffman,2,31.4,7,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+296861,Bounding box sample application location details,156,1,2024-06-18T16:27:59.132Z,2024-06-28T20:56:48.129Z,1196,https://forums.developer.nvidia.com/t/bounding-box-sample-application-location-details,chris.hoffman,2,31.6,7,driveworks,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -242,7 +716,7 @@ CKF_NVIDIA_SECURE_STORAGE_NOT_PROVISIONED</p>
 <li>Where is the location of this bounding box sample application with instructions?</li>
 </ol>
 <p>Thank you!</p>"
-296779,CNvMBlockingQueue.hpp 151 - Queue is full,99,0,2024-06-18T05:48:42.254Z,2024-06-28T19:03:30.655Z,342,https://forums.developer.nvidia.com/t/cnvmblockingqueue-hpp-151-queue-is-full,collin.day,2,15.6,2,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+296779,CNvMBlockingQueue.hpp 151 - Queue is full,107,0,2024-06-18T05:48:42.254Z,2024-06-28T19:03:30.655Z,342,https://forums.developer.nvidia.com/t/cnvmblockingqueue-hpp-151-queue-is-full,collin.day,2,15.8,3,driveos,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -277,99 +751,9 @@ Jun 18 05:42:33 charlie-b test_sipl[1207178]: [10795468613151] Module_id 30 Seve
 </code></pre>
 <p>But I can’t find this in the SDK anywhere.  What does this typically mean?</p>
 <p>Thanks!</p>"
-296848,Trigger notification event / signal?,97,0,2024-06-18T14:33:02.043Z,2024-06-28T19:00:21.870Z,310,https://forums.developer.nvidia.com/t/trigger-notification-event-signal,collin.day,2,25.8,3,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
-<strong>Software Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Target Operating System</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> Linux<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
-<p><strong>Hardware Platform</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>SDK Manager Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
-<p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>I was looking in the SDK API docs, but I don’t see anything - is there trigger received event in the system - similar to the signals in NvSiplPipelineNotifier that tells us when a trigger signal is received?</p>"
-298033,How to integrate new sensor which is not listed in nvidia drive orin list?,52,0,2024-06-28T09:21:52.553Z,2024-06-28T09:55:03.497Z,69,https://forums.developer.nvidia.com/t/how-to-integrate-new-sensor-which-is-not-listed-in-nvidia-drive-orin-list,akshay.tupkar,2,15.8,5,"<p>Hi,<br>
+298033,How to integrate new sensor which is not listed in nvidia drive orin list?,56,0,2024-06-28T09:21:52.553Z,2024-06-28T09:55:03.497Z,69,https://forums.developer.nvidia.com/t/how-to-integrate-new-sensor-which-is-not-listed-in-nvidia-drive-orin-list,akshay.tupkar,2,16.2,5,driveworks,"<p>Hi,<br>
 I am working on NVIDIA DRIVE ORIN, how can we integrate new sensor which is not listed in the list?</p>"
-295783,Enabling CAN Driver for Nvidia Drive AGX Orin,259,0,2024-06-10T14:05:26.302Z,2024-06-28T09:14:10.760Z,1273,https://forums.developer.nvidia.com/t/enabling-can-driver-for-nvidia-drive-agx-orin,chintan.patel2,2,49.4,22,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
-<strong>Software Version</strong><br>
-[*] DRIVE OS 6.0.8.1<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Target Operating System</strong><br>
-[*] Linux<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Hardware Platform</strong><br>
-[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>SDK Manager Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
-[*] other</p>
-<p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
-[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>We have the Nvidia Drive AGX Orin, along with the Vehicle Accessory kit. We want to test the CAN Communication on the Target Device(AGX Orin).</p>
-<aside class=""onebox allowlistedgeneric"" data-onebox-src=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CANDriver1.html"">
-  <header class=""source"">
-      <img class=""site-icon"" src=""https://global.discourse-cdn.com/nvidia/original/4X/4/b/f/4bf849cf02aedc66982a9e2f19b6740b87888a0c.png"" data-dominant-color=""74B700"" width=""16"" height=""16"">
-
-      <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CANDriver1.html"" target=""_blank"" rel=""noopener nofollow ugc"">developer.nvidia.com</a>
-  </header>
-
-  <article class=""onebox-body"">
-    
-
-<h3><a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/sys_components/CANDriver1.html"" target=""_blank"" rel=""noopener nofollow ugc"">CAN Driver | NVIDIA Docs</a></h3>
-
-  <p>Linux releases support two instances of NVIDIA Tegra Controller Area Network (TegraCAN). The CAN controller for Tegra family devices is the Bosch MTTCAN controller IP. TegraCAN provides two SocketCAN ...</p>
-
-
-  </article>
-
-  <div class=""onebox-metadata"">
-    
-    
-  </div>
-
-  <div style=""clear: both""></div>
-</aside>
-
-<p>We are following the above link to set up the CAN, however we are not sure how to set it up properly. Below are some of the screenshots of the steps that we are stuck on.</p>
-<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f.png"" data-download-href=""/uploads/short-url/1789EPl1EWaPCqwkdVbfSSJICK3.png?dl=1"" title=""Screenshot from 2024-06-10 14-53-52"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_690x388.png"" alt=""Screenshot from 2024-06-10 14-53-52"" data-base62-sha1=""1789EPl1EWaPCqwkdVbfSSJICK3"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/d/07d08c7663b227ec4964e4d5b8ec9fa0023f376f_2_1380x776.png 2x"" data-dominant-color=""C1C6BE""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-10 14-53-52</span><span class=""informations"">1920×1080 413 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
-<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7.png"" data-download-href=""/uploads/short-url/bmP4ZuDRY9JyzPv6KtGJDVIr8vd.png?dl=1"" title=""Screenshot from 2024-06-10 14-53-37"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_690x388.png"" alt=""Screenshot from 2024-06-10 14-53-37"" data-base62-sha1=""bmP4ZuDRY9JyzPv6KtGJDVIr8vd"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/4/f/a/4fac65cf0900107ee15da9e2cb7a717db93c1ab7_2_1380x776.png 2x"" data-dominant-color=""C7CDC4""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-10 14-53-37</span><span class=""informations"">1920×1080 446 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
-<p>From the above screenshots the instructions are not pointing to where to enable the CAN Drivers on the Target device.</p>
-<p>Is there some files in the driveworks docker container that we need to transfer to the Target device? If so can you list them?</p>
-<p>Can you please help us in any way possible?</p>
-<p>Thanks in advance.</p>"
-296681,CSI capture RCE Traces log,115,0,2024-06-17T11:13:05.671Z,2024-06-28T07:02:30.663Z,274,https://forums.developer.nvidia.com/t/csi-capture-rce-traces-log,quang.huy.dang,3,26.8,8,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+296681,CSI capture RCE Traces log,119,0,2024-06-17T11:13:05.671Z,2024-06-28T07:02:30.663Z,274,https://forums.developer.nvidia.com/t/csi-capture-rce-traces-log,quang.huy.dang,3,26.8,8,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -402,7 +786,7 @@ I am working on NVIDIA DRIVE ORIN, how can we integrate new sensor which is not 
 <p>It doc said to send the traces to NVIDIA for further analysis.<br>
 You can find below the RTE Traces file attached.<br>
 <a class=""attachment"" href=""/uploads/short-url/vnj4M1iOxGFTzcCrC9MDCd66VS6.txt"">trace.txt</a> (1.8 KB)</p>"
-292910,[BUG] cgf helloworld sample nvsci+interprocess communication hangs with exception error,529,2,2024-05-15T03:35:46.832Z,2024-06-28T05:32:31.355Z,5402,https://forums.developer.nvidia.com/t/bug-cgf-helloworld-sample-nvsci-interprocess-communication-hangs-with-exception-error,lizhensheng,2,102.6,13,"<p><strong>Required Info:</strong></p>
+292910,[BUG] cgf helloworld sample nvsci+interprocess communication hangs with exception error,544,2,2024-05-15T03:35:46.832Z,2024-06-28T05:32:31.355Z,5402,https://forums.developer.nvidia.com/t/bug-cgf-helloworld-sample-nvsci-interprocess-communication-hangs-with-exception-error,lizhensheng,2,102.8,13,driveworks-cgf,"<p><strong>Required Info:</strong></p>
 <ul>
 <li>Software Version<br>
 [ x ] DRIVE OS 6.0.8.1</li>
@@ -545,7 +929,7 @@ Stack trace (most recent call last):
 <li>Please the forum reproduce the issue with the official minimal helloworld sample.</li>
 <li>Please provide the correct way to use the nvsci channel in dwcgf, and all needed infomation to help us run dwcgf well.</li>
 </ol>"
-296138,Gdm display manager does not automatically come up when Orin is turned on,162,0,2024-06-12T17:20:20.973Z,2024-06-28T05:09:09.705Z,809,https://forums.developer.nvidia.com/t/gdm-display-manager-does-not-automatically-come-up-when-orin-is-turned-on,chris.hoffman,3,31.8,8,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+296138,Gdm display manager does not automatically come up when Orin is turned on,168,0,2024-06-12T17:20:20.973Z,2024-06-28T05:09:09.705Z,809,https://forums.developer.nvidia.com/t/gdm-display-manager-does-not-automatically-come-up-when-orin-is-turned-on,chris.hoffman,3,46.8,9,drive-platform-bootup,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -575,52 +959,7 @@ Stack trace (most recent call last):
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
 <p>Hello,</p>
 <p>Is there a script to run / command to run for bringing up the display manager on boot up? For some reason our ORIN is always in the state of display manager being stopped and will only come up after running <code>sudo systemctl start gdm</code>. Previously, Ubuntu desktop login screen would automatically show when Orin is switched on.</p>"
-297292,"Understanding NvENC parameters, benchmarks & bitrate results when using nvm_iep_sci",104,0,2024-06-21T21:55:04.409Z,2024-06-27T21:13:25.374Z,935,https://forums.developer.nvidia.com/t/understanding-nvenc-parameters-benchmarks-bitrate-results-when-using-nvm-iep-sci,samuel.ongzx,2,51.4,6,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
-<strong>Software Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Target Operating System</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Hardware Platform</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>SDK Manager Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
-<p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>Hi NVIDIA Team,</p>
-<p>I am hoping to understand in the NvENC benchmarks (<code>MPix/s</code> &amp; <code>Max cumulative bitrate</code>). Currently, my setup is to encode 3-4 4K videos @ 30 fps, using HEVC (h265), either on the HP or UHP setting with the sample application <code>nvm_iep_sci</code>. I am getting some results and hoping to get some clarification to get a better understanding.</p>
-<p><strong>Results</strong><br>
-Encoding 4 different streams simultaneously using <code>.yuv</code> files of 4k resolution (100 frames / file), using UHP default settings, constant QP @ QP32, I am getting an average of 70 fps across 4 videos, with varying average bitrates of 60Mbps to 105Mbps (sample output from <code>nvm_iep_sci</code> below). Based on the benchmarks we got from NVIDIA (separate from the one below but using it as a reference), the cumulative bitrate should be somewhere in the order of 155Mbps for UHP of 3x 4k@30fps videos. However, if we were to sum the average / minimum bitrate of the 4 videos, it is well over 200Mbps which is much higher than the maximum cumulative bitrate.</p>
-<p>Additionally, if I were to encode 3 different streams using Constant Bitrate and specifying the <code>RCAverageBitrate</code> parameter = <code>50Mbps</code>, I am getting an average <code>60fps</code> across 3 streams, and an average bitrate of <code>150Mbps</code>. Summing all 3 streams bitrate puts the bitrate well over the maximum cumulative bitrate.</p>
-<p><strong>Questions</strong></p>
-<ol>
-<li>Is my understanding of maximum cumulative bitrate correct - <code>maximum cumulative bitrate / no. of streams = desired average bitrate per stream</code>? How does this benchmark number come into use when trying to encode the streams (is it used only in a certain encoding setting)?</li>
-<li>For the other benchmark number of <code>MPix/s</code>, how does it come into use when trying to encode the streams?</li>
-<li>What is the encoding (quality?) difference between <code>HQ</code>, <code>HP</code> &amp; <code>UHP</code> setting? We see that the default config files main difference is <code>H265EncPreset</code>, but it seems like the number of streams that NvENC can guarantee a 4k@30fps encoding differs significantly when changing the setting.</li>
-<li>What is the <code>EPFrameRateNum/Den</code> parameter used for - is it only useful for actual camera streams? How do you specify the output frame rate of the encoded streams (<code>.hevc</code>) files?</li>
-</ol>
-<p>Thanks in advance!</p>
-<p>Retrieved from NVIDIA Jetson AGX Orin Series datasheet<br>
-<img src=""https://global.discourse-cdn.com/nvidia/original/4X/0/b/a/0ba3054e1d0c1400b0368083c05d0e19e8c6adc9.png"" alt=""image"" data-base62-sha1=""1EWwolGkCvtNKekBePP7LTCXaMp"" width=""640"" height=""313""></p>
-<p>Sample output from <code>nvm_iep_sci</code><br>
-<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" data-download-href=""/uploads/short-url/e64KHsAjBdcXMlcUbHc3nYOol2X.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/c/62ce48ab3b05c810d7b2a21b433c14a977b5252b.png"" alt=""image"" data-base62-sha1=""e64KHsAjBdcXMlcUbHc3nYOol2X"" width=""690"" height=""54"" data-dominant-color=""08313C""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">755×60 3.73 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
-297833,MAX96712 Pattern Generator display,58,0,2024-06-27T07:28:10.447Z,2024-06-27T09:51:19.101Z,349,https://forums.developer.nvidia.com/t/max96712-pattern-generator-display,quang.huy.dang,2,21.0,4,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297833,MAX96712 Pattern Generator display,63,0,2024-06-27T07:28:10.447Z,2024-06-27T09:51:19.101Z,349,https://forums.developer.nvidia.com/t/max96712-pattern-generator-display,quang.huy.dang,2,26.0,4,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -656,7 +995,7 @@ I don’t know if this is the expected behavior.</p>
 <code>sudo ./nvsipl_camera --platform-config ""MAX96712_RAW12_TPG_DPHY_x4"" --link-enable-masks ""0x0001 0x0000 0x0000 0x0000""  -v 4 -0 -1 -2 --enableRawOutput --showfps -d 1</code></p>
 <p>This is the log when I launch the application:<br>
 <a class=""attachment"" href=""/uploads/short-url/5vskjLmOD0eCMfbjcjsTwjqWb1f.txt"">MAX96712_TPG.txt</a> (183.1 KB)</p>"
-294940,Trtexec Error：Could not find any implementation for node,231,1,2024-06-03T04:25:47.600Z,2024-06-27T08:57:38.354Z,599,https://forums.developer.nvidia.com/t/trtexec-error-could-not-find-any-implementation-for-node,HIENG_NS,2,92.4,11,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+294940,Trtexec Error：Could not find any implementation for node,239,1,2024-06-03T04:25:47.600Z,2024-06-27T08:57:38.354Z,599,https://forums.developer.nvidia.com/t/trtexec-error-could-not-find-any-implementation-for-node,HIENG_NS,2,97.4,12,driveos-dl,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -700,68 +1039,7 @@ I have confirmed that it works correctly when I run the onnx model.</p>
 <p>The TensorRT version on DRIVE OS 6.0.8.1 is 8.6.11.</p>
 <p>The execution location is Orin’s /usr/src/tensorrt/bin</p>
 <p>How can I solve it?</p>"
-297834,Unable to start up Sekonix SF3325-100 GMSL Camera on Drive AGX Orin,43,0,2024-06-27T07:54:20.022Z,2024-06-27T08:12:15.552Z,313,https://forums.developer.nvidia.com/t/unable-to-start-up-sekonix-sf3325-100-gmsl-camera-on-drive-agx-orin,kevin.kal,2,20.8,3,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
-<strong>Software Version</strong><br>
-[*] DRIVE OS 6.0.8.1<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Target Operating System</strong><br>
-[*] Linux<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Hardware Platform</strong><br>
-[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>SDK Manager Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
-[*] other</p>
-<p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
-[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>Hello,</p>
-<p>We recently purchased 2x Sekonix SF3325-100. We were advised by Sekonix that the cameras are equipped with the MAX96705 Serializer and is compatible with MAX96712 Deserializer on Nvidia Drive AGX Orin.</p>
-<p>We were following the guide to setup camera link below:</p>
-<aside class=""onebox allowlistedgeneric"" data-onebox-src=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/camera_setup/ConnectingtheCameras12.html"">
-  <header class=""source"">
-      <img class=""site-icon"" src=""https://global.discourse-cdn.com/nvidia/original/4X/6/4/2/642d303a8b2a61febcc945bc42ffac9131cb1489.png"" data-dominant-color=""74B700"" width=""16"" height=""16"">
-
-      <a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/camera_setup/ConnectingtheCameras12.html"" target=""_blank"" rel=""noopener nofollow ugc"">developer.nvidia.com</a>
-  </header>
-
-  <article class=""onebox-body"">
-    
-
-<h3><a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.8.1/public/drive-os-linux-sdk/common/topics/camera_setup/ConnectingtheCameras12.html"" target=""_blank"" rel=""noopener nofollow ugc"">Connecting the Cameras | NVIDIA Docs</a></h3>
-
-  <p>Warning: The GMSL camera must be 8V tolerant. Refer to the platform datasheet for details on the electrical requirements for the GMSL camera. Always turn off main power before connecting or ...</p>
-
-
-  </article>
-
-  <div class=""onebox-metadata"">
-    
-    
-  </div>
-
-  <div style=""clear: both""></div>
-</aside>
-
-<p>After coping and pasting this command: “sudo ./nvsipl_camera --platform-config “V728S1-120V1-FWC_CPHY_x4” --link-enable-masks “0x0001 0x0000 0x0000 0x0000” -d 0”</p>
-<p>I got the following error on the terminal as shown in the screenshot below:</p>
-<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b.png"" data-download-href=""/uploads/short-url/5qGOV82Y6DY5xGe5R8HEaYwtPU7.png?dl=1"" title=""Screenshot from 2024-06-27 08-46-58"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_690x388.png"" alt=""Screenshot from 2024-06-27 08-46-58"" data-base62-sha1=""5qGOV82Y6DY5xGe5R8HEaYwtPU7"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/2/6/0/260f40887f06c6227ef7130d68579830635ee17b_2_1380x776.png 2x"" data-dominant-color=""36112A""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-27 08-46-58</span><span class=""informations"">1920×1080 235 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
-<p>Can you help us to set up the cameras for us?</p>
-<p>Thanks</p>"
-297808,"Install ros2 , but find dependency issue",50,0,2024-06-27T02:54:43.585Z,2024-06-27T05:54:35.442Z,269,https://forums.developer.nvidia.com/t/install-ros2-but-find-dependency-issue,tonyb.zhao,2,10.8,4,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297808,"Install ros2 , but find dependency issue",57,0,2024-06-27T02:54:43.585Z,2024-06-27T05:54:35.442Z,269,https://forums.developer.nvidia.com/t/install-ros2-but-find-dependency-issue,tonyb.zhao,2,16.0,6,ros,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -789,9 +1067,9 @@ I have confirmed that it works correctly when I run the onnx model.</p>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
 [✔] other（native Ubuntu Linux 20.04: deb install ）</p>"
-297564,Installing tegrastats GUI,101,0,2024-06-25T08:49:37.680Z,2024-06-27T05:51:21.434Z,633,https://forums.developer.nvidia.com/t/installing-tegrastats-gui,akshay.tupkar,2,21.2,6,"<p>Hi team,<br>
+297564,Installing tegrastats GUI,112,0,2024-06-25T08:49:37.680Z,2024-06-27T05:51:21.434Z,633,https://forums.developer.nvidia.com/t/installing-tegrastats-gui,akshay.tupkar,2,31.4,6,driveos,"<p>Hi team,<br>
 I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to view the statistics in graphical view?</p>"
-297702,How to configure the rig file for camera?,60,0,2024-06-26T09:20:36.265Z,2024-06-27T00:42:51.490Z,263,https://forums.developer.nvidia.com/t/how-to-configure-the-rig-file-for-camera,deng.shigang,2,15.6,5,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297702,How to configure the rig file for camera?,66,0,2024-06-26T09:20:36.265Z,2024-06-27T00:42:51.490Z,263,https://forums.developer.nvidia.com/t/how-to-configure-the-rig-file-for-camera,deng.shigang,2,21.2,5,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -824,7 +1102,7 @@ I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to vie
 <a class=""attachment"" href=""/uploads/short-url/x6ZKTy5QwbRIPvAlqRbbgw6wq7t.txt"">sample_camera_out.txt</a> (25.9 KB)<br>
 <a class=""attachment"" href=""/uploads/short-url/hXk5r4MaeOFk8Y5kVajOdKRMloG.txt"">sipl_query_out.txt</a> (25.7 KB)<br>
 <a class=""attachment"" href=""/uploads/short-url/i3DwCpc6PMbbm6r2SxY5rrjWUDk.txt"">rig.txt</a> (1.2 KB)</p>"
-297710,Configuring External SSD to work with Drive Unit,46,0,2024-06-26T09:49:23.084Z,2024-06-26T10:16:26.907Z,208,https://forums.developer.nvidia.com/t/configuring-external-ssd-to-work-with-drive-unit,chintan.patel2,2,10.8,4,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297710,Configuring External SSD to work with Drive Unit,48,0,2024-06-26T09:49:23.084Z,2024-06-26T10:16:26.907Z,208,https://forums.developer.nvidia.com/t/configuring-external-ssd-to-work-with-drive-unit,chintan.patel2,2,16.0,4,drive-platform-configuration,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -855,9 +1133,9 @@ I have tegrastats running on DRIVE Orin. Is there any tool for tegrastats to vie
 <p>We currently possess Nvidia Drive AGX Orin, we want to configure an External SSD to work with the drive unit, since the storage on the drive is limited.</p>
 <p>Can you please help us in any way possible?</p>
 <p>Thanks in advance.</p>"
-297580,Sample related to sensor fusion on drive orin,64,0,2024-06-25T10:55:11.523Z,2024-06-26T05:09:18.471Z,44,https://forums.developer.nvidia.com/t/sample-related-to-sensor-fusion-on-drive-orin,akshay.tupkar,2,1.0,4,"<p>Hi,<br>
+297580,Sample related to sensor fusion on drive orin,69,0,2024-06-25T10:55:11.523Z,2024-06-26T05:09:18.471Z,44,https://forums.developer.nvidia.com/t/sample-related-to-sensor-fusion-on-drive-orin,akshay.tupkar,2,11.0,5,driveworks,"<p>Hi,<br>
 I am working on DRIVE Orin platform. I want to know if there is any module or sample provided for sensor fusion?</p>"
-297003,DRIVE AGX ORIN: New partition,106,0,2024-06-19T20:32:35.547Z,2024-06-26T04:37:21.521Z,1305,https://forums.developer.nvidia.com/t/drive-agx-orin-new-partition,mac.pinnock,2,47.2,13,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297003,DRIVE AGX ORIN: New partition,113,0,2024-06-19T20:32:35.547Z,2024-06-26T04:37:21.521Z,1305,https://forums.developer.nvidia.com/t/drive-agx-orin-new-partition,mac.pinnock,2,57.8,13,driveos,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -986,7 +1264,7 @@ OSError: 46
 </ol>
 <p>The whole idea is to create a new partition that can be mounted in a new directory in the rootfs called /data.</p>
 <p>I could not find the documentation on how to do something like that. Does somebody know how I can do something like that?</p>"
-297277,Connection Issue while connecting Velodyne Lidar VLP-16,107,1,2024-06-21T17:02:08.722Z,2024-06-25T14:41:44.947Z,636,https://forums.developer.nvidia.com/t/connection-issue-while-connecting-velodyne-lidar-vlp-16,prit.shah,2,20.8,3,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297277,Connection Issue while connecting Velodyne Lidar VLP-16,111,1,2024-06-21T17:02:08.722Z,2024-06-25T14:41:44.947Z,636,https://forums.developer.nvidia.com/t/connection-issue-while-connecting-velodyne-lidar-vlp-16,prit.shah,2,25.8,3,driveworks-lidar,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 [*] DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -1023,7 +1301,7 @@ OSError: 46
 <div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6.jpeg"" data-download-href=""/uploads/short-url/oMSQ13vW5QrMXOJGMrcw4r40yuq.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_437x500.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53"" data-base62-sha1=""oMSQ13vW5QrMXOJGMrcw4r40yuq"" width=""437"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_437x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_655x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/a/d/b/adbacf1f86aac8f05266dd210820d373437485c6_2_874x1000.jpeg 2x"" data-dominant-color=""BCBEBD""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53</span><span class=""informations"">1792×2048 645 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
 <div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1.jpeg"" data-download-href=""/uploads/short-url/2wT0lKAP6KPUPTzXVgFlCKwVnc5.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53 (2)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_690x388.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53 (2)"" data-base62-sha1=""2wT0lKAP6KPUPTzXVgFlCKwVnc5"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_690x388.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_1035x582.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/1/1/b/11bc0c02bb9f74a409882765e89d700e1f846dc1_2_1380x776.jpeg 2x"" data-dominant-color=""AEACA6""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53 (2)</span><span class=""informations"">2016×1134 378 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
 <div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b.jpeg"" data-download-href=""/uploads/short-url/at2QSlgDv5AMUxmup0jMnTWrcUz.jpeg?dl=1"" title=""WhatsApp Image 2024-06-21 at 17.36.53 (3)"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_690x435.jpeg"" alt=""WhatsApp Image 2024-06-21 at 17.36.53 (3)"" data-base62-sha1=""at2QSlgDv5AMUxmup0jMnTWrcUz"" width=""690"" height=""435"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_690x435.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_1035x652.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/4/9/5/495e481a3aa67299d6c86b316641542ca181cf8b_2_1380x870.jpeg 2x"" data-dominant-color=""908C89""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">WhatsApp Image 2024-06-21 at 17.36.53 (3)</span><span class=""informations"">1786×1126 153 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
-297596,About bird's-eye view image sample code,62,0,2024-06-25T13:29:38.019Z,2024-06-25T14:36:17.827Z,181,https://forums.developer.nvidia.com/t/about-birds-eye-view-image-sample-code,liuq1,2,25.8,6,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+297596,About bird's-eye view image sample code,71,0,2024-06-25T13:29:38.019Z,2024-06-25T14:36:17.827Z,181,https://forums.developer.nvidia.com/t/about-birds-eye-view-image-sample-code,liuq1,2,31.4,6,driveos-nvmedia,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
@@ -1049,33 +1327,7 @@ OSError: 46
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
 <p>Hi experts,<br>
 Is there an example code in NvMedia that converts fish eye images from different directions into a panoramic bird’s-eye view.</p>"
-297570,CPU pegasus xavier a doesn't start aymore,50,0,2024-06-25T09:24:12.527Z,2024-06-25T09:24:12.595Z,142,https://forums.developer.nvidia.com/t/cpu-pegasus-xavier-a-doesnt-start-aymore,erwin.rademakers,1,35.6,3,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
-<strong>Software Version</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Target Operating System</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Hardware Platform</strong><br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>SDK Manager Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> 1.9.1.10844<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p><strong>Host Machine Version</strong><br>
-<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
-<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
-<p>Hi, I get following error: CBB fault on my xavier a (pegasus). How can I revive it ? If not, is there a way to get the data from internal disk back ?</p>
-<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e.jpeg"" data-download-href=""/uploads/short-url/17Tgwb9MUMQ1VTVMAc1M0vR1VSK.jpeg?dl=1"" title=""GetImage"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg"" alt=""GetImage"" data-base62-sha1=""17Tgwb9MUMQ1VTVMAc1M0vR1VSK"" width=""554"" height=""499"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_554x499.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_831x748.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/7/e/07e689944f544806cab80393a27841e3f1189c8e_2_1108x998.jpeg 2x"" data-dominant-color=""B0B0B0""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">GetImage</span><span class=""informations"">1762×1588 216 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>"
-297567,DriveWorks sample can't execute on the target platform,69,0,2024-06-25T09:09:13.266Z,2024-06-25T09:17:38.693Z,296,https://forums.developer.nvidia.com/t/driveworks-sample-cant-execute-on-the-target-platform,steven_cho,2,46.4,6,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+297567,DriveWorks sample can't execute on the target platform,76,0,2024-06-25T09:09:13.266Z,2024-06-25T09:17:38.693Z,296,https://forums.developer.nvidia.com/t/driveworks-sample-cant-execute-on-the-target-platform,steven_cho,2,51.4,7,driveworks,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
 <strong>Software Version</strong><br>
 <span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
@@ -1109,10 +1361,10 @@ Is there an example code in NvMedia that converts fish eye images from different
 ./sample_hello_world<br>
 -bash: ./sample_hello_world: cannot execute binary file: Exec format error</p>
 <p>Should I copy the DriveWorks sample source code to the target platform and build it on target platform?</p>"
-297410,Setting up Driveworks 5.14 on the Drive Orin,100,0,2024-06-24T06:32:22.973Z,2024-06-25T07:33:03.799Z,579,https://forums.developer.nvidia.com/t/setting-up-driveworks-5-14-on-the-drive-orin,akshay.tupkar,2,27.0,10,"<p>Hi team,<br>
+297410,Setting up Driveworks 5.14 on the Drive Orin,109,0,2024-06-24T06:32:22.973Z,2024-06-25T07:33:03.799Z,579,https://forums.developer.nvidia.com/t/setting-up-driveworks-5-14-on-the-drive-orin,akshay.tupkar,2,32.2,11,driveworks,"<p>Hi team,<br>
 I have switched to DRIVE OS 6.0.8.1 from DRIVE OS 6.0.6. Now I need to set up driveworks 5.14 to run samples on drive orin.<br>
 What all are the steps required for that?</p>"
-297534,CUDA memory usage by process in Orin/DriveOS,56,0,2024-06-25T04:12:20.962Z,2024-06-25T06:58:14.541Z,197,https://forums.developer.nvidia.com/t/cuda-memory-usage-by-process-in-orin-driveos,Alex-1,2,35.8,3,"<p>I’m trying to obtain CUDA memory usage per process on Orin. The issues I face are:</p>
+297534,CUDA memory usage by process in Orin/DriveOS,61,0,2024-06-25T04:12:20.962Z,2024-06-25T06:58:14.541Z,197,https://forums.developer.nvidia.com/t/cuda-memory-usage-by-process-in-orin-driveos,Alex-1,2,41.0,4,driveos-cuda,"<p>I’m trying to obtain CUDA memory usage per process on Orin. The issues I face are:</p>
 <ol>
 <li>There is no nvidia-smi.</li>
 <li>To work around (1), I try to write a Python program using <code>py3nvml.py3nvml</code>, but it fails due to lack of <code>libnvidia-ml.so</code>.</li>
@@ -1128,3 +1380,556 @@ What all are the steps required for that?</p>"
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)</p>
 <p><strong>Host Machine Version</strong><br>
 <span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers</p>"
+296736,NITO file for Valeo C2 Camera Models,119,0,2024-06-17T20:07:40.154Z,2024-06-24T18:58:49.323Z,349,https://forums.developer.nvidia.com/t/nito-file-for-valeo-c2-camera-models,extern.ray.xie,2,76.8,8,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hi,</p>
+<p>We currently have purchased cameras from Valeo with model number: V1SIM728SARU5120NC2. Our company’s NVIDIA contact told us this camera model is only supported in DriveOS 6.0.9. However, we don’t have access to DriveOS 6.0.9 because we don’t have a developer contract. I was wondering if this NITO file can be supplied to us since many of our projects depend on these cameras. Thanks!</p>"
+297075,Switching to Drive OS 6.0.8.1 ON Drive Orin,109,0,2024-06-20T09:02:29.721Z,2024-06-24T06:18:34.665Z,613,https://forums.developer.nvidia.com/t/switching-to-drive-os-6-0-8-1-on-drive-orin,akshay.tupkar,2,36.0,4,drive-platform-setup,"<p>Hi team,<br>
+I am looking forward to switching to DRIVE OS 6.0.8.1 on drive Orin.<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/0/8/e/08e977269aa3557549c148759732c13a9b3d4de1.png"" data-download-href=""/uploads/short-url/1gQ13Uuch551gyRFN5NxrdWTD7b.png?dl=1"" title=""image"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/8/e/08e977269aa3557549c148759732c13a9b3d4de1_2_690x187.png"" alt=""image"" data-base62-sha1=""1gQ13Uuch551gyRFN5NxrdWTD7b"" width=""690"" height=""187"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/0/8/e/08e977269aa3557549c148759732c13a9b3d4de1_2_690x187.png, https://global.discourse-cdn.com/nvidia/optimized/4X/0/8/e/08e977269aa3557549c148759732c13a9b3d4de1_2_1035x280.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/0/8/e/08e977269aa3557549c148759732c13a9b3d4de1_2_1380x374.png 2x"" data-dominant-color=""F6F7F5""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">image</span><span class=""informations"">1396×379 32.8 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+Instead of downloading the docker software from official website, Can I download an installation script by using the command given in the document. Because I am not sure the type of Docker software needed.</p>"
+297072,DriveSim,72,1,2024-06-20T08:35:13.754Z,2024-06-20T09:56:14.633Z,176,https://forums.developer.nvidia.com/t/drivesim,prit.shah,2,46.6,7,drive-misc,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+[*] DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+[*] Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+[*] other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello Everyone,</p>
+<p>How can I get the Early Access of DRIVE Sim?</p>"
+296907,Facing issue while executing sample object detector tracker on drive orin,117,0,2024-06-19T06:00:38.615Z,2024-06-20T07:32:27.790Z,486,https://forums.developer.nvidia.com/t/facing-issue-while-executing-sample-object-detector-tracker-on-drive-orin,akshay.tupkar,2,37.2,10,driveworks-dnn-framework,"<p>Hi team,<br>
+I am working on DRIVE Orin with DRIVE OS 6.0.6. I went through driveworks documention and I came across a sample named sample_object_detector_tracker. For your reference I am attaching its link. After executing a sample on drive orin, I am not getting the output as shown in the documentation. I am attaching both the scenarios, an expected output and the output which I am getting.<br>
+<div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/9/a/3/9a3bad97ffb0fe0a8553026bd3a8e116d89e9ccc.jpeg"" data-download-href=""/uploads/short-url/m0pobTbChkuFFu9e0IOe9XdwS16.jpeg?dl=1"" title=""expected output as shown in the documentation"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/original/4X/9/a/3/9a3bad97ffb0fe0a8553026bd3a8e116d89e9ccc.jpeg"" alt=""expected output as shown in the documentation"" data-base62-sha1=""m0pobTbChkuFFu9e0IOe9XdwS16"" width=""690"" height=""406"" data-dominant-color=""848380""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">expected output as shown in the documentation</span><span class=""informations"">911×537 39.4 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/f/1/3/f130e748ad97b1feb5928328f239e9c6de0e8138.jpeg"" data-download-href=""/uploads/short-url/ypFQqgrKkmR0hBj2vB4ieLyzkhy.jpeg?dl=1"" title=""output in my case"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/f/1/3/f130e748ad97b1feb5928328f239e9c6de0e8138_2_666x500.jpeg"" alt=""output in my case"" data-base62-sha1=""ypFQqgrKkmR0hBj2vB4ieLyzkhy"" width=""666"" height=""500"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/f/1/3/f130e748ad97b1feb5928328f239e9c6de0e8138_2_666x500.jpeg, https://global.discourse-cdn.com/nvidia/optimized/4X/f/1/3/f130e748ad97b1feb5928328f239e9c6de0e8138_2_999x750.jpeg 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/f/1/3/f130e748ad97b1feb5928328f239e9c6de0e8138_2_1332x1000.jpeg 2x"" data-dominant-color=""716E68""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">output in my case</span><span class=""informations"">1920×1440 256 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div><br>
+</p><div class=""video-placeholder-container"" data-video-src=""https://global.discourse-cdn.com/nvidia/original/4X/6/2/5/625a74061a54577f5a230573bd8826bfed254fc2.mp4"" data-thumbnail-src=""https://global.discourse-cdn.com/nvidia/original/4X/f/6/e/f6e4ba6fa70c389d2ba49c148bcb2c4ac0c59bd5.jpeg"">
+  </div><br>
+Can you help me with this?<br>
+<a href=""https://developer.nvidia.com/docs/drive/drive-os/6.0.6/public/driveworks-nvsdk/dwx_object_detector_tracker_sample.html"" rel=""noopener nofollow ugc"">DriveWorks SDK Reference: Basic Object Detector and Tracker Sample (nvidia.com)</a><p></p>"
+296446,Inquiry Regarding SoC Comparison Between Jetson AGX Orin and DRIVE Orin,137,1,2024-06-14T08:27:43.531Z,2024-06-19T06:47:48.746Z,449,https://forums.developer.nvidia.com/t/inquiry-regarding-soc-comparison-between-jetson-agx-orin-and-drive-orin,ismael.gomez4178,2,57.6,13,drive-misc,"<p>Dear NVIDIA Support Team,</p>
+<p>I would like to know if I can use the datasheet for the Orin SoC provided for the Jetson AGX Orin in the <a href=""https://www.nvidia.com/content/dam/en-zz/Solutions/gtcf21/jetson-orin/nvidia-jetson-agx-orin-technical-brief.pdf"" rel=""noopener nofollow ugc"">Technical Brief</a> as a reference to understand the Orin SoC used in the DRIVE Orin platform, or if there are significant differences between the two.</p>
+<p>I am interested in this information to better understand the functioning of DriveWorks and the hardware acceleration tools on the DRIVE platform.</p>
+<p>Thank you in advance for your assistance.<br>
+Best regards.</p>"
+296416,Is there any lane detection sample provide by driveworks for drive orin?,144,0,2024-06-14T05:13:55.109Z,2024-06-19T06:41:13.229Z,420,https://forums.developer.nvidia.com/t/is-there-any-lane-detection-sample-provide-by-driveworks-for-drive-orin,akshay.tupkar,2,33.2,16,driveworks,"<p>Hi team,<br>
+I am working on Drive Orin. I want to know whether there are any samples provided by Driveworks for lane and drowsiness detection. Currently I am using Driveworks 5.10 version. On driveworks 3.5.78, I see a perception module which has a lane detection sample(Mapnet).<br>
+<a href=""https://docs.nvidia.com/drive/driveworks-3.5/dwx_landmark_perception_sample.html#dwx_landmark_det_running"" rel=""noopener nofollow ugc"">DriveWorks SDK Reference: Segmentation-based Landmark Detection Sample (MapNet) (nvidia.com)</a></p>"
+296801,Cuda compatibility with opencv,85,0,2024-06-18T08:43:18.709Z,2024-06-19T04:55:08.273Z,43,https://forums.developer.nvidia.com/t/cuda-compatibility-with-opencv,akshay.tupkar,2,32.2,10,driveos-cuda,"<p>Hi team,<br>
+I want to know whether Opencv 4.2.0 is compatible with CUDA 11.4?</p>"
+296858,NVENC shows Off during video encoding using sample application nvm_iep_sci,68,2,2024-06-18T15:50:52.548Z,2024-06-18T22:39:38.494Z,375,https://forums.developer.nvidia.com/t/nvenc-shows-off-during-video-encoding-using-sample-application-nvm-iep-sci,samuel.ongzx,2,26.4,6,driveos-nvmedia,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hi NVIDIA Team,</p>
+<p>I am trying to benchmark video encoding capabilities onboard the Drive AGX Orin. Using the sample app <code>nvm_iep_sci</code>, I am trying to encode a 4K video with pixel format IYUV to H265 using the default config file for H265 at UHP quality. When I run <code>sudo tegrastats</code>, I am seeing it report <code>NVENC off</code> during the encoding process. I instead notice one of the CPU core is going up to 100% when the encoding is in process. Is there any advice to get the encoding to be done on the encoding hardware or am I interpreting something wrongly here?</p>
+<p>Thanks!</p>"
+296564,How to handle CHANSEL_NOMATCH?,104,0,2024-06-15T20:58:12.984Z,2024-06-18T21:46:41.658Z,449,https://forums.developer.nvidia.com/t/how-to-handle-chansel-nomatch,collin.day,2,36.0,4,driveos,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>We have an application that we noticed would fail if the program had any kind of delay in it.  To reproduce more (although still intermittlently) , we start the application up and introduce a delay with a thread sleep.  Later, as it processes - we eventually see these errors in the kernel trace:</p>
+<pre><code class=""lang-auto"">kworker/5:0-444543  [005] ....... 140963.128948: rtcpu_vinotify_error: tstamp:4405238666900 cch:0 vi:0 tag:CHANSEL_NOMATCH channel:0x41 frame:0 vi_tstamp:140967637296192 data:0x0000000000000589
+</code></pre>
+<p>According to <code>drive-linux/kernel/source/oss_src/nvidia/include/soc/tegra/camrtc-capture.h</code> it indicates either we have not configured a sensor channel, which does not make sense because we do capture, or indicates a rwuest underflow.</p>
+<p>My question is - how is this communicated to the client application, and what are the steps you would use to mitigate it?  What are the generally accepted methods for recovery?</p>
+<p>Also - it isn’t really clear to me after looking at the source code what:<br>
+cch, vi, channel, and frame are referring to in this context.</p>
+<p>Thanks.</p>"
+296728,Errors when executing common_if_testapp,87,1,2024-06-17T17:52:46.304Z,2024-06-18T14:48:30.570Z,364,https://forums.developer.nvidia.com/t/errors-when-executing-common-if-testapp,luis.merayo,2,36.0,4,drive-platform-setup,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>I am trying to use the common_if_testapp application, but every time I execute a command i get errors, for example:</p>
+<p>nvidia@tegra-ubuntu:~$ common_if_testapp -get_fw_version<br>
+CommonIf: Receive Timeout!<br>
+Query FW Version failed: CommonIf_E_TIMEOUT</p>
+<p>nvidia@tegra-ubuntu:~$ common_if_testapp -get_default_bootchain x1<br>
+DU_MCC_SendRecvPacket: Failed to wait for IPC read event. ret is: 0x9<br>
+Failed to get default boot chain selection for Tegra A<br>
+CommonIf_E_NOK</p>
+<p>Is there something I need to set up first before being able to use this command?</p>
+<p>Also, I couldn’t find the source code of the app, is it available in the docker containers?</p>
+<p>Thanks in advance.</p>"
+296675,Running traffic light classifier with customer camera,102,0,2024-06-17T09:49:19.893Z,2024-06-18T09:52:37.348Z,597,https://forums.developer.nvidia.com/t/running-traffic-light-classifier-with-customer-camera,tingguang.wang1,2,15.8,3,driveworks-cameras,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>I am trying run traffic light classifier sample on my customer camera, I have 2 question related</p>
+<ol>
+<li>
+<p>I have bring up the rccb camera f008a120bm0a on 5.1.6.1 with nvmedia sample nvsipl generated from my host, but I can’t run the driveworks sample on target (same issue when running sample camera GMSL), I use type ar0820-rccb-bae-f008a120bm0a.<br>
+Error was like: CameraGMSL: Couldn’t set CameraGMSL setup thread sched params!<br>
+…nvmedia:ERROR: ImgGetDevice: Can’t find driver for ref_max96712_9295_ar0820f008a120bm0a<br>
+Should I compile together the samples and nvmedia ? and it there any documentation ?</p>
+</li>
+<li>
+<p>I plan to upgrade driveos to 5.2.6 and use RGGB camera f008a120rm0a, is traffic light classifier sample still available and supports RGGB camera relatively, any documentation available?</p>
+</li>
+</ol>"
+295936,Error at Drive Software Platform when using SDK manager,137,1,2024-06-11T06:24:20.916Z,2024-06-18T07:14:58.839Z,1093,https://forums.developer.nvidia.com/t/error-at-drive-software-platform-when-using-sdk-manager,tingguang.wang1,2,21.0,4,drive-platform-setup,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello,<br>
+Following error was returned at installation final step,<br>
+Please check, thanks. SDK manager version is 2.1.0</p>
+<p>13:50:43 INFO: Drive Platform Targetfs - target_image: archives/gnome-user-docs_3.28.2+git20180715-0ubuntu0.1_all.deb</p>
+<p>13:50:43 INFO: Drive Platform Targetfs - target_image: python/wheel-0.33.6-py2.py3-none-any.whl</p>
+<p>13:50:43 INFO: Drive Platform Targetfs - target_image: INFO: Checking for prerequisites</p>
+<p>13:50:43 INFO: Drive Platform Targetfs - target_image: INFO: Installing docker</p>
+<p>13:50:43 INFO: Drive Platform Targetfs - target_image: Get:1 file:/var/cuda-repo-10-2-local-10.2.19-430.17 InRelease</p>
+<p>13:50:43 INFO: Drive Platform Targetfs - target_image: Get:6 file:/var/nv-tensorrt-repo-cuda10.2-trt5.1.4.2-ga-20190506 Release [574 B]</p>
+<p>13:50:44 INFO: Drive Platform Targetfs - target_image: Hit:11 <a href=""http://security.ubuntu.com/ubuntu"" class=""inline-onebox"" rel=""noopener nofollow ugc"">Index of /ubuntu</a> bionic-security InRelease</p>
+<p>13:50:44 INFO: Drive Platform Targetfs - target_image: Hit:10 <a href=""http://mirrors.tuna.tsinghua.edu.cn/ubuntu"" class=""inline-onebox"" rel=""noopener nofollow ugc"">Index of /ubuntu/ | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a> bionic InRelease</p>
+<p>13:50:44 INFO: Drive Platform Targetfs - target_image: Hit:12 <a href=""http://mirrors.tuna.tsinghua.edu.cn/ubuntu"" class=""inline-onebox"" rel=""noopener nofollow ugc"">Index of /ubuntu/ | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a> bionic-updates InRelease</p>
+<p>13:50:44 INFO: Drive Platform Targetfs - target_image: Hit:13 <a href=""http://mirrors.tuna.tsinghua.edu.cn/ubuntu"" class=""inline-onebox"" rel=""noopener nofollow ugc"">Index of /ubuntu/ | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a> bionic-backports InRelease</p>
+<p>13:50:46 INFO: Drive Platform Targetfs - target_image: Reading package lists…</p>
+<p>13:50:46 INFO: Drive Platform Targetfs - target_image: Reading package lists…</p>
+<p>13:50:47 INFO: Drive Platform Targetfs - target_image: Building dependency tree…</p>
+<p>13:50:47 INFO: Drive Platform Targetfs - target_image: Reading state information…</p>
+<p>13:50:47 INFO: Drive Platform Targetfs - target_image: curl is already the newest version (7.58.0-2ubuntu3.24).</p>
+<p>13:50:47 INFO: Drive Platform Targetfs - target_image: 0 upgraded, 0 newly installed, 0 to remove and 47 not upgraded.</p>
+<p>13:50:47 INFO: Drive Platform Targetfs - target_image: Warning: apt-key output should not be parsed (stdout is not a terminal)</p>
+<p>13:52:57 INFO: Drive Platform Targetfs - target_image: curl: (7) Failed to connect to <a href=""http://download.docker.com"" rel=""noopener nofollow ugc"">download.docker.com</a> port 443: Connection timed out</p>
+<p>13:52:57 ERROR: Drive Platform Targetfs - target_image: ERROR: Fingerprint was not found</p>
+<p>13:52:58 ERROR: Drive Platform Targetfs - target_image: command terminated with error</p>
+<p>13:52:58 SUMMARY: Drive Platform Targetfs Patch - target_image: Depends on failed component</p>
+<p>13:52:58 DEBUG: running command &lt; true &gt;</p>
+<p>13:52:58 INFO: command finished successfully</p>
+<p>13:52:58 DEBUG: DRIVE Linux Release Notes - target_image: using adapter to install NV_DRIVE_LINUX_RELEASE_NOTES@DRIVE_AGX_PEGASUS_XT to /home/nvhost/nvidia/nvidia_sdk/DRIVE_Software_10.0_Linux_OS_DRIVE_AGX_PEGASUS_XT</p>
+<p>13:52:58 INFO: DRIVE Linux Release Notes - target_image: command finished successfully</p>
+<p>13:52:58 SUMMARY: DRIVE Linux Release Notes - target_image: Install completed successfully.</p>"
+296628,Nvidia account default password,91,0,2024-06-17T03:38:40.042Z,2024-06-18T06:22:08.869Z,401,https://forums.developer.nvidia.com/t/nvidia-account-default-password,tingguang.wang1,3,350.8,3,drive-platform-setup,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello,<br>
+I cannot enter the correct password to my platform, basically I only need it when remote ssh<br>
+I have tried:<br>
+“”<br>
+"" ""<br>
+“nvidia”<br>
+“ubuntu”<br>
+“NVIDIA”<br>
+“UBUNTU”</p>
+<p>all not correct, please let me know how to proceed</p>"
+295205,Entron camera bringup issue at Pegasus development kit,165,0,2024-06-05T06:06:55.414Z,2024-06-18T06:21:09.277Z,628,https://forums.developer.nvidia.com/t/entron-camera-bringup-issue-at-pegasus-development-kit,tingguang.wang1,2,61.4,6,driveos-nvstreams,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>My target has drive OS 5.1.5<br>
+I am using the NVIDIA ecosystem camera(8MP) from supplier Entron<br>
+By following the instruction to put 2 libraries under /usr/lib/nvispl_drv</p>
+<p>1)I tried the sample under driveworks(2.2) to run gmsl camera，the bringup is failed with log info on mismatch on resolution, it seems that I need to change the sample code to match it ?</p>
+<p>2)It was also told to use ./nvsipl_camera -c “entron_camera_type” -m … , but I can’t find this command nvsipl_camera, is it to be installed with SDK manager?</p>"
+264679,AQR113C PHY firmware update corrupted,2238,1,2023-08-28T17:46:03.283Z,2024-06-18T03:14:47.934Z,2689,https://forums.developer.nvidia.com/t/aqr113c-phy-firmware-update-corrupted,bmargosian2,6,2094.0,120,driveos-networking,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>–</p>
+<p>Hello,</p>
+<p>We are using the drive AGX kits available 10GBASE-T connection (mgbe1_0) to communicate to a 10G-T switch. The cable length is &lt;5m and is CAT6 STP.</p>
+<p>Recently we noticed that a few devices would fail autonegotiation and we would not get a link on this port. After some time the Orin would report the following PCS error.</p>
+<pre><code class=""lang-auto"">[243088.778675] nvethernet 6910000.ethernet: [xpcs_lane_bring_up][449][type:0x4][loga-0x0] Failed to get PCS block lock
+</code></pre>
+<p>In an attempt to remedy the situation, we thought to update the AQR113C PHY included in the AGX dev kit using the nvidia provided tooling:</p>
+<pre><code class=""lang-auto"">/lib/firmware/marvell_ethernet/AQR113C$ ./flash_aqr113c
+</code></pre>
+<p>We first ran the <code>--IsReady</code> flag to ensure the PHY was ready:</p>
+<pre><code class=""lang-auto"">$ ./flash_aqr113c --IsReady mgbe1_0
+Device initialization done and is READY for flashing
+</code></pre>
+<p>Then we checked to make sure the PHY needed an update:</p>
+<pre><code class=""lang-auto"">$ ./flash_aqr113c --GetCurrentVersion mgbe1_0
+5.6
+$ ./flash_aqr113c --VersionCompare mgbe1_0 AQR-G4_v5.6.1-AQR_Marvell_NoSwap_XFI_ID44874_VER1836.cld
+Current FW version: 5.6
+Input FW version is AQR-G4_v5.6.1-AQR_Marvell_NoSwap_XFI_ID44874_VER1836.cld
+Input FW version is Lesser
+</code></pre>
+<p>The file indicated version 5.6.1 so a flash was attempted.</p>
+<pre><code class=""lang-auto"">$ ./flash_aqr113c --Install mgbe1_0 AQR-G4_v5.6.1-AQR_Marvell_NoSwap_XFI_ID44874_VER1836.cld
+</code></pre>
+<p>This did succeed for a while but then began failing with mismatch errors, ultimately failing with error 209.</p>
+<pre><code class=""lang-auto"">  Bytes: 0x16F00
+  Bytes: 0x17000
+  Bytes: 0x17100
+  Bytes: 0x17200
+  Bytes: 0x17300
+  Mismatch on byte 0x17358: Read 0xB1 - Should be: 0x90
+  Mismatch on byte 0x17359: Read 0x69 - Should be: 0xA1
+  Mismatch on byte 0x1735A: Read 0xA8 - Should be: 0x87
+  Mismatch on byte 0x1735B: Read 0xC - Should be: 0xAC
+  Mismatch on byte 0x1735C: Read 0xC - Should be: 0xB1
+...
+  Bytes: 0x5FE00
+  Bytes: 0x5FF00
+  Bytes: 0x60000
+ret 209
+Fail to Flash FW image with 209
+</code></pre>
+<p>After a cold reboot (full AGX power cycle, the firmware of the PHY seems corrupted and the PHY no longer links up to any BASE-T link partner. The firmware when probed also now reports 0.0.</p>
+<pre><code class=""lang-auto"">$ ./flash_aqr113c --GetCurrentVersion mgbe1_0
+0.0
+</code></pre>
+<p>What is the proper method to update / flash the PHY firmware on the Drive AGX Orin dev kit with DriveOS for the Aquantia AQR113C?</p>"
+296524,Idea that would make autonomous vehicles a reality,71,0,2024-06-14T19:38:04.159Z,2024-06-14T19:38:04.289Z,41,https://forums.developer.nvidia.com/t/idea-that-would-make-autonomous-vehicles-a-reality,stevebarr1000,1,15.8,4,,"<p>Dear Autonomous vehicles team,</p>
+<p>I have an idea that will make autonomous driving totally safe and could get the whole industry into reality.<br>
+I would like someone from the team to contact me.  My email is <a href=""mailto:stevebarr1000@gmail.com"">stevebarr1000@gmail.com</a><br>
+thanks,<br>
+s</p>"
+296116,Changing h264 bitrate on the fly at the run time with driveworks serialization api,106,0,2024-06-12T12:29:44.415Z,2024-06-13T12:09:29.714Z,455,https://forums.developer.nvidia.com/t/changing-h264-bitrate-on-the-fly-at-the-run-time-with-driveworks-serialization-api,buva5871,2,66.4,6,driveworks-image-processing,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> 1.9.3.10904<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello Nvidia Team,<br>
+i am using drivework serialization api to encode the official nvidia support gmsl2 camera into h264 stream.<br>
+Using the rig file, i can set the bitrate for the encoder at the inititialization of the serializer.<br>
+Here is how i define the properties for the encode:</p>
+<p>newParams +=,type=user,format=h264,bitrate=800000,gop-length=1,quality=24,fifo-size=4,encoder-instance=0</p>
+<p>My question is that how can i adjust the bitrate on the fly while the camera_sample application is running without having to restart the application?</p>
+<p>thank you in advance!</p>"
+296082,How to record a video file using usb camera on drive orin?,104,0,2024-06-12T08:02:53.072Z,2024-07-02T18:53:33.058Z,459,https://forums.developer.nvidia.com/t/how-to-record-a-video-file-using-usb-camera-on-drive-orin,akshay.tupkar,2,36.6,8,driveworks-cameras,"<p>Hi team,<br>
+<a href=""https://docs.nvidia.com/drive/driveworks-4.0/dwx_camera_usb_sample.html"" class=""onebox"" target=""_blank"" rel=""noopener nofollow ugc"">https://docs.nvidia.com/drive/driveworks-4.0/dwx_camera_usb_sample.html</a><br>
+In this provided sample, recording option is disabled. It has been mentioned that recording option is only available on x86 platfrom. But if i want to record the video, how can i do that because I want to try this on drive orin which has arm64 architecture.</p>"
+296081,Whats is the built-in Deserializer board number for Nvidia Drive AGX Orin?,94,1,2024-06-12T07:49:47.059Z,2024-06-28T03:13:04.639Z,243,https://forums.developer.nvidia.com/t/whats-is-the-built-in-deserializer-board-number-for-nvidia-drive-agx-orin,kevin.kal,2,27.2,10,drive-platform-design,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+[*] DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+[*] Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+[*] other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>We are in the middle of purchasing a GMSL Camera. However the supplier stated that the built-in Deserializer  board for Nvidia Drive AGX Orin is MAX96712. We wanted to know if this is correct?</p>
+<p>Thanks</p>"
+295133,Error: no CUDA-capable device is detected on Nvidia Drive AGX Orin,162,2,2024-06-04T13:42:37.887Z,2024-06-28T02:40:12.501Z,428,https://forums.developer.nvidia.com/t/error-no-cuda-capable-device-is-detected-on-nvidia-drive-agx-orin,kevin.kal,2,47.2,10,driveos-cuda,"<p>Please provide the following info (tick the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+[*] DRIVE OS 6.0.8.1<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.5<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 (rev. 1)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS 6.0.4 SDK<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+[*] Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+[*] DRIVE AGX Orin Developer Kit (940-63710-0010-300)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-200)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-100)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-D00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (940-63710-0010-C00)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE AGX Orin Developer Kit (not sure its number)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.3.10904<br>
+[*] other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 20.04 Host installed with SDK Manager<br>
+[*] native Ubuntu Linux 20.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu Linux 18.04 Host installed with DRIVE OS Docker Containers<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p>Hello,</p>
+<p>We were trying to run sample_hello_world code on the drive unit however we kept getting the following error:</p>
+<p>“Driveworks exception thrown: Platform: cannot retrieve GPU device count… Error cudaErrorNoDevice: no CUDA-capable device is detected”</p>
+<p>here is the screenshot:</p>
+<p><div class=""lightbox-wrapper""><a class=""lightbox"" href=""https://global.discourse-cdn.com/nvidia/original/4X/1/5/7/157105c0fc6d899934484a357b46521884f4c1dd.png"" data-download-href=""/uploads/short-url/33GaW9dpurMJxz6alN6NcVTusDr.png?dl=1"" title=""Screenshot from 2024-06-04 14-41-34"" rel=""noopener nofollow ugc""><img src=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/5/7/157105c0fc6d899934484a357b46521884f4c1dd_2_690x388.png"" alt=""Screenshot from 2024-06-04 14-41-34"" data-base62-sha1=""33GaW9dpurMJxz6alN6NcVTusDr"" width=""690"" height=""388"" srcset=""https://global.discourse-cdn.com/nvidia/optimized/4X/1/5/7/157105c0fc6d899934484a357b46521884f4c1dd_2_690x388.png, https://global.discourse-cdn.com/nvidia/optimized/4X/1/5/7/157105c0fc6d899934484a357b46521884f4c1dd_2_1035x582.png 1.5x, https://global.discourse-cdn.com/nvidia/optimized/4X/1/5/7/157105c0fc6d899934484a357b46521884f4c1dd_2_1380x776.png 2x"" data-dominant-color=""F0F2ED""><div class=""meta""><svg class=""fa d-icon d-icon-far-image svg-icon"" aria-hidden=""true""><use href=""#far-image""></use></svg><span class=""filename"">Screenshot from 2024-06-04 14-41-34</span><span class=""informations"">1920×1080 310 KB</span><svg class=""fa d-icon d-icon-discourse-expand svg-icon"" aria-hidden=""true""><use href=""#discourse-expand""></use></svg></div></a></div></p>
+<p>Can you please have a look and us know how to solve this?</p>
+<p>Thanks</p>"
+294557,Xavier A board is not detected by screen,216,0,2024-05-30T04:08:34.318Z,2024-06-12T03:35:51.780Z,531,https://forums.developer.nvidia.com/t/xavier-a-board-is-not-detected-by-screen,tingguang.wang1,3,35.8,3,drive-platform-bootup,"<p>Please provide the following info (check/uncheck the boxes after creating this topic):<br>
+<strong>Software Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.6 and DriveWorks 4.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> DRIVE OS Linux 5.2.0 and DriveWorks 3.5<br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> NVIDIA DRIVE™ Software 10.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ Software 9.0 (Linux)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other DRIVE OS version<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Target Operating System</strong><br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> Linux<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> QNX<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Hardware Platform</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> NVIDIA DRIVE™ AGX Xavier DevKit (E3550)<br>
+<span class=""chcklst-box checked permanent fa fa-check-square fa-fw""></span> NVIDIA DRIVE™ AGX Pegasus DevKit (E3550)<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>SDK Manager Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> 1.9.1.10844<br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> other</p>
+<p><strong>Host Machine Version</strong><br>
+<span class=""chcklst-box fa fa-square-o fa-fw""></span> native Ubuntu 18.04<br>
+<span class=""chcklst-box checked fa fa-check-square-o fa-fw""></span> other</p>
+<p>Hello,</p>
+<p>I have initialize this platform connection by following the official instructions and successfully running some driveworks samples on Xavier A board last week<br>
+No flashing is operated, remains at 5.1.6</p>
+<p>But I met this issue today that A board is no longer detected by my screen, (check on B is OK), by trying “lsusb”, IOs is still there. How should I handle this situation to get A board back ?<br>
+Later when I tried to scp .mp4 file to B board, transferring was always pending due to unknow reasons (my host is ubuntu22 for now), How should I confirm the connection is correct?</p>
+<p>Thank you in advance!</p>
+<p>Tingguang</p>"
